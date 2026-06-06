@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saline: Saltwater Pool — Support</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main class="policy">
+        <header>
+            <p><a href="../">← Moon Dog</a></p>
+            <h1>Saline: Saltwater Pool — Support</h1>
+        </header>
+
+        <section>
+            <h2>Need help?</h2>
+            <p>Email <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a> with your question. Please include:</p>
+            <ul>
+                <li>What you were trying to do</li>
+                <li>What happened</li>
+                <li>The iOS version and iPhone or iPad model you're using (Settings → General → About)</li>
+                <li>The app version (Saline → Settings → About Saline)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Common questions</h2>
+
+            <h3>My salt target looks different from what my SWG manual says</h3>
+            <p>Saline uses the manufacturer's published target range for the specific cell you picked in Cell brand. Hayward TurboCell targets 2700–3400 ppm; Pentair IntelliChlor targets 3000–4500 ppm; Jandy TruClear targets 3000–3500 ppm. If you haven't selected a cell yet, Saline uses a generic 3000–3500 ppm range. Update your cell in Settings if you change hardware.</p>
+
+            <h3>Why is the FC target for my saltwater pool different from PoolMath's manual chlorine guidance?</h3>
+            <p>Saltwater pools work at a 5 % free-chlorine-to-cyanuric-acid ratio, not the 7.5 % ratio used for manual chlorine. This is documented in the Trouble Free Pool wiki. With CYA at 70 ppm, the SWG minimum FC is 3.5 ppm. Saline applies the SWG ratio automatically.</p>
+
+            <h3>What is CSI and why does Saline show it as the hero metric?</h3>
+            <p>CSI is the Calcium Saturation Index — it predicts whether calcium will scale onto your SWG cell plates (positive CSI) or whether the water will be corrosive (negative CSI). For SWG pools, the sweet spot is slightly negative (−0.3 to 0) to keep cells running clean. Scale on the cell plates is the #1 cause of premature SWG failure, and the cell is the most expensive part of a saltwater system to replace ($300–700). CSI lives on the main screen because protecting your cell is the highest-leverage thing the app can help with.</p>
+
+            <h3>Why does Saline recommend borates?</h3>
+            <p>SWG cells continuously produce sodium hydroxide as a byproduct of generating chlorine, which drives pH upward. Borates at 50 ppm act as a pH buffer that flattens this drift. Saline turns on borates dosing when you toggle "Dose borates" in Settings. Borax can be added incrementally over 2–3 days; the calculator handles the math.</p>
+
+            <h3>My CYA reading is over 100 ppm. What do I do?</h3>
+            <p>CYA cannot be lowered with any chemistry — once it is too high, you must drain and refill some of the pool water to dilute it. Saline will surface an advisory rather than recommend a dose for CYA &gt; 100 ppm. Standard practice is to replace 30–50 % of pool water and re-test.</p>
+
+            <h3>Does the app work offline?</h3>
+            <p>Yes — Saline never connects to the internet for chemistry calculations. The only network traffic is to Apple's StoreKit servers when you initiate a Pro purchase or restore.</p>
+
+            <h3>How do I delete my data?</h3>
+            <p>Delete the app from your iPhone or iPad. All local data is removed along with it.</p>
+        </section>
+
+        <section>
+            <h2>Safety reminder</h2>
+            <p>Pool chemistry can change fast. Add chemicals slowly with the pump running, never pour water into acid (always acid into water), and store concentrated pH adjusters and pool chemicals out of reach of children. Wear eye protection when handling muriatic acid or calcium hypochlorite. Saline presents brand-cited dosing guidance for educational purposes only — confirm with the product label, and consult a pool professional for complex or potentially dangerous situations.</p>
+        </section>
+    </main>
+</body>
+</html>
