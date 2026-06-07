@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux: Glaze Chemistry — Support</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main class="policy">
+        <header>
+            <p><a href="../">← Moon Dog</a></p>
+            <h1>Flux: Glaze Chemistry — Support</h1>
+        </header>
+
+        <section>
+            <h2>Need help?</h2>
+            <p>Email <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a> with your question. Please include:</p>
+            <ul>
+                <li>What you were trying to do</li>
+                <li>What happened</li>
+                <li>The iOS version and iPhone or iPad model you're using (Settings → General → About)</li>
+                <li>The app version (Flux → More → About)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Common questions</h2>
+
+            <h3>Why does the warning say "compared to the target" instead of "violation"?</h3>
+            <p>Limit formulas are advisory targets, not enforced rules. Tony Hansen at Digitalfire is explicit: "Outside the range isn't broken, inside the range isn't automatically safe." Flux honors that voice — every warning cites the named source so you can judge between recommendations from Digitalfire, Sue McLeod cone 6, and Hesselberth &amp; Roy cone 6 rather than treating one calculator's ranges as gospel.</p>
+
+            <h3>Two warnings disagree about the same oxide. Which is right?</h3>
+            <p>Both. Different schools of cone-6 chemistry use different windows. Sue McLeod's factorial cone-6 testing produces a different alumina upper bound than Hesselberth &amp; Roy's recommendations. Flux surfaces both so you can choose — recipe development is judgment work, not lookup work.</p>
+
+            <h3>Is the food-safety chip a real food-safety test?</h3>
+            <p>No. It is an advisory based on UMF coefficients and common limit-formula sources. Leach testing is the only definitive answer for whether a finished glaze is food-safe. The disclosure beside the chip says this explicitly. The chip exists to flag obvious red flags (PbO, CdO), BaO leaching risk per Digitalfire, the Si:Al durability window, and the Hesselberth &amp; Roy cone-6 silica minimum — not to certify any glaze as safe.</p>
+
+            <h3>Why is BaO surfaced as a warning even at low amounts?</h3>
+            <p>Tony Hansen on Digitalfire is explicit: "Don't use BaO on functional surfaces without leach testing capability." Flux follows that guidance — any presence of barium triggers the advisory, with stronger language once BaO ≥ 0.10 UMF.</p>
+
+            <h3>The oxide percentages on a material plus its LOI sum to ~100. Is that right?</h3>
+            <p>Yes. Materials are stored on the calcined (post-LOI) basis — oxide weights are what survives the firing. The LOI is what evaporates (CO₂ from carbonates, H₂O from hydrates). Glazy and Digitalfire both normalize this way, and UMF math doesn't need an extra LOI adjustment because the convention is already baked in.</p>
+
+            <h3>Why doesn't Flux include my favorite material?</h3>
+            <p>Flux v1.0 ships 55 preloaded raw materials covering the common studio pantry — Custer, G-200, Minspar, Mahavir, Nepheline, EPK, OM-4, Grolleg, Whiting, Wollastonite, Dolomite, the Ferro frit series, Gerstley/Gillespie Borate, and the standard colorants/opacifiers. Custom material entry is on the v1.1 backlog. Email if you have a brand or analysis you'd like added — most material chemistry comes from <a href="https://help.glazy.org/concepts/oxides">Glazy</a>'s CC-licensed library.</p>
+
+            <h3>Why no Stull chart in v1?</h3>
+            <p>v1 ships the UMF math, named-source warnings, and food-safety advisory — the core "did my chemistry work?" loop. The Stull chart (Si:Al × R₂O:RO scatter) is on the v1.1 backlog. The Si:Al ratio is already surfaced beside the UMF result.</p>
+
+            <h3>Does the app work offline?</h3>
+            <p>Yes — Flux never connects to the internet. Material chemistry data and limit-formula reference ranges are bundled in the app at install time. There are no analytics, no accounts, no cloud sync.</p>
+
+            <h3>How do I share a recipe with another potter?</h3>
+            <p>Open the recipe, tap the share icon (top-right). Choose JSON (Glazy-shaped schema, good for importing into another tool later) or PDF (single-page printout — title, materials, UMF table, warnings, food-safety status, notes). iOS standard share sheet handles AirDrop, Mail, Messages, Files, Notes, and any third-party app that accepts those file types.</p>
+
+            <h3>How do I delete my data?</h3>
+            <p>Delete the app from your iPhone or iPad. All local data is removed along with it.</p>
+        </section>
+
+        <section>
+            <h2>Studio safety reminder</h2>
+            <p>Glaze chemistry can be hazardous. Lead, cadmium, and barium oxides leach in functional ware; raw materials can be respiratory hazards in dry-mixing; lithium and boron compounds need careful handling. Wear an N95 (or better) when mixing dry glaze, work in a ventilated space, label every container, and store raw materials out of reach of children. Flux presents chemistry information for educational purposes — confirm with material safety data sheets and consult a professional ceramics chemist for production functional ware.</p>
+        </section>
+    </main>
+</body>
+</html>
