@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop: Hydroponic Calculator — Support</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main class="policy">
+        <header>
+            <p><a href="../">← Moon Dog</a></p>
+            <h1>Crop: Hydroponic Calculator — Support</h1>
+        </header>
+
+        <section>
+            <h2>Need help?</h2>
+            <p>Email <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a> with your question. Please include:</p>
+            <ul>
+                <li>What you were trying to do</li>
+                <li>What happened</li>
+                <li>The iOS version and iPhone or iPad model you're using (Settings → General → About)</li>
+                <li>The app version (Crop → Settings → About)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Common questions</h2>
+
+            <h3>What does Crop do?</h3>
+            <p>Crop is a hydroponic nutrient calculator for greenhouse vegetable, herb, strawberry, leafy green, and microgreen growers. Pick a plant + stage or a branded recipe, enter your reservoir volume, and get the salt weights to mix. Log EC and pH per reservoir over time and see drift warnings cited to the published source the recipe came from.</p>
+
+            <h3>What plants are covered in v1?</h3>
+            <p>Lettuce (seedling + mature head), tomato (seedling, vegetative, fruiting), basil, leafy herbs (cilantro, parsley, mint, chives), cucumber, pepper, strawberry (fruiting), leafy greens (kale, chard, spinach, arugula), and microgreens. Lettuce, tomato, and herbs (via Penn State's modified Sonneveld recipe) are the fully cited core. Cucumber, pepper, strawberry, leafy greens, and microgreens are surfaced as broad guidance — published per-stage tables are thinner for those crops.</p>
+
+            <h3>Which branded recipes are in v1?</h3>
+            <p>MasterBlend Tomato 4-18-38 (with calcium nitrate + Epsom at 2:2:1), MasterBlend Lettuce 8-15-36 (the Cornell CEA leafy recipe at 2:2:1), Jack's 3-2-1 (Jack's 5-12-26 + 15-0-0 calcium nitrate + Epsom at 0.951:0.634:0.317 g/L), and the General Hydroponics Flora trio (Lite Feeding and Aggressive Leafy ratios).</p>
+
+            <h3>Where do the recipes come from?</h3>
+            <p>Every plant + stage target cites a primary source — Cornell CEA (Mattson & Lieth), Penn State Extension, UF/IFAS, or Produce Grower for microgreens. Every branded recipe cites the manufacturer's guaranteed analysis label or published feeding chart. Every salt's elemental percentage is derived from the chemical formula using IUPAC 2021 atomic weights. Sources are surfaced inline next to each recommendation.</p>
+
+            <h3>Why is the EC reading on my meter different from what Crop shows?</h3>
+            <p>Crop surfaces the published target EC range from the recipe's source — it doesn't try to predict your meter's exact reading. Real-world conductivity depends on your meter's scale calibration (500, 640, or 700), the actual ion mix of your tap water, and the salt brands you're using. Measure with your meter after mixing and compare against the target range.</p>
+
+            <h3>Why are there 500, 640, and 700 EC scales?</h3>
+            <p>EC meters convert measured conductivity (mS/cm) to a ppm reading using a calibration factor. Cornell and most US hobbyist tables assume 700. Hanna and Bluelab meters default to 500. The European 640 scale is also common. Match your meter's scale in Settings.</p>
+
+            <h3>The salt-weight output suggests calcium nitrate but I have potassium nitrate instead. Can I substitute?</h3>
+            <p>Not directly — Ca(NO₃)₂·4H₂O delivers both calcium and a chunk of the nitrogen, and replacing it with KNO₃ leaves the calcium short. The solver walks the Resh / Mattson sequential satisfy textbook order; if you have an unusual salt set, you can enter the target ppm in Custom mode and adjust until the available salts cover the elements.</p>
+
+            <h3>Can I add my own recipe or salt?</h3>
+            <p>Not in v1. Custom plant recipes and custom salts are on the v1.1 candidate list. The v1 discipline is named-source-only recipes — the wedge is the citation.</p>
+
+            <h3>Does Crop handle tap-water baseline adjustment?</h3>
+            <p>Not in v1. Tap-water baseline subtraction (where Crop subtracts your municipal water's existing ppm from the target before solving) is planned for v1.1.</p>
+
+            <h3>What about two-part or three-part stock solutions?</h3>
+            <p>Not in v1. The reservoir flow assumes you dissolve the salts directly into the reservoir water. Two-part / three-part stock builders are on the v1.1 candidate list.</p>
+        </section>
+
+        <section>
+            <h2>Privacy</h2>
+            <p>Crop does not collect any personal data. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+        </section>
+    </main>
+</body>
+</html>
