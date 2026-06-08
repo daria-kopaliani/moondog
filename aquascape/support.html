@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquascape: Planted Tank Calc — Support</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main class="policy">
+        <header>
+            <p><a href="../">← Moon Dog</a></p>
+            <h1>Aquascape: Planted Tank Calc — Support</h1>
+        </header>
+
+        <section>
+            <h2>Need help?</h2>
+            <p>Email <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a> with your question. Please include:</p>
+            <ul>
+                <li>What you were trying to do</li>
+                <li>What happened</li>
+                <li>The iOS version and iPhone or iPad model you're using (Settings → General → About)</li>
+                <li>The app version (Aquascape → info icon → About)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Common questions</h2>
+
+            <h3>Which methodology should I pick — EI, PPS-Pro, or PMDD?</h3>
+            <p>EI (Estimative Index) is the most popular and the safest starting point for medium-to-high light tanks with CO₂ injection. The Standard variant doses macros Mon/Wed/Fri and traces Tue/Thu/Sat with a 50% weekly water change. EI Daily spreads the same weekly totals over 7 days. EI Low Light / Weekly is the lean once-a-week recipe for low-light tanks. PPS-Pro is daily lean dosing without required water changes — better for setups where weekly water changes are inconvenient. PMDD is mostly historical; few modern hobbyists run it as their primary schedule.</p>
+
+            <h3>Why does my Liquid Dose screen show different SKUs depending on the brand?</h3>
+            <p>Each brand's bottles are positioned for specific methodologies. 2HR APT 1 is ADA-lean (PPS-Pro-style); APT e is the EI formula. NilocG Thrive C is positioned for low-tech; Thrive is high-tech. The screen filters to the SKUs the brand's own page recommends for your chosen methodology. If your tank is set to "Shrimp," the filter also removes products containing glutaraldehyde (Flourish Excel) because it stresses inverts.</p>
+
+            <h3>Are the brand dose rates official?</h3>
+            <p>They're transcribed from each brand's published label or dosing-information page. Source URLs are cited inline on the Liquid Dose screen and in About. If a brand updates its label, the in-app number can lag; please email so we can patch it in the next release.</p>
+
+            <h3>The CO₂ estimator says my tank is in the "danger" band. Is that real?</h3>
+            <p>The formula assumes carbonate buffering (KH) is the only contributor to your pH. If you're dosing phosphate buffers, running Indian almond leaves or peat, or have soft acidic source water, your real CO₂ is lower than the estimator says. Use a drop checker against the estimator for ground truth. The 25–35 ppm window is the standard target; above 40 ppm starts to stress fish (gasping at the surface, hovering near filters); above 60 ppm can be lethal.</p>
+
+            <h3>Why does my shrimp tank get tighter GH/KH bounds?</h3>
+            <p>Shrimp colonies are sensitive to GH and KH changes — off-by-1 dGH can crash a colony, especially for Caridina (crystal red, tiger, taiwan bee) which want GH 4–6 and KH 0–2. The GH/KH Tools screen surfaces species ranges (Neocaridina, Caridina, Sulawesi) when your tank is set to "Shrimp," so you can see whether your target lands inside the canonical husbandry envelope. Re-test before adding shrimp; remineralization products affect KH differently (Equilibrium doesn't raise KH at all; Salty Shrimp GH/KH+ does).</p>
+
+            <h3>Does Aquascape ship Tropica / Aqua Rebell / Dennerle?</h3>
+            <p>Not in v1. The v1 brand list is Seachem Flourish, NilocG Thrive, and 2HR APT — the three brands with the best-documented public dose tables for the U.S. market. European brand presets are on the roadmap for a future European-localization release. Dry-fert salt math (KNO₃, KH₂PO₄, K₂SO₄, CSM+B, MgSO₄) is methodology-driven, so GLA dry-fert kit users and any other dry-fert brand are covered by the standard methodology screens.</p>
+
+            <h3>What's a Walstad / low-tech mode?</h3>
+            <p>Not in v1. Low-tech tanks dose less frequently and at lower concentrations than EI / PPS-Pro tanks. The EI Low Light / Weekly variant is the closest fit in v1; a dedicated low-tech mode is on the v1.1 backlog.</p>
+
+            <h3>Does the app work offline?</h3>
+            <p>Yes — Aquascape never connects to the internet. Methodology recipes, brand dose tables, CO₂ tables, and remineralization rates are bundled in the app at install time. There are no analytics, no accounts, no cloud sync.</p>
+
+            <h3>How do I delete my data?</h3>
+            <p>Delete the app from your iPhone or iPad. All local data is removed along with it. Individual tanks can be deleted from the tank list (swipe left) or from the per-tank Settings screen.</p>
+        </section>
+
+        <section>
+            <h2>Safety reminder</h2>
+            <p>Planted-aquarium dosing involves real chemistry. CO₂ above 40 ppm stresses fish; above 60 ppm can be lethal. Shrimp colonies fail when GH/KH drifts outside their species range. Glutaraldehyde-class liquid carbon products (Seachem Excel and others) should not be dosed in shrimp tanks. Aquascape presents brand-cited and methodology-cited dosing guidance for educational purposes; confirm with the product label and your local fish-club community for tank-specific tuning.</p>
+        </section>
+    </main>
+</body>
+</html>
