@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash: Chlorine Pool Care — Support</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main class="policy">
+        <header>
+            <p><a href="../">← Moon Dog</a></p>
+            <h1>Splash: Chlorine Pool Care — Support</h1>
+        </header>
+
+        <section>
+            <h2>Need help?</h2>
+            <p>Email <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a> with your question. Please include:</p>
+            <ul>
+                <li>What you were trying to do</li>
+                <li>What happened</li>
+                <li>The iOS version and iPhone or iPad model you're using (Settings → General → About)</li>
+                <li>The app version (Splash → Settings → About)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Common questions</h2>
+
+            <h3>What is the CYA trajectory and why does Splash treat it as the hero metric?</h3>
+            <p>Trichlor tablets are 55 % cyanuric acid by weight. Every pound of tablets adds roughly 6 ppm of CYA to a 10,000-gallon pool, along with the chlorine. CYA does not break down — it can only leave the pool through water replacement. By mid-season, set-and-forget tablet users typically reach 80–120 ppm CYA, at which point chlorine effectiveness collapses (the "chlorine lock" failure mode). Splash projects CYA forward from your dose history and warns when the projection crosses 70 ppm, so you can switch to liquid bleach or partially refill the pool before the chlorine becomes ineffective.</p>
+
+            <h3>Why are FC, pH, and CYA the parameters Splash asks for first?</h3>
+            <p>The three are coupled. FC needs to scale with CYA (the trouble-free-pool ratio of FC = 7.5 % of CYA). Active chlorine — the fraction actually disinfecting — also depends on pH. Splash shows the active-chlorine percentage so you can see why the same FC reading sanitizes differently at different pH and CYA levels.</p>
+
+            <h3>What is CSI and what should it be for my pool?</h3>
+            <p>CSI is the Calcium Saturation Index — a balance metric predicting whether your water will scale (positive) or dissolve plaster, grout, and metal surfaces (negative). The safe range is −0.3 to +0.3. Splash computes CSI from pH, calcium hardness, total alkalinity, water temperature, and cyanuric acid (using the TFP variant of the Langelier formula). Plaster and gunite pools care about CSI more than vinyl liners or fiberglass, but both ends of the range can cause real damage over time.</p>
+
+            <h3>What's the difference between trichlor, cal hypo, dichlor, and liquid bleach?</h3>
+            <p>All deliver free chlorine, but each has side effects: trichlor adds CYA every dose, cal hypo raises calcium hardness and pH, dichlor adds CYA and is near-pH-neutral, and liquid bleach adds no CYA and no CH. Splash Pro accounts for all four; the free tier covers liquid bleach only.</p>
+
+            <h3>What is SLAM mode?</h3>
+            <p>SLAM (Shock Level And Maintain) is the Trouble Free Pool protocol for clearing algae or breaking through combined chlorine. You raise FC to 40 % of CYA and hold it there until water is clear, combined chlorine is at or below 0.5 ppm, and the overnight chlorine loss test shows less than 1 ppm loss. Splash Pro walks you through pH prep, the daily liquid bleach dose, and the OCLT.</p>
+
+            <h3>My CYA reading is over 100 ppm. What do I do?</h3>
+            <p>CYA cannot be lowered with any chemistry — once it is too high, you must drain and refill some of the pool water to dilute it. Splash surfaces an advisory rather than recommend a dose for CYA &gt; 100 ppm. Standard practice is to replace 30–50 % of pool water and re-test.</p>
+
+            <h3>Does the app work offline?</h3>
+            <p>Yes — Splash never connects to the internet for chemistry calculations. The only network traffic is to Apple's StoreKit servers when you initiate a Pro purchase or restore.</p>
+
+            <h3>How do I delete my data?</h3>
+            <p>Delete the app from your iPhone or iPad. All local data is removed along with it.</p>
+        </section>
+
+        <section>
+            <h2>Safety reminder</h2>
+            <p>Pool chemistry can change fast. Add chemicals slowly with the pump running, never pour water into acid (always acid into water), and store concentrated pH adjusters and pool chemicals out of reach of children. Wear eye protection when handling muriatic acid or calcium hypochlorite. Splash presents brand-cited dosing guidance for educational purposes only — confirm with the product label, and consult a pool professional for complex or potentially dangerous situations.</p>
+        </section>
+    </main>
+</body>
+</html>
