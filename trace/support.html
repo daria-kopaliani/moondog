@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trace: Soap Calculator — Support</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main class="policy">
+        <header>
+            <p><a href="../">← Moon Dog</a></p>
+            <h1>Trace: Soap Calculator — Support</h1>
+        </header>
+
+        <section>
+            <h2>Need help?</h2>
+            <p>Email <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a> with your question. Please include:</p>
+            <ul>
+                <li>What you were trying to do</li>
+                <li>What happened</li>
+                <li>The iOS version and iPhone or iPad model you're using (Settings → General → About)</li>
+                <li>The app version (Trace → Settings → About)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Common questions</h2>
+
+            <h3>What does "Trace" mean?</h3>
+            <p>In cold-process soapmaking, "trace" is the moment the lye-and-oil mixture emulsifies into a stable batter — when a drizzle of batter leaves a visible mark on the surface before sinking back in. It's the pivot point of the cook, and the named anchor for everything the app helps you plan.</p>
+
+            <h3>Where do the SAP values come from?</h3>
+            <p>Each oil in Trace carries a saponification value for both NaOH (bar soap) and KOH (liquid soap), cross-checked against the American Oil Chemists' Society (AOCS) official methods (Cd 3-25 for SAP, Ce 1-62 and Ce 1h-05 for fatty-acid composition by GC) and the USDA National Nutrient Database / Agricultural Handbook 8. The KOH/NaOH ratio averages 1.4035 (the ratio of their molecular masses, 56.11 / 40.00) and the test suite enforces that ratio within ±5 % for every oil in the table.</p>
+
+            <h3>Where do the quality ranges come from?</h3>
+            <p>Hardness 29–54, cleansing 12–22, and conditioning 44–69 are anchored to Kevin Dunn's <em>Scientific Soapmaking: The Chemistry of the Cold Process</em> (Clavicula Press, 2010 — Hampden-Sydney College, Professor of Chemistry). Bubbly lather 14–46 and creamy lather 16–48 follow the SoapCalc legacy ranges derived from Dunn's fatty-acid mapping. Longevity is computed from total saturated-fatty-acid percent per Modern Soapmaking and practitioner consensus. Tap any quality bar in the Recipe tab to see the source.</p>
+
+            <h3>How does citric acid affect the lye calculation?</h3>
+            <p>Citric acid neutralizes NaOH at a 1:1.18 weight ratio (per Lovin' Soap Studio / Amanda Gail Aaron) — every gram of citric acid in the recipe requires 1.18 grams of additional NaOH to remain neutralized. Trace surfaces the offset inline so you can see why the recommended lye amount grew. Citric acid is added for its chelating effect (binds hard-water minerals, reduces soap scum) and a modest lather boost.</p>
+
+            <h3>Why does NaOH purity matter?</h3>
+            <p>Food-grade NaOH (Essential Depot, Bramble Berry) is typically 98–99% pure. Industrial NaOH can be 90–95% pure and may contain impurities (chlorides, iron) that affect color and shelf life. Trace defaults to 99% for NaOH and 90% for KOH (flake KOH is typically less pure). Verify your supplier's MSDS before bulk-purchasing.</p>
+
+            <h3>Why do I see warnings on the qualities radar?</h3>
+            <p>When a value falls outside the cited target range — for example, a pure-coconut recipe lands at cleansing ~67 against the 12–22 target — Trace flags the deviation inline with the source-cited explanation. Out-of-range isn't always wrong: 100% castile (pure olive oil) sits at conditioning ~80 above the 44–69 target and produces an excellent (if soft) bar.</p>
+
+            <h3>What is IFRA Category 9?</h3>
+            <p>The International Fragrance Association (IFRA) publishes safe-use limits for fragrance ingredients in different product categories. Category 9 is "toilet soap and other rinse-off applications" — more permissive than leave-on skincare (Cat 5) because the product washes away. Trace ships the 51st Amendment (2025) values; caps update annually, so verify against the current IFRA Standards before commercial production.</p>
+
+            <h3>Does the app work offline?</h3>
+            <p>Yes — Trace never connects to the internet. The only network requests come from tapping a citation URL on the Sources screen, which opens in Safari.</p>
+
+            <h3>How do I delete my data?</h3>
+            <p>Delete the app from your iPhone or iPad. All local data (recipes, batches, cure events, settings) is removed along with it.</p>
+        </section>
+
+        <section>
+            <h2>Safety reminder</h2>
+            <p>Sodium hydroxide (NaOH) and potassium hydroxide (KOH) are corrosive. They can cause serious chemical burns to skin and permanent eye damage on contact. Always wear lye-rated gloves and full-coverage eye protection when handling lye, add lye to water (never water to lye), work in a well-ventilated area, and keep concentrated lye and finished caustic soap out of reach of children. Trace cites named sources for educational reference but does not generate recipes — confirm with your supplier's Material Safety Data Sheet (MSDS) and the safety practices recommended by the Handcrafted Soap & Cosmetic Guild (HSCG) before mixing.</p>
+        </section>
+    </main>
+</body>
+</html>
