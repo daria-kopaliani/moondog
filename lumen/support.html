@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen: Red Light Calculator — Support</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main class="policy">
+        <header>
+            <p><a href="../">← Moon Dog</a></p>
+            <h1>Lumen: Red Light Calculator — Support</h1>
+        </header>
+
+        <section>
+            <h2>Need help?</h2>
+            <p>Email <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a> with your question. Please include:</p>
+            <ul>
+                <li>What you were trying to do</li>
+                <li>What happened</li>
+                <li>The iOS version and iPhone or iPad model you're using (Settings → General → About)</li>
+                <li>The app version (Lumen → Settings → About)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Scope (important)</h2>
+            <p>Lumen is a calculator and session log for owners of consumer red light panels. <strong>It is not a medical device. It does not diagnose, treat, or cure any condition.</strong> The app cites peer-reviewed photobiomodulation literature (Huang/Hamblin 2011 PMID 22461763, Freitas/Hamblin 2016 PMID 28070154) and ISO/IEC 17025-accredited (LightLab International Allentown, NVLAP 201079-0) irradiance measurements as references. Treatment goals and decisions are yours; Lumen does the J/cm² math against the literature.</p>
+        </section>
+
+        <section>
+            <h2>Common questions</h2>
+
+            <h3>Why does Lumen present one combined J/cm² number instead of separate red and NIR doses?</h3>
+            <p>Vendors uniformly publish a single peak irradiance value at a reference distance (typically 6 inches), measured across the panel face as combined output from all wavelengths' LEDs. PBM literature splits per-wavelength because its sources (e.g. Huang/Hamblin's worked examples at 660 / 670 / 810 nm) are monochromatic lasers; consumer panels are multi-LED arrays where what's measured at the target is the sum of every wavelength's contribution. Lumen computes one combined dose per session and discloses the panel's wavelength composition as a metadata badge (e.g. "660 nm + 850 nm" or "630 nm + 660 nm + 850 nm"). The biphasic-window guardrail (Huang/Hamblin 2011) is computed against the combined dose, matching the literature's measurement convention.</p>
+
+            <h3>Why is the MitoPRO 750X badged "vendor-published, lab-audit pending"?</h3>
+            <p>Mito Red Light's LightLab International Allentown testing for the 750X model was in progress as of April 2026. Lumen ships the row with the vendor-published value but marks it not lab-audited so the irradiance number is treated with appropriate care. When the LightLab report is published, the row will update with the audited value.</p>
+
+            <h3>What's the difference between Joovv's "100 mW/cm² combined" and Lumen's 74 mW/cm²?</h3>
+            <p>Joovv publishes "&gt; 100 mW/cm² at 6 inches" as combined irradiance. Independent measurement by Light Therapy Insiders (2024) reports 74 mW/cm² peak on the Solo 3.0. Lumen uses the independent measurement as the honest baseline; the vendor's larger claim is disclosed in the citation source string on the panel detail screen. The difference matters because cumulative-dose tracking and biphasic guardrails compound errors — anchoring to the conservative-honest number gives a more reliable safety margin.</p>
+
+            <h3>What do the biphasic-window colors mean?</h3>
+            <p>Lumen maps single-session dose to one of five bands cited to Huang/Hamblin 2011 (PMID 22461763) and the 2025 Lasers in Medical Science review (PMC11991943): below therapeutic (&lt; 1 J/cm²), low therapeutic window (1–10 J/cm² — the 5–10 J/cm² window cited in PMC11991943 sits here), extended therapeutic (10–50 J/cm²), caution (50–60 J/cm²), and overshoot risk (&gt; 60 J/cm²). The Arndt-Schulz biphasic principle (Huang/Hamblin) is that too-low has no effect and too-high reverses the effect. The bands are a navigation aid, not clinical guidance.</p>
+
+            <h3>Does Lumen control my panel?</h3>
+            <p>No. Lumen does not use Bluetooth or any wireless connectivity. It does not pair with, connect to, or control any panel. It is purely a calculator + log + reference. You operate your panel manually; Lumen does the dose math and tracks the sessions.</p>
+
+            <h3>Why does Lumen apply inverse-square distance scaling? Is that accurate for panel arrays?</h3>
+            <p>Lumen scales the vendor's reference irradiance (typically measured at 6 inches / 15.24 cm) to your actual treatment distance using the inverse-square law: <code>I_actual = I_reference × (d_reference / d_actual)²</code>. This is exact for point sources and conservative-honest for planar panel arrays at close range — real arrays drop off slower than 1/r² because of multi-LED overlap, so Lumen tends to slightly under-estimate dose at distances closer than the reference. PBM literature uses this approximation as a working heuristic when the target body region is small relative to the panel face.</p>
+
+            <h3>Does Lumen work offline?</h3>
+            <p>Yes. The app has no network calls. Every preset, every citation, every formula ships as Swift literals in the bundle. The only network call StoreKit makes is for the purchase itself when you tap "Unlock Lumen Pro".</p>
+
+            <h3>How do I restore Lumen Pro on a new device?</h3>
+            <p>Open Lumen → Settings → "Restore Purchases". This re-validates your Apple ID's purchase history with the App Store and unlocks Lumen Pro if your ID owns the purchase. Lumen Pro is a one-time, non-consumable purchase tied to your Apple ID, not a subscription.</p>
+
+            <h3>The 24-hour trial timer started before I was ready — can I reset it?</h3>
+            <p>The trial begins the first time you tap a Pro feature. There's no reset option — once started, it counts down 24 hours of real time. If the trial expires before you've evaluated the calc, the IAP unlock is $6.99 one-time (no subscription, no recurring cost). The trial countdown is visible in Settings.</p>
+
+            <h3>Will Lumen add more panel brands?</h3>
+            <p>Possibly. v1.0 ships Mito Red Light (LightLab-audited), Joovv, and GembaRed (vendor-published). Strong candidates for v1.x are Hooga, PlatinumLED Bio, and Red Light Rising once Lumen can source audited or vendor-published irradiance values with enough provenance to cite. Users with unsupported panels can add Custom entries with their own measurements. Requests welcome via email.</p>
+        </section>
+
+        <section>
+            <h2>App Privacy</h2>
+            <p>See the <a href="privacy.html">Lumen Privacy Policy</a>. The app collects nothing.</p>
+        </section>
+
+        <footer>
+            <p class="muted">© 2026 Roman Kopaliani · <a href="../">Moon Dog apps</a></p>
+        </footer>
+    </main>
+</body>
+</html>
