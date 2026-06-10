@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://daria-kopaliani.github.io/moondog/sitemap.xml
