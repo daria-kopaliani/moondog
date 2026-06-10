@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flush: Mushroom Cultivation — Support</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main class="policy">
+        <header>
+            <p><a href="../">← Moon Dog</a></p>
+            <h1>Flush: Mushroom Cultivation — Support</h1>
+        </header>
+
+        <section>
+            <h2>Need help?</h2>
+            <p>Email <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a> with your question. Please include:</p>
+            <ul>
+                <li>What you were trying to do</li>
+                <li>What happened</li>
+                <li>The iOS version and iPhone or iPad model you're using (Settings → General → About)</li>
+                <li>The app version (Flush → Settings → About)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Scope (important)</h2>
+            <p>Flush is a calculator and grow tracker for <strong>gourmet and medicinal edible mushroom species only</strong> — oyster, lion's mane, shiitake, king oyster, reishi, maitake, pioppino, enoki, chestnut, turkey tail, and Cordyceps militaris. The app does not support, reference, or instruct on psilocybin, Psilocybe cubensis, or any controlled substance. If you're looking for guidance on cultivating species outside the listed gourmet / medicinal set, Flush is not the right tool.</p>
+        </section>
+
+        <section>
+            <h2>Common questions</h2>
+
+            <h3>Why does Reishi have an inverted CO₂ target compared to other species?</h3>
+            <p>Reishi (<em>Ganoderma lucidum</em>) is the one species in the library where high CO₂ is sometimes the goal, not the problem. At atmospheric CO₂ (~400 ppm) reishi produces the kidney-cap form used culinarily; at 1000–3000 ppm CO₂ it produces the elongated antler form prized in traditional medicine. Per Zhou et al., <em>Journal of Fungi</em> 2024/2025 (PMC12842923) which mapped the transcriptomic shift. Flush lets you target either form by adjusting the FAE / CO₂ target in the species profile.</p>
+
+            <h3>Why does Lion's Mane need 80 plugs per log when everything else uses 50?</h3>
+            <p>Hericium is slower-growing and less aggressive than the other log species in Field & Forest's catalog. Doubling the inoculation rate speeds colonization and improves first-flush yield. The 50 / 80 split is Field & Forest Products' published default (Krawczyk & Kozak, Peshtigo WI, founded 1983). Flush bakes in the exception automatically when you pick Lion's Mane for plug-spawn-on-logs.</p>
+
+            <h3>Why is shiitake's fruiting RH lower (60–80%) than other gourmet species (85–95%)?</h3>
+            <p>Bag-grown shiitake is intentionally drier at fruiting than oyster or lion's mane. The Wu 1993 commercial formulation targets 48–50% substrate moisture; the fruiting chamber RH stays in the 60–80% range. Higher RH gives shiitake caps soft, sticky surfaces that retain moisture poorly during storage. Per the literature anchored in PMC11575786 (Bermúdez-Bazán et al., <em>PLOS One</em> 2024).</p>
+
+            <h3>What does "Per Stamets:" / "Per Cornell BMP:" / "Per Field & Forest:" mean in the calculator?</h3>
+            <p>Every numeric default in Flush traces to a named, published source. Stamets is <em>Growing Gourmet & Medicinal Mushrooms</em> (Ten Speed Press, 2000), Cotter is <em>Organic Mushroom Farming and Mycoremediation</em> (Chelsea Green, 2014), Cornell BMP is the Northeast Mushroom Project's Shiitake Cultivation Best Management Practice (Gabriel & Mudge, 2020). Tap any source row in the Sources tab to see the publisher and URL.</p>
+
+            <h3>Does Flush work offline?</h3>
+            <p>Yes. The app has no network calls. Every data table (substrate recipes, species profiles, sterilization PSI / time matrix, brand presets) ships as Swift literals in the bundle. The only network call StoreKit makes is for the purchase itself when you tap "Unlock Flush Pro".</p>
+
+            <h3>How do I restore Flush Pro on a new device?</h3>
+            <p>Open Flush → Settings → "Restore Purchases". This re-validates your Apple ID's purchase history with the App Store and unlocks Flush Pro if your ID owns the purchase. Flush Pro is a one-time, non-consumable purchase tied to your Apple ID, not a subscription.</p>
+
+            <h3>The 48-hour trial timer started before I was ready — can I reset it?</h3>
+            <p>The trial begins the first time you tap a Pro feature. There's no reset option — once started, it counts down 48 hours of real time. If the trial expires before you've evaluated the calc, the IAP unlock is $6.99 one-time (no subscription, no recurring cost). The trial countdown is visible in Settings.</p>
+
+            <h3>Will Flush ever add support for additional species?</h3>
+            <p>Possibly. Strong candidates for v1.1+ are Wine Cap / King Stropharia (outdoor woodchip beds), King Boletus (wild but not cultivable), or expanded medicinal Cordyceps. Daria's general rule: a species needs to be both edibly / medicinally cultivated AND have a citation-anchored profile of cultivation parameters before it ships. Requests welcome via email.</p>
+        </section>
+
+        <section>
+            <h2>App Privacy</h2>
+            <p>See the <a href="privacy.html">Flush Privacy Policy</a>. The app collects nothing.</p>
+        </section>
+
+        <footer>
+            <p class="muted">© 2026 Roman Kopaliani · <a href="../">Moon Dog apps</a></p>
+        </footer>
+    </main>
+</body>
+</html>
