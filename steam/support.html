@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam: Sauna Dose Calc — Support</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main class="policy">
+        <header>
+            <p><a href="../">← Moon Dog</a></p>
+            <h1>Steam: Sauna Dose Calc — Support</h1>
+        </header>
+
+        <section>
+            <h2>Need help?</h2>
+            <p>Email <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a> with your question. Please include:</p>
+            <ul>
+                <li>What you were trying to do</li>
+                <li>What happened</li>
+                <li>The iOS version and iPhone or iPad model you're using (Settings → General → About)</li>
+                <li>The app version (Steam → Settings → About)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Scope (important)</h2>
+            <p>Steam is a calculator, a citation reference, and a session log for sauna users. <strong>It is not a medical device. It does not diagnose, treat, cure, or prevent any condition.</strong> The app cites peer-reviewed sauna dose-response literature from the Kuopio Ischemic Heart Disease Study (KIHD) cohort — Laukkanen et al. 2015 JAMA Internal Medicine (PMID 25705824), 2017 Age & Ageing, 2018 BMC Medicine (PMID 30486813), and the 2018 Mayo Clinic Proceedings synthesis paper. Hazard ratios are observational findings from a named cohort, never personalized risk-reduction guarantees.</p>
+        </section>
+
+        <section>
+            <h2>Common questions</h2>
+
+            <h3>Why don't the 2–3 sessions/week and 11–19 minute tiers show hazard ratios?</h3>
+            <p>The intermediate tiers' exact hazard ratios are reported in Laukkanen 2015 JAMA Internal Medicine, Tables 2 and 3. They are present in the underlying data, but Steam v1.0 ships only the highest-dose-tier HRs that have been independently source-verified (4–7 sessions/week and ≥19 minutes/session). The intermediate tiers display a "verification pending" caveat pointing to the source paper. This is deliberate honesty about the source-discipline gap — verification will land in a v1.0.x update.</p>
+
+            <h3>Why do the HRs say "vs 1 session per week" or "vs &lt;11 minutes" every time?</h3>
+            <p>Every hazard ratio in epidemiological literature compares one group to a reference baseline group. The Laukkanen KIHD analyses use 1 session/week as the frequency baseline and &lt;11 minutes as the per-session duration baseline. Showing an HR without the baseline is misleading — Steam surfaces both every time the number appears, per the source paper's own framing.</p>
+
+            <h3>Why is the Sources tab so explicit about the cohort being Finnish men?</h3>
+            <p>The original KIHD cohort (Laukkanen 2015 JAMA Internal Medicine, 2017 Age & Ageing) is n=2315 middle-aged Finnish men. The 2018 BMC Medicine extension adds women but with smaller n=1688 mixed-sex. Observational findings from this specific cohort do not automatically generalize to other populations. Steam surfaces the cohort attribution on every HR so users can interpret the number in context. This is the source paper's own caveat, not an editorial choice.</p>
+
+            <h3>Why does Infrared mode show an "evidence is thinner" badge?</h3>
+            <p>The Laukkanen KIHD cohort was specifically Finnish wet sauna (80–100°C with periodic löyly water-on-rocks for humidity). Infrared saunas operate at lower temperatures (50–60°C) and heat the body by radiant penetration rather than convective hot air. The dose-response findings from the KIHD cohort do not transfer cleanly. Steam shows the badge so users know the tier guidance is approximate for infrared sessions.</p>
+
+            <h3>Why are steam rooms flagged as "not in the Laukkanen cohort"?</h3>
+            <p>Steam rooms (Turkish-hammam-style high-humidity rooms at 40–50°C) are a distinct heat-exposure modality and were not part of the KIHD cohort. The frequency and duration tier guidance does not apply directly. Steam still lets you log steam-room sessions for personal tracking, but the tier badges show the caveat.</p>
+
+            <h3>Does Steam control my sauna or connect to a heater?</h3>
+            <p>No. Steam does not use Bluetooth or any wireless connectivity. It does not pair with, connect to, or control any sauna heater. It is purely a calculator + reference + log. You operate your sauna manually; Steam plans the session and records it.</p>
+
+            <h3>Does Steam work offline?</h3>
+            <p>Yes. The app has no network calls. Every tier table, every citation, every formula ships as Swift literals in the bundle. Tapping a citation link opens Safari; that's the only network activity, and it's Safari talking to PubMed or the journal, not Steam talking to any server.</p>
+
+            <h3>Does Steam read or write Apple Health (HealthKit)?</h3>
+            <p>No. Steam v1.0 does not integrate with HealthKit. Sauna sessions you log in Steam stay in Steam. HealthKit integration (sauna minutes feeding into the Health app as Mindful Minutes or a Workout type) is on the v1.1 backlog as an optional feature, gated behind explicit permission.</p>
+
+            <h3>Why is there a non-dismissable cardiovascular safety acknowledgement on first launch?</h3>
+            <p>Sauna heat exposure has documented cardiovascular contraindications (unstable cardiovascular conditions, recent MI, severe untreated hypertension, orthostatic hypotension), and alcohol pre-session is a documented sudden-cardiac-death risk per Laukkanen, Laukkanen, & Kunutsor 2018 Mayo Clinic Proceedings § Safety considerations. Surfacing these on first launch is the safety floor; you can re-read them anytime via Settings → "Re-show safety acknowledgement," and the full block is permanently visible on the Sources tab.</p>
+
+            <h3>How does Steam count "this week"?</h3>
+            <p>Steam uses your device's current ISO calendar week (the week containing today's date, per your system's first-weekday setting). Sessions logged within that week count toward the weekly frequency tier; sessions from previous weeks do not.</p>
+
+            <h3>Will Steam add multi-sauna support (home + gym)?</h3>
+            <p>v1.0 assumes one implicit sauna. Multi-sauna entity profiles (separate logs per location with their own temp / type defaults) are on the v1.1 backlog. If multi-sauna matters for your workflow, email and tell us — that signal moves it up the queue.</p>
+
+            <h3>Will Steam localize beyond English?</h3>
+            <p>v1.1 candidate locales are Finnish (canonical sauna culture), German (largest non-Nordic European sauna market), Swedish, Norwegian, and Estonian. Russian-language (banya culture) localization is not on the roadmap.</p>
+
+            <h3>I have a feature request or found a bug.</h3>
+            <p>Email <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a>. Include the steps to reproduce the bug (or the rough shape of the feature you want), and which iOS version + device you're on. Steam ships from a small team; we read every email.</p>
+        </section>
+
+        <section>
+            <h2>App Privacy</h2>
+            <p>See the <a href="privacy.html">Steam Privacy Policy</a>. The app collects nothing.</p>
+        </section>
+
+        <footer>
+            <p class="muted">© 2026 Roman Kopaliani · <a href="../">Moon Dog apps</a></p>
+        </footer>
+    </main>
+</body>
+</html>
