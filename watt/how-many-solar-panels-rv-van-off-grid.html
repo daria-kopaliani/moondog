@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>How Many Solar Panels Do I Need for a Van, RV, or Off-Grid Setup?</title>
+    <meta name="description" content="Size a solar array from your daily watt-hour load, local peak sun hours, and system losses — with a worked van/RV example and the formula behind it.">
+    <link rel="stylesheet" href="../style.css">
+    <script data-goatcounter="https://moondog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <main>
+        <article>
+            <header>
+                <p><a href="../">← Moon Dog</a> · <a href="./">Off-Grid Solar Guides</a></p>
+                <h1>How many solar panels do I need?</h1>
+                <p class="article-meta">Work backward from your daily energy use — not from the size of your roof.</p>
+            </header>
+
+            <p>The right number of panels isn't a guess about roof space. It comes from three numbers: how much energy you use in a day, how many hours of usable sun you get, and how much you lose to wiring, heat, and charging inefficiency. Get those, and the array size falls out of one formula.</p>
+
+            <h2>Step 1 — add up your daily load (watt-hours)</h2>
+            <p>For each device, multiply its power draw (watts) by how many hours per day it runs. Sum them to get your daily load in watt-hours (Wh).</p>
+            <table>
+                <thead><tr><th>Device</th><th class="num">Watts</th><th class="num">Hrs/day</th><th class="num">Wh/day</th></tr></thead>
+                <tbody>
+                    <tr><td>12V fridge</td><td class="num">45</td><td class="num">8</td><td class="num">360</td></tr>
+                    <tr><td>LED lights</td><td class="num">15</td><td class="num">4</td><td class="num">60</td></tr>
+                    <tr><td>Laptop + phone</td><td class="num">60</td><td class="num">3</td><td class="num">180</td></tr>
+                    <tr><td>Water pump / fan</td><td class="num">30</td><td class="num">2</td><td class="num">60</td></tr>
+                    <tr><td><strong>Total</strong></td><td class="num"></td><td class="num"></td><td class="num"><strong>660</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h2>Step 2 — find your peak sun hours</h2>
+            <p>"Peak sun hours" is not daylight hours — it's the number of hours per day the sun delivers a full 1,000 W/m². A panel only makes its rated wattage at that intensity, so this is the figure that matters. It varies by location and season: roughly 5–6 in the summer Southwest, 3–4 in the cloudy/winter North. Size to your <em>worst</em> month if you live off-grid year-round.</p>
+
+            <div class="callout">
+                <p><strong>Why not just use daylight hours?</strong> A panel at sunrise or under haze produces a fraction of its rating. Peak sun hours bundle a whole day's varying intensity into an equivalent number of full-strength hours, which is exactly what the math needs.</p>
+            </div>
+
+            <h2>Step 3 — divide, then add a loss margin</h2>
+            <p>Solar charging is never 100% efficient — expect 25–30% loss to wiring, panel heat, dust, and charge-controller conversion. Divide your load by sun hours, then by a system efficiency factor (use ~0.75):</p>
+            <p style="text-align:center"><strong>Array watts = Daily Wh ÷ Peak sun hours ÷ 0.75</strong></p>
+            <p>For our 660 Wh/day van at 4 peak sun hours (a conservative shoulder-season figure):</p>
+            <p style="text-align:center"><strong>660 ÷ 4 ÷ 0.75 ≈ 220 W</strong></p>
+            <p>So two 110 W panels — or a single 200–220 W panel — covers this van in average conditions. Bump to ~300 W if you want a cushion for cloudy stretches or plan to add devices.</p>
+
+            <div class="callout warn">
+                <strong>Panels and batteries are a system.</strong>
+                <p>Panels refill the bank each day; the battery carries you through the night and bad weather. Sizing one without the other leaves you short. See the companion guide on battery sizing below.</p>
+            </div>
+
+            <div class="cta">
+                <h3>Watt sizes the whole system for you</h3>
+                <p>Enter your devices and location and Watt returns array wattage, battery bank size, and charge-controller and wire-gauge recommendations — with the peak-sun-hour and loss assumptions shown, not hidden. Built for van, RV, and off-grid builds. Free to download.</p>
+                <p><a class="store" href="https://apps.apple.com/app/id6777471058">Get Watt on the App Store</a></p>
+            </div>
+
+            <p class="related">Related: <a href="off-grid-battery-bank-sizing.html">What size battery bank do I need for off-grid?</a></p>
+
+            <div class="sources">
+                <h2>Sources</h2>
+                <ul>
+                    <li>NREL PVWatts methodology (peak-sun-hour / insolation and system-loss modeling)</li>
+                    <li>Standard photovoltaic system-design practice (array-to-load and derating factors)</li>
+                </ul>
+                <p>Peak sun hours vary by site and season — size to your worst expected month for year-round off-grid use.</p>
+            </div>
+        </article>
+        <footer>
+            <p>Contact: <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a></p>
+        </footer>
+    </main>
+</body>
+</html>

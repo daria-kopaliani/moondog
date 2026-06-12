@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>What Size Battery Bank for Off-Grid? Amp-Hours, Depth of Discharge & Autonomy</title>
+    <meta name="description" content="Size an off-grid battery bank from daily load, days of autonomy, and usable depth of discharge — and why LiFePO4 and AGM give very different answers.">
+    <link rel="stylesheet" href="../style.css">
+    <script data-goatcounter="https://moondog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <main>
+        <article>
+            <header>
+                <p><a href="../">← Moon Dog</a> · <a href="./">Off-Grid Solar Guides</a></p>
+                <h1>What size battery bank do I need?</h1>
+                <p class="article-meta">Three numbers: daily load, days of autonomy, and how deep you can safely discharge.</p>
+            </header>
+
+            <p>Panels make power during the day; the battery bank is what runs your fridge at 2 a.m. and carries you through a cloudy stretch. Its size depends on how much energy you use per day, how many no-sun days you want to survive, and — critically — what fraction of the battery you can actually use.</p>
+
+            <h2>Start with usable capacity, not rated capacity</h2>
+            <p>A battery's label capacity is not all usable. Draining a battery fully shortens its life, so you only use a fraction — the <strong>depth of discharge (DoD)</strong>. This is the single biggest difference between chemistries:</p>
+            <table>
+                <thead><tr><th>Chemistry</th><th class="num">Safe DoD</th><th>Notes</th></tr></thead>
+                <tbody>
+                    <tr><td>LiFePO4 (lithium)</td><td class="num">80–100%</td><td>Light, long cycle life, costs more upfront</td></tr>
+                    <tr><td>AGM (sealed lead)</td><td class="num">50%</td><td>Cheaper, heavier; deeper draws kill it fast</td></tr>
+                    <tr><td>Flooded lead-acid</td><td class="num">50%</td><td>Cheapest, needs ventilation + maintenance</td></tr>
+                </tbody>
+            </table>
+            <p>The practical takeaway: a 100 Ah AGM battery gives you ~50 Ah; a 100 Ah LiFePO4 gives you 80–100 Ah. For the same usable energy, lead-acid needs roughly double the rated capacity.</p>
+
+            <h2>The sizing formula</h2>
+            <p>Convert your daily load to amp-hours at your system voltage, multiply by the days of autonomy you want, then divide by usable DoD:</p>
+            <p style="text-align:center"><strong>Battery Ah = (Daily Wh ÷ System V) × Days of autonomy ÷ DoD</strong></p>
+            <p>Worked example — 660 Wh/day on a 12V system, 2 days of autonomy:</p>
+            <table>
+                <thead><tr><th>Chemistry</th><th class="num">Math</th><th class="num">Rated Ah needed</th></tr></thead>
+                <tbody>
+                    <tr><td>LiFePO4 (0.9 DoD)</td><td class="num">(660 ÷ 12) × 2 ÷ 0.9</td><td class="num">~122 Ah</td></tr>
+                    <tr><td>AGM (0.5 DoD)</td><td class="num">(660 ÷ 12) × 2 ÷ 0.5</td><td class="num">~220 Ah</td></tr>
+                </tbody>
+            </table>
+
+            <div class="callout">
+                <p><strong>Days of autonomy</strong> is how long the bank runs with no solar input. One day is fine for fair-weather weekend use; 2–3 days is sensible for full-time off-grid where a cloudy spell shouldn't leave you dark.</p>
+            </div>
+
+            <div class="callout warn">
+                <strong>Don't forget temperature and inverter losses.</strong>
+                <p>Lead-acid loses usable capacity in the cold, and any 120V AC loads add ~10–15% inverter loss on top. Add margin rather than sizing to the exact minimum.</p>
+            </div>
+
+            <div class="cta">
+                <h3>Watt does this for your exact build</h3>
+                <p>Enter your devices, voltage, battery chemistry, and desired autonomy — Watt returns the rated bank size, the matching solar array, and charge-controller and wire-gauge picks, with every assumption shown. For van, RV, and off-grid systems. Free to download.</p>
+                <p><a class="store" href="https://apps.apple.com/app/id6777471058">Get Watt on the App Store</a></p>
+            </div>
+
+            <p class="related">Related: <a href="how-many-solar-panels-rv-van-off-grid.html">How many solar panels do I need?</a></p>
+
+            <div class="sources">
+                <h2>Sources</h2>
+                <ul>
+                    <li>Battery manufacturer cycle-life vs. depth-of-discharge data (LiFePO4 and lead-acid)</li>
+                    <li>Standard off-grid system-design practice (autonomy and derating factors)</li>
+                </ul>
+                <p>Cycle life and safe DoD vary by manufacturer — follow your battery's datasheet for its rated limits.</p>
+            </div>
+        </article>
+        <footer>
+            <p>Contact: <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a></p>
+        </footer>
+    </main>
+</body>
+</html>
