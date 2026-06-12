@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>How to Calculate Red Light Therapy Dose (J/cm²)</title>
+    <meta name="description" content="The simple formula behind red light therapy dose — irradiance times time — why distance changes everything, and how to compare panels on real numbers.">
+    <link rel="stylesheet" href="../style.css">
+    <script data-goatcounter="https://moondog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <main>
+        <article>
+            <header>
+                <p><a href="../">← Moon Dog</a> · <a href="./">Red Light Guides</a></p>
+                <h1>How to calculate red light dose (J/cm²)</h1>
+                <p class="article-meta">One formula turns "how long do I stand here?" into a real number.</p>
+            </header>
+
+            <div class="callout warn">
+                <strong>General information, not medical advice.</strong>
+                <p>Photobiomodulation research is ongoing and red light devices are not a treatment for any disease here. Follow your device manufacturer's safety instructions, protect your eyes, and consult a clinician for medical concerns.</p>
+            </div>
+
+            <p>Red light therapy (photobiomodulation) is dosed in <strong>joules per square centimeter (J/cm²)</strong> — the energy delivered to each patch of skin. The dose is what the research talks about, and it comes from a single formula. Once you can compute it, vague claims like "use it for 10 minutes" become numbers you can actually compare.</p>
+
+            <h2>The formula</h2>
+            <p>Dose is irradiance (how intensely the light arrives) multiplied by time:</p>
+            <p style="text-align:center"><strong>Dose (J/cm²) = Irradiance (mW/cm²) × Time (s) ÷ 1000</strong></p>
+            <p>The ÷ 1000 converts milliwatts to watts. A worked example: a panel delivering <strong>100 mW/cm²</strong> for <strong>120 seconds</strong>:</p>
+            <p style="text-align:center"><strong>100 × 120 ÷ 1000 = 12 J/cm²</strong></p>
+
+            <h2>Irradiance is the number people get wrong</h2>
+            <p>Everything hinges on irradiance — the power density at your skin — and that figure is only meaningful <em>at a stated distance</em>. Light spreads out as it travels, so irradiance falls steeply as you move away from the panel:</p>
+            <table>
+                <thead><tr><th class="num">Distance</th><th class="num">Typical irradiance</th><th class="num">Time for 10 J/cm²</th></tr></thead>
+                <tbody>
+                    <tr><td class="num">6 in</td><td class="num">~100 mW/cm²</td><td class="num">100 s</td></tr>
+                    <tr><td class="num">12 in</td><td class="num">~45 mW/cm²</td><td class="num">~220 s</td></tr>
+                    <tr><td class="num">18 in</td><td class="num">~25 mW/cm²</td><td class="num">400 s</td></tr>
+                </tbody>
+            </table>
+            <p>(Illustrative figures — your panel's are different.) The same target dose can mean 100 seconds up close or several minutes farther back. A manufacturer's headline irradiance measured at the panel surface tells you almost nothing about your dose at arm's length.</p>
+
+            <div class="callout">
+                <p><strong>Demand the distance.</strong> An irradiance spec without a measurement distance is unusable. Reputable makers publish third-party (e.g. ISO/IEC 17025 lab) irradiance at several distances — use those, not the surface number.</p>
+            </div>
+
+            <div class="cta">
+                <h3>Lumen does the dose math by device and distance</h3>
+                <p>Pick your panel (brand-aware, with lab-measured irradiance), set your distance and target dose, and Lumen returns the exact session time — with guardrails for sensible dose ranges. Free to download.</p>
+                <p><a class="store" href="https://apps.apple.com/app/id6779296866">Get Lumen on the App Store</a></p>
+            </div>
+
+            <p class="related">Related: <a href="red-light-biphasic-dose-response.html">Why more red light isn't better</a></p>
+
+            <div class="sources">
+                <h2>Sources</h2>
+                <ul>
+                    <li>Huang, Chen, Carroll &amp; Hamblin, "Biphasic dose response in low level light therapy" (PMID 22461763)</li>
+                    <li>Device manufacturer ISO/IEC 17025 lab irradiance reports (power density vs. distance)</li>
+                </ul>
+                <p>Dosing is an active research area; figures here are illustrative. Follow your device's instructions and protect your eyes.</p>
+            </div>
+        </article>
+        <footer>
+            <p>Contact: <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a></p>
+        </footer>
+    </main>
+</body>
+</html>
