@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Sizing a Well Pump: Total Dynamic Head (TDH) Explained</title>
+    <meta name="description" content="What total dynamic head is, the four components that make it up — drawdown, lift, pressure, and friction — and how TDH and flow together pick a pump.">
+    <link rel="stylesheet" href="../style.css">
+    <script data-goatcounter="https://moondog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <main>
+        <article>
+            <header>
+                <p><a href="../">← Moon Dog</a> · <a href="./">Off-Grid Water Guides</a></p>
+                <h1>Sizing a well pump: total dynamic head</h1>
+                <p class="article-meta">A pump is chosen by two numbers — the flow you need and the head it must overcome.</p>
+            </header>
+
+            <p>"What size pump do I need?" can't be answered by horsepower alone. Pumps are selected from a curve that pairs flow rate (gallons per minute) with <strong>total dynamic head (TDH)</strong> — the total resistance, expressed in feet, the pump must push against. Get TDH wrong and you either starve your fixtures or burn out an oversized pump.</p>
+
+            <h2>The four components of TDH</h2>
+            <table>
+                <thead><tr><th>Component</th><th>What it is</th></tr></thead>
+                <tbody>
+                    <tr><td>Pumping water level (lift)</td><td>Depth to the water while pumping — the static level plus drawdown as the pump runs</td></tr>
+                    <tr><td>Elevation lift</td><td>Vertical rise from the wellhead up to the storage or pressure tank</td></tr>
+                    <tr><td>Pressure head</td><td>The system pressure you want at the tank, converted to feet (psi × 2.31)</td></tr>
+                    <tr><td>Friction loss</td><td>Resistance from pipe length, diameter, fittings, and flow rate</td></tr>
+                </tbody>
+            </table>
+            <p>Add them up and you have TDH:</p>
+            <p style="text-align:center"><strong>TDH = pumping level + elevation lift + pressure head + friction loss</strong></p>
+
+            <h2>Why drawdown matters</h2>
+            <p>The water level in a well <em>drops</em> while you pump — that's drawdown. You must size to the <strong>pumping</strong> water level, not the resting level, or the pump will be undersized once it's actually running. A well that sits at 80 ft static but draws down to 140 ft while pumping has a 140 ft lift component, not 80.</p>
+
+            <div class="callout">
+                <p><strong>Pressure converts at 2.31 ft per psi.</strong> Want 50 psi at the tank? That's about 115 ft of head on its own. Pressure is often the most overlooked chunk of TDH for people sizing by depth alone.</p>
+            </div>
+
+            <div class="callout warn">
+                <strong>Friction loss climbs fast with flow and thin pipe.</strong>
+                <p>Push more GPM through undersized pipe and friction loss can dominate TDH on a long run. The fix is usually larger-diameter drop pipe — not a bigger pump fighting the restriction.</p>
+            </div>
+
+            <div class="cta">
+                <h3>Well computes TDH from your system</h3>
+                <p>Enter your pumping level, lift, pressure, pipe, and target flow and Well returns the TDH and the operating point to match against a pump curve — with sizing math drawn from extension and standards sources. Free to download.</p>
+                <p><a class="store" href="https://apps.apple.com/app/id6778885751">Get Well on the App Store</a></p>
+            </div>
+
+            <p class="related">Related: <a href="uv-water-disinfection-dose-nsf-55.html">UV disinfection dose for well water (NSF/ANSI 55)</a></p>
+
+            <div class="sources">
+                <h2>Sources</h2>
+                <ul>
+                    <li>Penn State Extension (B. Swistock) — private water wells and pump systems</li>
+                    <li>USDA NRCS Conservation Practice Standard 642 (water well) and standard hydraulics references</li>
+                </ul>
+                <p>Sizing math is a planning aid; have a licensed well/pump professional review your design.</p>
+            </div>
+        </article>
+        <footer>
+            <p>Contact: <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a></p>
+        </footer>
+    </main>
+</body>
+</html>
