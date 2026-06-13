@@ -1,67 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://daria-kopaliani.github.io/moondog/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/guides/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/frost/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/frost/chlorine-vs-hydrogen-peroxide-cold-plunge.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/frost/how-often-change-cold-plunge-water.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/frost/why-is-cold-plunge-water-cloudy.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/frost/cold-plunge-water-testing.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/frost/cold-plunge-temperature-guide.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/crust/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/crust/how-much-yeast-cold-ferment-pizza-dough.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/crust/pizza-dough-hydration-by-style.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/reef/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/reef/dose-magnesium-before-calcium-alkalinity.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/reef/reef-tank-parameters-by-type.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/hottub/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/hottub/hot-tub-water-balance-cheat-sheet.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/hottub/how-much-chlorine-to-add-to-hot-tub.html</loc></url>
   <url><loc>https://daria-kopaliani.github.io/moondog/aquascape/</loc></url>
   <url><loc>https://daria-kopaliani.github.io/moondog/aquascape/ei-vs-pps-pro-vs-pmdd-dosing.html</loc></url>
   <url><loc>https://daria-kopaliani.github.io/moondog/aquascape/pps-pro-dosing-recipe.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/flux/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/flux/umf-glaze-chemistry-explained.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/flux/glaze-food-safe-limit-formulas.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/bath/chill-sous-vide-food-safely.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/bath/how-long-sous-vide-food-safe-in-fridge.html</loc></url>
   <url><loc>https://daria-kopaliani.github.io/moondog/crop/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/crop/ppm-ec-hydroponic-nutrients-explained.html</loc></url>
   <url><loc>https://daria-kopaliani.github.io/moondog/crop/hydroponic-nutrient-targets-by-crop.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/pond/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/pond/koi-pond-water-parameters.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/pond/koi-pond-ph-crash-kh-fix.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/seal/water-bath-vs-pressure-canning.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/seal/canning-at-altitude-adjustments.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/watt/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/watt/how-many-solar-panels-rv-van-off-grid.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/watt/off-grid-battery-bank-sizing.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/saline/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/saline/salt-level-for-swg-cell.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/saline/saltwater-pool-csi-cell-longevity.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/splash/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/splash/fc-cya-ratio-chlorine-pool.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/splash/how-much-shock-chlorine-pool.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/temper/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/temper/tempering-temperature-color-chart.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/temper/quench-and-temper-knife-steel-hrc.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/steam/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/steam/sauna-temperature-and-time.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/steam/sauna-frequency-for-benefits.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/lumen/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/lumen/red-light-therapy-dose-j-cm2.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/lumen/red-light-biphasic-dose-response.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/crop/ppm-ec-hydroponic-nutrients-explained.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/crust/</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/crust/how-much-yeast-cold-ferment-pizza-dough.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/crust/pizza-dough-hydration-by-style.html</loc></url>
   <url><loc>https://daria-kopaliani.github.io/moondog/flush/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/flush/substrate-hydration-field-capacity-mushrooms.html</loc></url>
   <url><loc>https://daria-kopaliani.github.io/moondog/flush/biological-efficiency-mushroom-yield.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/flush/substrate-hydration-field-capacity-mushrooms.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/flux/</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/flux/glaze-food-safe-limit-formulas.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/flux/umf-glaze-chemistry-explained.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/frost/</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/frost/chlorine-vs-hydrogen-peroxide-cold-plunge.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/frost/cold-plunge-temperature-guide.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/frost/cold-plunge-water-testing.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/frost/how-often-change-cold-plunge-water.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/frost/why-is-cold-plunge-water-cloudy.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/guides/</loc></url>
   <url><loc>https://daria-kopaliani.github.io/moondog/hide/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/hide/stitches-per-inch-leather-by-weight.html</loc></url>
   <url><loc>https://daria-kopaliani.github.io/moondog/hide/saddle-stitch-thread-length.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/strip/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/strip/jerky-safe-drying-temperature.html</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/strip/jerky-curing-salt-prague-powder.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/hide/stitches-per-inch-leather-by-weight.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/hottub/</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/hottub/hot-tub-water-balance-cheat-sheet.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/hottub/how-much-chlorine-to-add-to-hot-tub.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/lumen/</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/lumen/red-light-biphasic-dose-response.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/lumen/red-light-therapy-dose-j-cm2.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/marker/longevity-blood-panel-markers.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/marker/optimal-vs-reference-ranges-bloodwork.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/pond/</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/pond/koi-pond-ph-crash-kh-fix.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/pond/koi-pond-water-parameters.html</loc></url>
   <url><loc>https://daria-kopaliani.github.io/moondog/press/</loc></url>
   <url><loc>https://daria-kopaliani.github.io/moondog/press/cider-apple-blend-sugar-acid-tannin.html</loc></url>
   <url><loc>https://daria-kopaliani.github.io/moondog/press/cider-yan-nutrient-h2s.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/reef/</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/reef/dose-magnesium-before-calcium-alkalinity.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/reef/reef-tank-parameters-by-type.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/saline/</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/saline/salt-level-for-swg-cell.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/saline/saltwater-pool-csi-cell-longevity.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/seal/canning-at-altitude-adjustments.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/seal/water-bath-vs-pressure-canning.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/splash/</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/splash/fc-cya-ratio-chlorine-pool.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/splash/how-much-shock-chlorine-pool.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/steam/</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/steam/sauna-frequency-for-benefits.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/steam/sauna-temperature-and-time.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/strip/</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/strip/jerky-curing-salt-prague-powder.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/strip/jerky-safe-drying-temperature.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/temper/</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/temper/quench-and-temper-knife-steel-hrc.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/temper/tempering-temperature-color-chart.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/trace/lye-calculator-sap-values-cold-process-soap.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/trace/superfat-and-water-cold-process-soap.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/watt/</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/watt/how-many-solar-panels-rv-van-off-grid.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/watt/off-grid-battery-bank-sizing.html</loc></url>
   <url><loc>https://daria-kopaliani.github.io/moondog/well/</loc></url>
-  <url><loc>https://daria-kopaliani.github.io/moondog/well/well-pump-tdh-sizing.html</loc></url>
   <url><loc>https://daria-kopaliani.github.io/moondog/well/uv-water-disinfection-dose-nsf-55.html</loc></url>
+  <url><loc>https://daria-kopaliani.github.io/moondog/well/well-pump-tdh-sizing.html</loc></url>
 </urlset>
