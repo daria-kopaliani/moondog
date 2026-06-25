@@ -192,3 +192,24 @@ td.num, th.num { white-space: nowrap; }
 .sources li { margin: 4px 0; font-size: 14px; }
 
 .related { margin-top: 32px; font-size: 15px; }
+
+/* Affiliate disclosure — small, honest, near the top of the article */
+.affiliate-note {
+    margin: 16px 0;
+    font-size: 13px;
+    color: var(--muted);
+    font-style: italic;
+}
+
+/* "Gear" block — products referenced in the guide, with affiliate links */
+.gear {
+    margin: 32px 0;
+    padding: 16px 18px;
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    background: #fafafa;
+}
+.gear h3 { margin: 0 0 4px; font-size: 16px; }
+.gear .gear-sub { margin: 0 0 12px; font-size: 13px; color: var(--muted); }
+.gear ul { padding-left: 20px; margin: 0; }
+.gear li { margin: 6px 0; font-size: 15px; }
