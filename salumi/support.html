@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salumi: Charcuterie & Cure — Support</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main class="policy">
+        <header>
+            <p><a href="../">← Moon Dog</a></p>
+            <h1>Salumi: Charcuterie &amp; Cure — Support</h1>
+        </header>
+
+        <section>
+            <h2>Need help?</h2>
+            <p>Email <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a> with your question. Please include:</p>
+            <ul>
+                <li>What you were trying to do</li>
+                <li>What happened</li>
+                <li>The iOS version and iPhone or iPad model you're using (Settings → General → About)</li>
+                <li>The app version (Salumi → More → About)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Common questions</h2>
+
+            <h3>What's free, and what does Salumi Pro add?</h3>
+            <p>The Cure &amp; nitrite calculator is free permanently: enter your meat weight, the curing method (comminuted, immersion, pumped, or dry-cured), and Cure #1 vs Cure #2, and Salumi returns grams of cure and salt plus the resulting ingoing nitrite ppm — with the method-max, minimum, and finished-product guardrails. Salumi Pro ($6.99, one-time) unlocks the other five calculators: EQ dry-cure, water activity / shelf-stability, fermentation degree-hours, brine / immersion, and the safety-verdict (hurdle) check. No subscription.</p>
+
+            <h3>Where do the numbers come from?</h3>
+            <p>Every figure is cited to a primary authority — USDA FSIS (Directive 7620.3 and FSIS-GD-2023-0002), 9 CFR 424.21 and 424.22, the FDA Fish &amp; Fishery Products Hazards &amp; Controls Guide (Table A-1), UW–Madison Meat HACCP, and Marianski. The app names the source next to each number, in the form "Per USDA FSIS: …". Salumi is brand-agnostic: it doesn't sell you cure, casings, or starter cultures.</p>
+
+            <h3>Why does the app say weight loss isn't the safety gate?</h3>
+            <p>Because the sources don't support it. The widely-repeated "35–40% weight loss means it's shelf-stable" rule isn't in any USDA or FDA primary publication — it's a craft proxy for how much a piece has dried, nothing more. The real shelf-stability endpoint is measured water activity: aw ≤ 0.85, which controls every relevant pathogen including <em>S. aureus</em> and <em>C. botulinum</em> (FDA Hazards &amp; Controls Guide; 21 CFR 113.3; FSIS-GD-2023-0002). Salumi will still show you weight loss, but it labels it a proxy and points you to measured aw as the actual gate.</p>
+
+            <h3>Do I really need a pH meter and a water-activity reading?</h3>
+            <p>For anything fermented or shelf-stable, yes. Salumi computes targets (pH ≤ 5.3 to control <em>S. aureus</em>, pH ≤ 4.6 for <em>C. botulinum</em>, aw ≤ 0.85 for shelf-stability), but it cannot measure your product for you. A calibrated pH meter and a measured aw reading are what turn a target into a verified result. Salumi is a calculator, not a substitute for measurement or for a tested recipe.</p>
+
+            <h3>What is the safety-verdict (hurdle) check?</h3>
+            <p>You enter your measured pH and aw (plus salt and nitrite), and Salumi tells you which pathogens are controlled per the FDA Appendix 4 Table A-1 limits, as a green/red go-or-no-go. It defaults cold-curing risk to the non-proteolytic <em>C. botulinum</em> worst case and builds margin inside the published limits — those table values are extreme single-hurdle bounds, not safe setpoints.</p>
+
+            <h3>How do the brine and EQ calculators work?</h3>
+            <p>The brine / immersion tool converts salometer degrees to salt % (×0.264) and checks pump-percent nitrite against the 200-ppm immersion/pumped limit. The EQ dry-cure tool computes equilibrium salt % and the cure needed to hit a target ppm by batch weight, and it labels the denominator basis (green meat-block vs total batch) on every result, because that choice changes the number. Where a method has no USDA/CFR primary definition (e.g. hobbyist equilibrium brine), Salumi says so rather than implying a regulatory blessing.</p>
+
+            <h3>I bought Salumi Pro on another device. How do I restore?</h3>
+            <p>Open More → Restore Purchases. Your unlock will be restored from the App Store account that originally purchased.</p>
+
+            <h3>Does the app work offline?</h3>
+            <p>Yes — Salumi never makes general network requests. The exceptions are Apple's StoreKit (to fetch the unlock price and restore purchases) and the cited source links you tap (which open in Safari). All calculations and preferences are local.</p>
+
+            <h3>Is Salumi a guarantee?</h3>
+            <p>No. Salumi is an educational reference calculator that shows published food-safety guidance alongside your inputs. Curing meat at home carries real risk, including botulism. Confirm with a calibrated pH meter, a measured aw reading, a tested recipe, and USDA FSIS guidance — and when in doubt, throw it out.</p>
+
+            <h3>How do I delete my data?</h3>
+            <p>Delete the app from your iPhone or iPad. All local data (preferences) is removed along with it.</p>
+        </section>
+
+        <p class="last-updated">Last updated 2026-06-26</p>
+    </main>
+</body>
+</html>
