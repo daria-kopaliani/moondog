@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Tub Chemical Dosage Calculator — How Much Chlorine, pH &amp; Alkalinity to Add</title>
+    <meta name="description" content="Free hot tub chemical dosage calculator: enter your volume and test reading to get the exact dose of chlorine or bromine, pH up/down, alkalinity and calcium. Answers 'how much chlorine to add to a hot tub' by product and gallon.">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"TechArticle","headline":"Hot tub chemical dosage calculator: chlorine, pH, alkalinity and calcium","description":"A free hot tub chemical dosage calculator that returns the exact dose of chlorine or bromine sanitizer, pH up/down, alkalinity and calcium hardness for your tub volume and current reading, scaled from industry 10,000-gallon reference doses.","url":"https://moondogapps.com/hottub/hot-tub-chemical-dosage-calculator.html","inLanguage":"en","datePublished":"2026-07-02","author":{"@type":"Organization","name":"Moon Dog"},"publisher":{"@type":"Organization","name":"Moon Dog"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much chlorine do I add to a hot tub?","acceptedAnswer":{"@type":"Answer","text":"It depends on the product and how far below target you are. To raise free chlorine by 1 ppm in a 400-gallon tub you need roughly 2.7 g of dichlor (56%), 2.3 g of cal-hypo (68%), or about 24 ml of liquid chlorine (12.5%) to go from 1 to 3 ppm. Enter your volume and current reading in the sanitizer calculator above for the exact figure. Keep free chlorine in the 1–3 ppm range."}},{"@type":"Question","name":"How much pH down or baking soda does a hot tub need?","acceptedAnswer":{"@type":"Answer","text":"For pH, aim for 7.4–7.6. In a 400-gallon tub, dropping pH from 8.0 to 7.5 takes about 2.8 g of dry acid or 38 ml of muriatic acid; raising pH uses soda ash. For alkalinity (target 80–120 ppm), raising it 20 ppm needs about 54 g of baking soda per 400 gallons. Use the pH and alkalinity calculators above for your numbers."}},{"@type":"Question","name":"Chlorine or bromine — which needs more chemical?","acceptedAnswer":{"@type":"Answer","text":"Bromine runs at a higher target (2–4 ppm vs 1–3 ppm for chlorine) and is dosed by a different rule, so a fresh bromine start-up uses noticeably more granules than a chlorine top-up. This calculator handles both: pick your sanitizer and it switches the math and the target range automatically."}}]}
+    </script>
+    <link rel="canonical" href="https://moondogapps.com/hottub/hot-tub-chemical-dosage-calculator.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Hot Tub Chemical Dosage Calculator — Chlorine, pH &amp; Alkalinity">
+    <meta property="og:description" content="Enter your volume and reading for the exact dose of chlorine/bromine, pH up/down, alkalinity and calcium. Free. Answers 'how much chlorine to add to a hot tub'.">
+    <meta property="og:url" content="https://moondogapps.com/hottub/hot-tub-chemical-dosage-calculator.html">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .calc{border:1px solid var(--rule);border-radius:8px;padding:16px;margin:18px 0;background:#fff}
+        .calc h3{margin-top:0}
+        .calc label{display:block;font-size:14px;color:var(--muted);margin:10px 0 4px}
+        .calc input,.calc select{width:100%;box-sizing:border-box;font-size:16px;padding:9px 10px;border:1px solid var(--rule);border-radius:6px;background:#fff;color:var(--fg)}
+        .calc .row{display:flex;gap:12px;flex-wrap:wrap}
+        .calc .row>div{flex:1;min-width:130px}
+        .out{margin-top:14px;padding:12px;border-radius:6px;background:var(--bg);border:1px solid var(--rule)}
+        .out .big{font-size:20px;font-weight:600}
+        .out table{margin:8px 0 0}
+        .out .cite{font-size:12px;color:var(--muted);margin-top:8px}
+        .disclaimer{border-left:3px solid var(--accent);padding:8px 14px;background:var(--bg);font-size:14px;margin:18px 0}
+    </style>
+    <script data-goatcounter="https://moondog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <main>
+        <article>
+            <header>
+                <p><a href="../">← Moon Dog</a> · <a href="./">Hot Tub Guides</a></p>
+                <h1>Hot tub chemical dosage calculator</h1>
+                <p class="article-meta">Enter your tub's volume and a test reading, get the exact amount of chemical to add — chlorine or bromine, pH up/down, alkalinity and calcium. Free.</p>
+            </header>
+
+            <p>The most common hot tub question is <strong>how much chlorine to add</strong> — and the honest answer is "it depends on your volume, your product, and how far below target you are." These calculators do that arithmetic. Enter your tub volume in gallons and your current reading, and each one returns a dose in grams/ml (or oz/fl oz). The doses are scaled from the same 10,000-gallon industry reference figures (<a href="https://www.troublefreepool.com/">TroubleFreePool</a> tables) that the <strong>Soak</strong> app uses. Target ranges are the standard spa ranges: free chlorine 1–3 ppm, bromine 2–4 ppm, pH 7.4–7.6, alkalinity 80–120 ppm, calcium 150–250 ppm.</p>
+
+            <div class="calc">
+                <h3>1. Sanitizer dose — how much chlorine (or bromine) to add</h3>
+                <div class="row">
+                    <div>
+                        <label for="sanType">Sanitizer</label>
+                        <select id="sanType">
+                            <option value="chlorine" selected>Chlorine</option>
+                            <option value="bromine">Bromine</option>
+                        </select>
+                    </div>
+                    <div id="chlProdWrap">
+                        <label for="chlProd">Chlorine product</label>
+                        <select id="chlProd">
+                            <option value="dichlor56" selected>Dichlor 56% (granular)</option>
+                            <option value="calHypo68">Cal-hypo 68% (granular)</option>
+                            <option value="liquid125">Liquid chlorine 12.5%</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div><label for="sanVol">Tub volume (gallons)</label><input id="sanVol" type="number" inputmode="decimal" step="10" min="0" value="400"></div>
+                    <div><label for="sanCur">Current reading (ppm)</label><input id="sanCur" type="number" inputmode="decimal" step="0.1" min="0" value="0"></div>
+                    <div><label for="sanTgt">Target (ppm)</label><input id="sanTgt" type="number" inputmode="decimal" step="0.1" min="0" value="3"></div>
+                </div>
+                <div class="out" id="sanOut" hidden></div>
+            </div>
+
+            <div class="calc">
+                <h3>2. pH dose (up or down)</h3>
+                <p style="font-size:14px;color:var(--muted);margin:0 0 4px">Enter your pH — below 7.5 the calculator raises it with soda ash, above 7.5 it lowers it with the acid you pick. Ideal spa pH is 7.4–7.6.</p>
+                <div class="row">
+                    <div><label for="phVol">Tub volume (gallons)</label><input id="phVol" type="number" inputmode="decimal" step="10" min="0" value="400"></div>
+                    <div><label for="phCur">Current pH</label><input id="phCur" type="number" inputmode="decimal" step="0.1" min="0" max="14" value="8.0"></div>
+                    <div id="phLowProdWrap">
+                        <label for="phLowProd">Acid to use</label>
+                        <select id="phLowProd">
+                            <option value="dryAcid" selected>Dry acid (sodium bisulfate)</option>
+                            <option value="muriatic">Muriatic acid 31.45%</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="out" id="phOut" hidden></div>
+            </div>
+
+            <div class="calc">
+                <h3>3. Alkalinity &amp; calcium hardness dose</h3>
+                <div class="row">
+                    <div>
+                        <label for="akWhat">What to adjust</label>
+                        <select id="akWhat">
+                            <option value="ta-raise" selected>Raise alkalinity (→ ~90 ppm)</option>
+                            <option value="ta-lower">Lower alkalinity (→ ~110 ppm)</option>
+                            <option value="ch-raise">Raise calcium hardness (→ ~175 ppm)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div><label for="akVol">Tub volume (gallons)</label><input id="akVol" type="number" inputmode="decimal" step="10" min="0" value="400"></div>
+                    <div><label for="akCur">Current reading (ppm)</label><input id="akCur" type="number" inputmode="decimal" step="5" min="0" value="60"></div>
+                </div>
+                <div class="out" id="akOut" hidden></div>
+            </div>
+
+            <div class="row" style="max-width:220px">
+                <div>
+                    <label for="units" style="display:block;font-size:14px;color:var(--muted);margin:0 0 4px">Show doses in</label>
+                    <select id="units" style="width:100%;box-sizing:border-box;font-size:16px;padding:9px 10px;border:1px solid var(--rule);border-radius:6px;background:#fff;color:var(--fg)">
+                        <option value="metric" selected>Metric (g / ml)</option>
+                        <option value="imperial">Imperial (oz / fl oz)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Safety note.</strong> Always <em>add chemicals to water, never water to chemicals</em>, and add one chemical at a time — <em>never mix</em> chemicals together or pre-dissolve chlorine and acid in the same bucket. Follow the dose on your product's label; concentrations vary by brand. These figures are estimates from reference tables — add with the jets running, wait, and <strong>re-test</strong> before adding more. Do not enter the tub until sanitizer and pH are back in range.
+            </div>
+
+            <div class="cta">
+                <h3>Balancing everything at once?</h3>
+                <p>This page doses one chemical at a time. <strong>Soak: Hot Tub Assistant</strong> takes <em>all</em> your readings together and returns a single ordered plan — add this, wait, then that — with out-of-range warnings, an after-soak top-up that scales to how many people used the tub and for how long, weekly shock dosing, and a saved history so you're not re-typing your volume every time. The single-chemical math here is free; the full balancer is the app.</p>
+                <p><a class="store" href="https://apps.apple.com/app/id6775030424">Get Soak on the App Store</a></p>
+            </div>
+
+            <h2>How to use these numbers</h2>
+            <ol>
+                <li>Read your water with a <a href="https://www.amazon.com/s?k=hot+tub+test+strips&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-soak">hot tub test kit or strips</a> and note free chlorine (or bromine), pH, alkalinity and calcium.</li>
+                <li>Fix <strong>alkalinity first</strong>, then pH, then sanitizer — alkalinity buffers pH, so doing it first stops pH bouncing.</li>
+                <li>Dose with the right <a href="https://www.amazon.com/s?k=hot+tub+chlorine+granules+dichlor&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-soak">sanitizer granules</a>, run the jets, wait a few hours, and re-test before adding anything else.</li>
+            </ol>
+
+            <h2>FAQ</h2>
+            <p><strong>How much chlorine do I add to a hot tub?</strong><br>
+            To raise free chlorine by 1 ppm in a 400-gallon tub: about 2.7 g dichlor, 2.3 g cal-hypo, or 24 ml liquid chlorine to move 1→3 ppm. Use calculator 1 for your exact volume and reading. Keep free chlorine at 1–3 ppm.</p>
+            <p><strong>How much pH down / baking soda?</strong><br>
+            Aim pH at 7.4–7.6. Dropping 8.0→7.5 in 400 gallons is ~2.8 g dry acid or ~38 ml muriatic. Raising alkalinity 20 ppm is ~54 g baking soda per 400 gallons. Calculators 2 and 3 give your numbers.</p>
+            <p><strong>Chlorine or bromine — which needs more?</strong><br>
+            Bromine targets a higher band (2–4 ppm) and doses differently, so a bromine start-up uses more granules than a chlorine top-up. Pick your sanitizer in calculator 1 and it switches the math and target for you.</p>
+
+            <p class="related">Related: <a href="how-much-chlorine-to-add-to-hot-tub.html">How much chlorine to add to a hot tub</a> · <a href="hot-tub-water-balance-cheat-sheet.html">Hot tub water balance cheat sheet</a> · <a href="how-to-lower-ph-alkalinity-hot-tub.html">How to lower pH &amp; alkalinity</a> · <a href="new-hot-tub-startup-fill-and-balance.html">New hot tub startup: fill &amp; balance</a> · <a href="hot-tub-water-cloudy-foamy-green.html">Cloudy, foamy or green water</a></p>
+
+            <div class="sources">
+                <h2>Sources</h2>
+                <ul>
+                    <li><a href="https://www.troublefreepool.com/">TroubleFreePool</a> — chemical dosing reference tables (amount per 10,000 gal per unit change), the basis for every dose here</li>
+                    <li>Industry pool/spa chemistry guides — standard spa target ranges (FC 1–3 ppm, bromine 2–4 ppm, pH 7.4–7.6, alkalinity 80–120 ppm, calcium 150–250 ppm)</li>
+                </ul>
+                <p>Doses are scaled linearly from 10,000-gallon reference figures to your volume. They are starting points — product concentration varies by brand, so follow the label and always re-test after adding.</p>
+            </div>
+        </article>
+        <footer>
+            <p>Contact: <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a></p>
+        </footer>
+    </main>
+
+    <script src="hot-tub-chemical-dosage-calculator.js"></script>
+</body>
+</html>

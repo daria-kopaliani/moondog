@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canning Altitude Calculator — Water Bath Time &amp; Pressure PSI (USDA)</title>
+    <meta name="description" content="Free canning altitude calculator: enter your altitude to get the water-bath processing-time addition and the pressure-canner PSI for dial and weighted gauges. USDA Complete Guide brackets — never more permissive than the tables.">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"TechArticle","headline":"Canning altitude calculator: water-bath time and pressure PSI","description":"A free canning altitude calculator that returns the water-bath processing-time addition and the pressure-canner PSI (dial and weighted gauge) for your altitude, from the USDA Complete Guide to Home Canning brackets.","url":"https://moondogapps.com/seal/canning-altitude-calculator.html","inLanguage":"en","datePublished":"2026-07-02","author":{"@type":"Organization","name":"Moon Dog"},"publisher":{"@type":"Organization","name":"Moon Dog"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much extra time do I add for canning at altitude?","acceptedAnswer":{"@type":"Answer","text":"For boiling-water-bath canning, add processing time by altitude bracket: 0 min at 0–1,000 ft, 5 min at 1,001–3,000 ft, 10 min at 3,001–6,000 ft, 15 min at 6,001–8,000 ft, and 20 min at 8,001–10,000 ft (USDA Complete Guide to Home Canning). Add the extra minutes to the recipe's sea-level time — never reduce it."}},{"@type":"Question","name":"What PSI should I use for pressure canning at my altitude?","acceptedAnswer":{"@type":"Answer","text":"With a dial gauge: 11 psi to 2,000 ft, 12 psi to 4,000 ft, 13 psi to 6,000 ft, 14 psi to 8,000 ft, 15 psi to 10,000 ft. With a weighted gauge it is a step function: 10 lb up to 1,000 ft, then 15 lb above 1,000 ft. Processing time stays the same at any altitude for pressure canning; only the pressure changes."}},{"@type":"Question","name":"Why does the weighted gauge jump from 10 to 15 pounds at 1,001 feet?","acceptedAnswer":{"@type":"Answer","text":"Weighted gauges only come in 5, 10 and 15 lb weights, so there is no 11–14 lb setting — the USDA table rounds up to the next available weight. That means as soon as you pass 1,000 ft you must use 15 lb, not 10. It is a common beginner trap, so this calculator flags it."}}]}
+    </script>
+    <link rel="canonical" href="https://moondogapps.com/seal/canning-altitude-calculator.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Canning Altitude Calculator — Water Bath Time &amp; Pressure PSI">
+    <meta property="og:description" content="Enter your altitude for the water-bath time addition and pressure-canner PSI (dial &amp; weighted). USDA brackets, never more permissive.">
+    <meta property="og:url" content="https://moondogapps.com/seal/canning-altitude-calculator.html">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .calc{border:1px solid var(--rule);border-radius:8px;padding:16px;margin:18px 0;background:#fff}
+        .calc h3{margin-top:0}
+        .calc label{display:block;font-size:14px;color:var(--muted);margin:10px 0 4px}
+        .calc input,.calc select{width:100%;box-sizing:border-box;font-size:16px;padding:9px 10px;border:1px solid var(--rule);border-radius:6px;background:#fff;color:var(--fg)}
+        .calc .row{display:flex;gap:12px;flex-wrap:wrap}
+        .calc .row>div{flex:1;min-width:130px}
+        .out{margin-top:14px;padding:12px;border-radius:6px;background:var(--bg);border:1px solid var(--rule)}
+        .out .big{font-size:20px;font-weight:600}
+        .out table{margin:8px 0 0}
+        .out .cite{font-size:12px;color:var(--muted);margin-top:8px}
+        .warn{margin-top:10px;padding:10px 12px;border-radius:6px;background:#fff6e5;border:1px solid #f0c674;font-size:14px}
+        .warn.stop{background:#fdecea;border-color:#e0a0a0}
+        .disclaimer{border-left:3px solid var(--accent);padding:8px 14px;background:var(--bg);font-size:14px;margin:18px 0}
+    </style>
+    <script data-goatcounter="https://moondog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <main>
+        <article>
+            <header>
+                <p><a href="../">← Moon Dog</a> · <a href="./">Canning Guides</a></p>
+                <h1>Canning altitude calculator</h1>
+                <p class="article-meta">Enter your altitude for the water-bath time to add and the pressure-canner PSI — straight from the USDA brackets, never rounded down.</p>
+            </header>
+
+            <p>Altitude changes canning because water boils cooler as you climb. For <strong>boiling-water-bath</strong> canning you compensate with <strong>more time</strong>; for <strong>pressure</strong> canning you compensate with <strong>more pressure</strong> (the time stays the same). This calculator returns both from the <a href="https://nchfp.uga.edu/">USDA Complete Guide to Home Canning</a> tables. It only ever rounds <em>up</em> to the safe bracket — it is never more permissive than the printed tables.</p>
+
+            <div class="calc">
+                <h3>Your altitude</h3>
+                <div class="row">
+                    <div>
+                        <label for="altFt">Altitude (feet above sea level)</label>
+                        <input id="altFt" type="number" inputmode="numeric" step="100" min="0" placeholder="e.g. 4500">
+                    </div>
+                    <div>
+                        <label for="gauge">Pressure-canner gauge</label>
+                        <select id="gauge">
+                            <option value="dial" selected>Dial gauge</option>
+                            <option value="weighted">Weighted gauge (5/10/15)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="out" id="altOut" hidden></div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Safety note.</strong> This adjusts a <em>tested</em> recipe for altitude — it does not make an untested recipe safe. Always start from a current USDA / NCHFP or So Easy to Preserve recipe, use the full processing time and pressure, and when in doubt, process longer or at higher pressure. Improperly canned low-acid foods can cause <em>botulism</em>, which can be fatal. This tool never shortens a process.
+            </div>
+
+            <div class="cta">
+                <h3>Canning a specific food?</h3>
+                <p>This page handles altitude. <strong>Seal</strong> carries the whole safe-canning workflow: a citation-backed recipe library (which foods need pressure vs. water bath), acidity and headspace checks, jar-size and hot-vs-raw-pack rules, and altitude baked into every process spec — so you get one final "run it this long, at this pressure" answer per batch. Every recipe cites USDA / NCHFP.</p>
+                <p><a class="store" href="https://apps.apple.com/app/id6778012488">Get Seal on the App Store</a></p>
+            </div>
+
+            <h2>Altitude brackets (reference)</h2>
+            <h3>Boiling-water-bath — minutes to add</h3>
+            <table>
+                <thead><tr><th>Altitude</th><th class="num">Add to process time</th></tr></thead>
+                <tbody>
+                    <tr><td>0 – 1,000 ft</td><td class="num">+0 min</td></tr>
+                    <tr><td>1,001 – 3,000 ft</td><td class="num">+5 min</td></tr>
+                    <tr><td>3,001 – 6,000 ft</td><td class="num">+10 min</td></tr>
+                    <tr><td>6,001 – 8,000 ft</td><td class="num">+15 min</td></tr>
+                    <tr><td>8,001 – 10,000 ft</td><td class="num">+20 min</td></tr>
+                </tbody>
+            </table>
+            <h3>Pressure canner — PSI by gauge</h3>
+            <table>
+                <thead><tr><th>Altitude</th><th class="num">Dial</th><th class="num">Weighted</th></tr></thead>
+                <tbody>
+                    <tr><td>0 – 1,000 ft</td><td class="num">11</td><td class="num">10</td></tr>
+                    <tr><td>1,001 – 2,000 ft</td><td class="num">11</td><td class="num">15</td></tr>
+                    <tr><td>2,001 – 4,000 ft</td><td class="num">12</td><td class="num">15</td></tr>
+                    <tr><td>4,001 – 6,000 ft</td><td class="num">13</td><td class="num">15</td></tr>
+                    <tr><td>6,001 – 8,000 ft</td><td class="num">14</td><td class="num">15</td></tr>
+                    <tr><td>8,001 – 10,000 ft</td><td class="num">15</td><td class="num">15</td></tr>
+                </tbody>
+            </table>
+            <p>Pressure-canning <strong>time</strong> does not change with altitude — only the pressure does. Water-bath <strong>pressure</strong> can't change (it's atmospheric) — so time does.</p>
+
+            <h2>FAQ</h2>
+            <p><strong>How much time do I add at altitude?</strong><br>
+            By bracket: +5 min from 1,001 ft, +10 from 3,001, +15 from 6,001, +20 from 8,001 ft — added to the recipe's sea-level water-bath time.</p>
+            <p><strong>What PSI at my altitude?</strong><br>
+            Dial climbs 11→15 psi with altitude; weighted is a step: 10 lb to 1,000 ft, then 15 lb above. Use the calculator for your exact figure.</p>
+            <p><strong>What if I'm above 10,000 ft?</strong><br>
+            The USDA tables stop at 10,000 ft. Above that, this calculator will not extrapolate — contact your <a href="https://nchfp.uga.edu/">NCHFP</a> or local Extension office for guidance.</p>
+
+            <p class="related">Related: <a href="canning-at-altitude-adjustments.html">Canning at altitude, explained</a> · <a href="water-bath-vs-pressure-canning.html">Water bath vs. pressure canning</a> · <a href="pressure-canning-green-beans-time-psi.html">Pressure canning green beans (time &amp; psi)</a> · <a href="../guides/best-pressure-canners.html">Best pressure canners (2026)</a></p>
+
+            <div class="sources">
+                <h2>Sources</h2>
+                <ul>
+                    <li>USDA Complete Guide to Home Canning, Part 1: Principles of Home Canning — altitude tables (via <a href="https://nchfp.uga.edu/">NCHFP</a>)</li>
+                    <li><a href="https://extension.sdstate.edu/altitude-adjustments-home-canning">SDSU Extension — Altitude adjustments for home canning</a></li>
+                </ul>
+                <p>These are the published USDA brackets. This calculator never rounds down; when your altitude is near a boundary it uses the higher (safer) bracket.</p>
+            </div>
+        </article>
+        <footer>
+            <p>Contact: <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a></p>
+        </footer>
+    </main>
+
+    <script src="canning-altitude-calculator.js"></script>
+</body>
+</html>

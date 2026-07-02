@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydroponic Nutrient Calculator — EC to ppm &amp; Targets by Crop</title>
+    <meta name="description" content="Free hydroponic nutrient calculator: convert EC to ppm on the 500/640/700 scales, read fertilizer labels (K₂O→K, P₂O₅→P), and look up N-P-K-Ca-Mg targets by crop and stage. Cited to Cornell, Penn State and UF/IFAS.">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"TechArticle","headline":"Hydroponic nutrient calculator: EC to ppm and targets by crop","description":"A free hydroponic nutrient calculator that converts EC to ppm on the 500, 640 and 700 scales, converts oxide fertilizer labels to elemental percent, and looks up N-P-K-Ca-Mg targets by crop and stage, cited to Cornell, Penn State and UF/IFAS.","url":"https://moondogapps.com/crop/hydroponic-nutrient-calculator.html","inLanguage":"en","datePublished":"2026-07-02","author":{"@type":"Organization","name":"Moon Dog"},"publisher":{"@type":"Organization","name":"Moon Dog"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I convert EC to ppm?","acceptedAnswer":{"@type":"Answer","text":"Multiply EC in mS/cm by the scale factor: 500 (Hanna, Bluelab), 640 (European) or 700 (US hydroponic default). So EC 2.0 mS/cm is 1000 ppm on the 500 scale, 1280 on the 640, or 1400 on the 700 — the same solution, three numbers. Always check which scale your meter uses."}},{"@type":"Question","name":"What ppm should my hydroponic nutrients be?","acceptedAnswer":{"@type":"Answer","text":"It depends on the crop and stage. Leafy greens and lettuce run lean (about 400–900 ppm on the 500 scale), herbs and strawberries in the middle, and fruiting tomato, pepper and cucumber higher (roughly 900–1400). Use the target lookup above for per-element N-P-K-Ca-Mg figures and the EC band for each crop."}},{"@type":"Question","name":"How do I convert K₂O and P₂O₅ on a fertilizer label to actual K and P?","acceptedAnswer":{"@type":"Answer","text":"Fertilizer labels report potassium as K₂O and phosphorus as P₂O₅, which overstate the element. Multiply K₂O% by 0.8301 for elemental K, and P₂O₅% by 0.4364 for elemental P (CaO×0.7147 for Ca, MgO×0.6030 for Mg). A 4-18-38 label is really about 4% N, 7.9% P, 31.5% K."}}]}
+    </script>
+    <link rel="canonical" href="https://moondogapps.com/crop/hydroponic-nutrient-calculator.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Hydroponic Nutrient Calculator — EC to ppm &amp; Targets by Crop">
+    <meta property="og:description" content="Convert EC to ppm (500/640/700), read fertilizer labels, and look up N-P-K-Ca-Mg targets by crop and stage. Free. Cornell / Penn State / UF/IFAS cited.">
+    <meta property="og:url" content="https://moondogapps.com/crop/hydroponic-nutrient-calculator.html">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .calc{border:1px solid var(--rule);border-radius:8px;padding:16px;margin:18px 0;background:#fff}
+        .calc h3{margin-top:0}
+        .calc label{display:block;font-size:14px;color:var(--muted);margin:10px 0 4px}
+        .calc input,.calc select{width:100%;box-sizing:border-box;font-size:16px;padding:9px 10px;border:1px solid var(--rule);border-radius:6px;background:#fff;color:var(--fg)}
+        .calc .row{display:flex;gap:12px;flex-wrap:wrap}
+        .calc .row>div{flex:1;min-width:130px}
+        .out{margin-top:14px;padding:12px;border-radius:6px;background:var(--bg);border:1px solid var(--rule)}
+        .out .big{font-size:20px;font-weight:600}
+        .out table{margin:8px 0 0}
+        .out .cite{font-size:12px;color:var(--muted);margin-top:8px}
+        .badge{display:inline-block;font-size:11px;padding:2px 7px;border-radius:10px;background:#eef;color:var(--accent);vertical-align:middle}
+    </style>
+    <script data-goatcounter="https://moondog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <main>
+        <article>
+            <header>
+                <p><a href="../">← Moon Dog</a> · <a href="./">Hydroponic Guides</a></p>
+                <h1>Hydroponic nutrient calculator</h1>
+                <p class="article-meta">Convert your meter reading, decode a fertilizer label, and look up the N-P-K-Ca-Mg target for your crop — all cited, all free.</p>
+            </header>
+
+            <p>Three things every hydroponic grower needs to pin down: what your EC reading means in ppm, what a fertilizer label's oxide numbers actually contain, and what the target is for the crop you're growing. All three are below. The conversions are exact; the crop targets are published starting points from <a href="https://cals.cornell.edu/controlled-environment-agriculture">Cornell CEA</a>, <a href="https://extension.psu.edu/hydroponics-systems-nutrient-solution-programs-and-recipes">Penn State Extension</a> and UF/IFAS.</p>
+
+            <div class="calc">
+                <h3>1. EC ↔ ppm converter</h3>
+                <div class="row">
+                    <div>
+                        <label for="ecScale">Meter scale</label>
+                        <select id="ecScale">
+                            <option value="500">500 — Hanna / Bluelab</option>
+                            <option value="640">640 — European</option>
+                            <option value="700" selected>700 — US hydroponic default</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="ecIn">EC (mS/cm)</label>
+                        <input id="ecIn" type="number" inputmode="decimal" step="0.1" min="0" placeholder="e.g. 1.4">
+                    </div>
+                    <div>
+                        <label for="ppmIn">…or ppm (on the scale above)</label>
+                        <input id="ppmIn" type="number" inputmode="decimal" step="10" min="0" placeholder="e.g. 980">
+                    </div>
+                </div>
+                <div class="out" id="ecOut" hidden></div>
+            </div>
+
+            <div class="calc">
+                <h3>2. Fertilizer label converter (oxide → element)</h3>
+                <p style="font-size:14px;color:var(--muted);margin:0 0 4px">Labels report K as K₂O and P as P₂O₅ — both overstate the real element. Enter the guaranteed-analysis percentages to get elemental N-P-K-Ca-Mg.</p>
+                <div class="row">
+                    <div><label for="lblN">N %</label><input id="lblN" type="number" inputmode="decimal" step="0.1" min="0" placeholder="4"></div>
+                    <div><label for="lblP2O5">P₂O₅ %</label><input id="lblP2O5" type="number" inputmode="decimal" step="0.1" min="0" placeholder="18"></div>
+                    <div><label for="lblK2O">K₂O %</label><input id="lblK2O" type="number" inputmode="decimal" step="0.1" min="0" placeholder="38"></div>
+                </div>
+                <div class="row">
+                    <div><label for="lblCaO">CaO % <span style="font-weight:400">(opt.)</span></label><input id="lblCaO" type="number" inputmode="decimal" step="0.1" min="0"></div>
+                    <div><label for="lblMgO">MgO % <span style="font-weight:400">(opt.)</span></label><input id="lblMgO" type="number" inputmode="decimal" step="0.1" min="0"></div>
+                </div>
+                <div class="out" id="lblOut" hidden></div>
+            </div>
+
+            <div class="calc">
+                <h3>3. Nutrient target by crop &amp; stage</h3>
+                <label for="cropSel">Crop &amp; stage</label>
+                <select id="cropSel"></select>
+                <div class="out" id="cropOut"></div>
+            </div>
+
+            <div class="cta">
+                <h3>Mixing your own salts?</h3>
+                <p>This page gives you the target. <strong>Crop</strong> does the last step — enter your reservoir volume and it solves the exact grams of calcium nitrate, KNO₃, MKP, K₂SO₄ and Epsom to hit any target, with a reverse calculator for MasterBlend, Jack's and General Hydroponics, plus overshoot warnings. The mixing solver is the paid part; everything on this page stays free.</p>
+                <p><a class="store" href="https://apps.apple.com/app/id6777968635">Get Crop on the App Store</a></p>
+            </div>
+
+            <h2>How to use these numbers</h2>
+            <ol>
+                <li>Read EC and ppm with an <a href="https://www.amazon.com/s?k=hydroponic+EC+ppm+meter&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-crop">EC / ppm meter</a> — confirm whether it's a 500- or 700-scale model, then use converter&nbsp;1.</li>
+                <li>Pick your crop in lookup&nbsp;3 to get the per-element target and EC band.</li>
+                <li>Hit the target with <a href="https://www.amazon.com/s?k=hydroponic+nutrients+masterblend+general+hydroponics&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-crop">hydroponic nutrients</a> — use converter&nbsp;2 on the label to know what you're really dosing.</li>
+            </ol>
+
+            <h2>FAQ</h2>
+            <p><strong>How do I convert EC to ppm?</strong><br>
+            Multiply EC (mS/cm) by 500, 640 or 700 depending on your meter's scale. EC 1.4 is 700 ppm on the 500 scale or 980 ppm on the 700. The same solution shows different ppm on different meters — the EC is the fixed value.</p>
+            <p><strong>What ppm should my nutrients be?</strong><br>
+            Crop- and stage-dependent. Leafy greens run lean, fruiting crops higher. Use lookup&nbsp;3 for the per-element figures; the EC band there is the fastest daily check.</p>
+            <p><strong>Why doesn't the label's NPK match what I'm dosing?</strong><br>
+            Because the P and K on a label are oxides. Converter&nbsp;2 turns K₂O and P₂O₅ into the real elemental K and P — a 4-18-38 is closer to 4-7.9-31.5 elemental.</p>
+
+            <p class="related">Related: <a href="hydroponics-ppm-chart.html">Hydroponics ppm chart (EC to ppm)</a> · <a href="hydroponic-nutrient-targets-by-crop.html">Nutrient chart by crop and stage</a> · <a href="hydroponic-tomato-ppm-ec-schedule.html">Tomato ppm &amp; EC schedule</a> · <a href="masterblend-general-hydroponics-ppm-chart.html">MasterBlend &amp; General Hydroponics ratios</a> · <a href="../guides/best-hydroponic-nutrients.html">Best hydroponic nutrients (2026)</a></p>
+
+            <div class="sources">
+                <h2>Sources</h2>
+                <ul>
+                    <li>Cornell CEA (Mattson &amp; Lieth) — <em>A Recipe for Hydroponic Success</em> (lettuce, pepper targets)</li>
+                    <li><a href="https://extension.psu.edu/hydroponics-systems-nutrient-solution-programs-and-recipes">Penn State Extension — Hydroponics nutrient solutions</a> (tomato, basil, leafy herbs/greens)</li>
+                    <li>UF/IFAS — hydroponic tomato, cucumber &amp; strawberry guidance; <em>Produce Grower</em> — microgreens range</li>
+                    <li>Oxide→element factors from IUPAC 2021 atomic weights (K₂O 0.8301, P₂O₅ 0.4364, CaO 0.7147, MgO 0.6030)</li>
+                </ul>
+                <p>Conversions are exact; crop ppm ranges are starting points — adjust to your cultivar, system, and measurements.</p>
+            </div>
+        </article>
+        <footer>
+            <p>Contact: <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a></p>
+        </footer>
+    </main>
+
+    <script src="hydroponic-nutrient-calculator.js"></script>
+</body>
+</html>

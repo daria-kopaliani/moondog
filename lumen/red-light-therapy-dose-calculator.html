@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Light Therapy Dose Calculator — J/cm² &amp; Minutes to Target</title>
+    <meta name="description" content="Free red light therapy dose calculator: turn your panel's irradiance (mW/cm²) and session time into J/cm², or find the minutes to hit a target dose. Biphasic-window warnings cited to Huang/Hamblin 2011 (PMID 22461763) — never more permissive than the science.">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"TechArticle","headline":"Red light therapy dose calculator: J/cm² and minutes to target","description":"A free red light therapy (photobiomodulation) dose calculator that converts panel irradiance in mW/cm² and session time into a J/cm² dose, and inversely finds the minutes to reach a target dose, with biphasic therapeutic-window warnings cited to Huang/Hamblin 2011 (PMID 22461763).","url":"https://moondogapps.com/lumen/red-light-therapy-dose-calculator.html","inLanguage":"en","datePublished":"2026-07-02","author":{"@type":"Organization","name":"Moon Dog"},"publisher":{"@type":"Organization","name":"Moon Dog"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate a red light therapy dose in J/cm²?","acceptedAnswer":{"@type":"Answer","text":"Dose (J/cm²) = irradiance (mW/cm²) × time (seconds) ÷ 1000. So a panel delivering 50 mW/cm² for 12 minutes (720 s) gives 50 × 720 ÷ 1000 = 36 J/cm². Use your panel's measured irradiance at your actual treatment distance, not the marketing peak number."}},{"@type":"Question","name":"What is the therapeutic window for red light therapy?","acceptedAnswer":{"@type":"Answer","text":"Photobiomodulation follows a biphasic (Arndt-Schulz) dose response: too little does nothing and too much can reduce or reverse the benefit. Reviews most often cite a 5–10 J/cm² low therapeutic window (PMC11991943), with an extended range up to roughly 50 J/cm² depending on tissue depth and wavelength. Above about 60 J/cm² per session you are in the overshoot zone (Huang/Hamblin 2011, PMID 22461763)."}},{"@type":"Question","name":"How many minutes should a red light therapy session be?","acceptedAnswer":{"@type":"Answer","text":"It depends entirely on your panel's irradiance. Minutes = target dose (J/cm²) × 1000 ÷ irradiance (mW/cm²) ÷ 60. A strong 50 mW/cm² panel reaches a 5 J/cm² dose in under 2 minutes; a weak 5 mW/cm² panel needs about 17 minutes for the same dose. Measure irradiance at your real distance — it drops off fast."}}]}
+    </script>
+    <link rel="canonical" href="https://moondogapps.com/lumen/red-light-therapy-dose-calculator.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Red Light Therapy Dose Calculator — J/cm² &amp; Minutes to Target">
+    <meta property="og:description" content="Convert irradiance (mW/cm²) and time into a J/cm² dose, or find minutes to a target. Biphasic-window warnings, cited to Huang/Hamblin 2011.">
+    <meta property="og:url" content="https://moondogapps.com/lumen/red-light-therapy-dose-calculator.html">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .calc{border:1px solid var(--rule);border-radius:8px;padding:16px;margin:18px 0;background:#fff}
+        .calc h3{margin-top:0}
+        .calc label{display:block;font-size:14px;color:var(--muted);margin:10px 0 4px}
+        .calc input,.calc select{width:100%;box-sizing:border-box;font-size:16px;padding:9px 10px;border:1px solid var(--rule);border-radius:6px;background:#fff;color:var(--fg)}
+        .calc .row{display:flex;gap:12px;flex-wrap:wrap}
+        .calc .row>div{flex:1;min-width:130px}
+        .out{margin-top:14px;padding:12px;border-radius:6px;background:var(--bg);border:1px solid var(--rule)}
+        .out .big{font-size:20px;font-weight:600}
+        .out table{margin:8px 0 0}
+        .out .cite{font-size:12px;color:var(--muted);margin-top:8px}
+        .warn{margin-top:10px;padding:10px 12px;border-radius:6px;background:#fff6e5;border:1px solid #f0c674;font-size:14px}
+        .warn.stop{background:#fdecea;border-color:#e0a0a0}
+        .disclaimer{border-left:3px solid var(--accent);padding:8px 14px;background:var(--bg);font-size:14px;margin:18px 0}
+    </style>
+    <script data-goatcounter="https://moondog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <main>
+        <article>
+            <header>
+                <p><a href="../">← Moon Dog</a> · <a href="./">Red Light Guides</a></p>
+                <h1>Red light therapy dose calculator</h1>
+                <p class="article-meta">Turn your panel's irradiance and session time into a J/cm² dose — or work backward to the minutes for a target. With the biphasic therapeutic-window warnings, all cited.</p>
+            </header>
+
+            <p>Red light therapy (photobiomodulation, PBM) is dosed in <strong>joules per square centimeter (J/cm²)</strong>, and the formula is simple: <em>dose = irradiance (mW/cm²) × time (seconds) ÷ 1000</em>. The catch is the <strong>biphasic dose response</strong> — from <a href="https://pubmed.ncbi.nlm.nih.gov/22461763/">Huang &amp; Hamblin 2011</a>: too little does nothing, and too much can <em>reduce or reverse</em> the effect. This calculator flags both ends of that window and never treats a higher dose as "safer."</p>
+
+            <div class="calc">
+                <h3>1. Dose from irradiance &amp; time</h3>
+                <p style="font-size:14px;color:var(--muted);margin:0 0 4px">Enter your panel's irradiance <em>at your actual treatment distance</em> (measured, not the marketing peak) and how long you run it.</p>
+                <div class="row">
+                    <div>
+                        <label for="irr1">Irradiance (mW/cm²)</label>
+                        <input id="irr1" type="number" inputmode="decimal" step="1" min="0" placeholder="e.g. 50">
+                    </div>
+                    <div>
+                        <label for="minIn">Session time (minutes)</label>
+                        <input id="minIn" type="number" inputmode="decimal" step="0.5" min="0" placeholder="e.g. 12">
+                    </div>
+                </div>
+                <div class="out" id="out1" hidden></div>
+            </div>
+
+            <div class="calc">
+                <h3>2. Minutes to reach a target dose</h3>
+                <p style="font-size:14px;color:var(--muted);margin:0 0 4px">Pick the dose you're aiming for and this returns the session length for your panel.</p>
+                <div class="row">
+                    <div>
+                        <label for="irr2">Irradiance (mW/cm²)</label>
+                        <input id="irr2" type="number" inputmode="decimal" step="1" min="0" placeholder="e.g. 50">
+                    </div>
+                    <div>
+                        <label for="targetIn">Target dose (J/cm²)</label>
+                        <input id="targetIn" type="number" inputmode="decimal" step="0.5" min="0" placeholder="e.g. 6">
+                    </div>
+                </div>
+                <div class="out" id="out2" hidden></div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Not medical advice.</strong> This is a physics calculator for photobiomodulation dosing, not a treatment protocol. J/cm² targets vary widely by tissue depth, wavelength, and goal, and the biphasic window is guidance from the literature — not a personalized prescription. Use your device's own measured irradiance and instructions, and consult a qualified clinician before using red light therapy for any medical condition.
+            </div>
+
+            <div class="cta">
+                <h3>Don't know your panel's real irradiance?</h3>
+                <p>This page works if you already know your mW/cm². <strong>Lumen</strong> is where it gets easy: a brand-aware library of measured irradiance for Mito Red, Joovv, GembaRed and more (lab-audited ISO/IEC 17025 values where they exist), automatic <em>inverse-square distance scaling</em> so your dose is right at <em>your</em> distance, and per-body-part cumulative-dose tracking against the same biphasic window. The dose formula on this page stays free forever.</p>
+                <p><a class="store" href="https://apps.apple.com/app/id6779296866">Get Lumen on the App Store</a></p>
+            </div>
+
+            <h2>How to use these numbers</h2>
+            <ol>
+                <li>Measure your panel's irradiance at the distance you actually sit with a <a href="https://www.amazon.com/s?k=solar+power+meter+mw+cm2&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-lumen">solar power meter (mW/cm²)</a> — vendor "peak" figures are usually measured at 6&quot; and overstate what reaches your skin.</li>
+                <li>Use calculator&nbsp;1 to see the J/cm² dose and which biphasic band it lands in.</li>
+                <li>Or set a target with calculator&nbsp;2 to get your session length — and heed the overshoot warning if the target itself is too high.</li>
+            </ol>
+
+            <h2>FAQ</h2>
+            <p><strong>How do I calculate a red light dose in J/cm²?</strong><br>
+            Dose = irradiance (mW/cm²) × time (seconds) ÷ 1000. 50 mW/cm² for 12 minutes (720 s) is 36 J/cm². This is the canonical PBM formula from Huang/Hamblin 2011.</p>
+            <p><strong>What's the therapeutic window?</strong><br>
+            Biphasic: too little (under ~1 J/cm²) does nothing, ~5–10 J/cm² is the most-cited low window (PMC11991943), and above ~60 J/cm² per session is overshoot where the effect can reverse. Calculator&nbsp;1 labels your dose against these bands.</p>
+            <p><strong>How long should a session be?</strong><br>
+            It depends entirely on irradiance. Minutes = target J/cm² × 1000 ÷ mW/cm² ÷ 60. A 50 mW/cm² panel hits 5 J/cm² in under 2 minutes; a 5 mW/cm² panel needs ~17 minutes. Use calculator&nbsp;2.</p>
+
+            <p class="related">Related: <a href="how-long-red-light-therapy-session.html">How long should a red light therapy session be?</a> · <a href="red-light-biphasic-dose-response.html">The biphasic dose response, explained</a> · <a href="red-light-therapy-dose-j-cm2.html">Red light therapy dose in J/cm²</a> · <a href="red-light-therapy-minutes-distance-dose-table.html">Minutes, distance &amp; dose table</a></p>
+
+            <div class="sources">
+                <h2>Sources</h2>
+                <ul>
+                    <li>Huang YY, Sharma SK, Carroll J, Hamblin MR (2011). <em>Biphasic dose response in low level light therapy — an update.</em> Dose Response 9(4):602-18. <a href="https://pubmed.ncbi.nlm.nih.gov/22461763/">PMID 22461763</a> (PMC3315174) — dose formula &amp; Arndt-Schulz biphasic window.</li>
+                    <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11991943/">PMC11991943 (2025, Lasers in Medical Science)</a> — 5–10 J/cm² low therapeutic-window framing.</li>
+                    <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12181550/">Frankowski et al. 2025 (PMC12181550)</a> — Arndt-Schulz curve: optimal dose helps, too-low does nothing, too-high harms.</li>
+                    <li><a href="https://mitoredlight.com/blogs/mito-red-blog/independent-third-party-testing">Mito Red LightLab International testing</a> — ISO/IEC 17025 (NVLAP 201079-0) irradiance measurement chain (used for the app's audited panel presets).</li>
+                </ul>
+                <p>The dose formula is exact. The biphasic-window bands match the Lumen app exactly and are never widened; treat them as literature guidance, not a personal prescription.</p>
+            </div>
+        </article>
+        <footer>
+            <p>Contact: <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a></p>
+        </footer>
+    </main>
+
+    <script src="red-light-therapy-dose-calculator.js"></script>
+</body>
+</html>

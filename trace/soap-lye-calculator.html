@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soap Lye Calculator — NaOH &amp; KOH by Oil (Cold Process)</title>
+    <meta name="description" content="Free cold-process soap lye calculator: add your oils by weight and get the exact NaOH (bar) or KOH (liquid) grams, water, and superfat discount. SAP values cross-checked to SoapCalc and AOCS, cited to Kevin Dunn's Scientific Soapmaking.">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"TechArticle","headline":"Soap lye calculator: NaOH and KOH by oil for cold process","description":"A free cold-process soap lye calculator. Enter each oil by weight and it returns the NaOH (bar soap) or KOH (liquid soap) grams needed, applies the superfat/lye discount, and sizes the water — SAP values cross-checked to SoapCalc and AOCS and cited to Kevin Dunn's Scientific Soapmaking.","url":"https://moondogapps.com/trace/soap-lye-calculator.html","inLanguage":"en","datePublished":"2026-07-02","author":{"@type":"Organization","name":"Moon Dog"},"publisher":{"@type":"Organization","name":"Moon Dog"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate how much lye my soap recipe needs?","acceptedAnswer":{"@type":"Answer","text":"For each oil, multiply its weight by that oil's SAP value (grams of lye per gram of oil), then add them up. Multiply the total by (1 − superfat%) to apply the lye discount. For example 1,000 g of coconut oil at SAP 0.190 needs 190 g of NaOH at 0% superfat, or 180.5 g at 5% superfat. Use NaOH SAP for bar soap and KOH SAP for liquid soap. Always run your final recipe through a lye calculator before mixing — lye is caustic."}},{"@type":"Question","name":"What is superfat and how does it change the lye amount?","acceptedAnswer":{"@type":"Answer","text":"Superfat (also called lye discount) is the percentage of oils you deliberately leave unsaponified so there is never excess lye in the finished bar. A 5% superfat means you use 95% of the full saponification lye, which is the most common cold-process default. Higher superfat gives a more conditioning but softer bar; below about 1% leaves little margin for natural SAP-value variation."}},{"@type":"Question","name":"What is the difference between NaOH and KOH in soapmaking?","acceptedAnswer":{"@type":"Answer","text":"NaOH (sodium hydroxide) makes hard bar soap; KOH (potassium hydroxide) makes soft or liquid soap. Because KOH has a higher molecular weight (56.11 vs 40.00 g/mol), it takes about 1.4035 times as much KOH as NaOH to saponify the same oil — so every oil's KOH SAP value is roughly 1.4× its NaOH value. This calculator switches SAP tables when you pick the lye type."}}]}
+    </script>
+    <link rel="canonical" href="https://moondogapps.com/trace/soap-lye-calculator.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Soap Lye Calculator — NaOH &amp; KOH by Oil (Cold Process)">
+    <meta property="og:description" content="Add your oils by weight for exact NaOH or KOH grams, water and superfat. Free. SAP values cross-checked to SoapCalc / AOCS, cited to Kevin Dunn.">
+    <meta property="og:url" content="https://moondogapps.com/trace/soap-lye-calculator.html">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .calc{border:1px solid var(--rule);border-radius:8px;padding:16px;margin:18px 0;background:#fff}
+        .calc h3{margin-top:0}
+        .calc label{display:block;font-size:14px;color:var(--muted);margin:10px 0 4px}
+        .calc input,.calc select{width:100%;box-sizing:border-box;font-size:16px;padding:9px 10px;border:1px solid var(--rule);border-radius:6px;background:#fff;color:var(--fg)}
+        .calc .row{display:flex;gap:12px;flex-wrap:wrap}
+        .calc .row>div{flex:1;min-width:130px}
+        .oil-row{display:flex;gap:8px;align-items:center;margin:8px 0}
+        .oil-row .oil-select{flex:1 1 auto;min-width:0}
+        .oil-row .oil-grams{flex:0 0 96px;width:96px}
+        .oil-row .oil-remove{flex:0 0 auto;width:38px;height:38px;font-size:20px;line-height:1;padding:0;border:1px solid var(--rule);border-radius:6px;background:var(--bg);color:var(--muted);cursor:pointer}
+        .oil-row .oil-remove:hover{background:#fdecea;border-color:#e0a0a0;color:#b23}
+        .addbtn{margin-top:6px;font-size:14px;padding:8px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--bg);color:var(--fg);cursor:pointer}
+        .addbtn:hover{background:#eef}
+        .out{margin-top:14px;padding:12px;border-radius:6px;background:var(--bg);border:1px solid var(--rule)}
+        .out .big{font-size:20px;font-weight:600}
+        .out table{margin:8px 0 0}
+        .out .cite{font-size:12px;color:var(--muted);margin-top:8px}
+        .warn{margin-top:10px;padding:10px 12px;border-radius:6px;background:#fff6e5;border:1px solid #f0c674;font-size:14px}
+        .warn.stop{background:#fdecea;border-color:#e0a0a0}
+        .disclaimer{border-left:3px solid var(--accent);padding:8px 14px;background:var(--bg);font-size:14px;margin:18px 0}
+    </style>
+    <script data-goatcounter="https://moondog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <main>
+        <article>
+            <header>
+                <p><a href="../">← Moon Dog</a> · <a href="./">Soapmaking Guides</a></p>
+                <h1>Soap lye calculator</h1>
+                <p class="article-meta">Add your oils by weight and get the exact NaOH or KOH grams, water, and superfat discount — SAP values cross-checked to SoapCalc and AOCS, cited to Kevin Dunn.</p>
+            </header>
+
+            <p>Every cold-process bar starts with one non-negotiable number: how much lye. Each oil has a <strong>SAP value</strong> — the grams of lye it takes to saponify one gram of that oil — so the lye a recipe needs is the sum of (oil weight × SAP), then trimmed by your <strong>superfat</strong> (lye discount). This calculator does exactly that for any oil blend, in NaOH for bar soap or KOH for liquid soap. The SAP table is public reference data, cross-checked against <a href="https://soapcalc.net/">SoapCalc</a> and AOCS-typical ranges and anchored to <a href="https://en.wikipedia.org/wiki/Saponification_value">Kevin Dunn's <em>Scientific Soapmaking</em></a>.</p>
+
+            <div class="calc">
+                <h3>Your oils</h3>
+                <div id="oilRows"></div>
+                <button type="button" class="addbtn" id="addOil">+ Add oil</button>
+
+                <div class="row" style="margin-top:14px">
+                    <div>
+                        <label for="lyeType">Lye type</label>
+                        <select id="lyeType">
+                            <option value="naoh" selected>NaOH — hard bar soap</option>
+                            <option value="koh">KOH — soft / liquid soap</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="superfat">Superfat / lye discount (%)</label>
+                        <input id="superfat" type="number" inputmode="decimal" step="1" min="0" max="20" value="5">
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="waterMode">Water as</label>
+                        <select id="waterMode">
+                            <option value="percentOfOils" selected>% of oil weight</option>
+                            <option value="lyeConcentration">Lye concentration %</option>
+                            <option value="waterToLyeRatio">Water : lye ratio</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="waterVal">Water amount <span id="waterUnit" style="font-weight:400">% of oils</span></label>
+                        <input id="waterVal" type="number" inputmode="decimal" step="1" min="0" value="38">
+                    </div>
+                    <div>
+                        <label for="purity">Lye purity (%) <span style="font-weight:400">(opt.)</span></label>
+                        <input id="purity" type="number" inputmode="decimal" step="1" min="50" max="100" value="100">
+                    </div>
+                </div>
+                <div class="out" id="lyeOut" hidden></div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Safety note.</strong> Lye (NaOH and KOH) is <em>caustic</em> — it burns skin and eyes and gives off fumes when it hits water. Always wear goggles and gloves, add lye <em>to</em> water (never water to lye) in a ventilated space, and keep it away from children and pets. This tool is a starting point: <strong>always run your final recipe through a second lye calculator</strong> before mixing, weigh everything on a gram scale, and never skip the superfat — a bar mixed with too little superfat or a mis-typed SAP value can be lye-heavy and unsafe on the skin.
+            </div>
+
+            <div class="cta">
+                <h3>Want the whole soap studio?</h3>
+                <p>This page gives you the lye. <strong>Trace</strong> gives you the rest: a live <strong>fatty-acid quality analysis</strong> (hardness, cleansing, conditioning, bubbly and creamy lather, longevity) with cited target ranges so you can tell if a blend will actually make a good bar, <strong>multi-batch cure tracking</strong>, <strong>brand-aware oil presets</strong>, and fragrance/additive dosing with IFRA caps. The full soap studio — qualities, cure tracking, brand oils — lives in the app.</p>
+                <p><a class="store" href="https://apps.apple.com/app/id6778435536">Get Trace on the App Store</a></p>
+            </div>
+
+            <h2>How to use it</h2>
+            <ol>
+                <li>Add each oil in your recipe and type its weight in grams (weigh on a <a href="https://www.amazon.com/s?k=digital+kitchen+scale+grams&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-trace">digital gram scale</a> — soapmaking is by weight, never volume).</li>
+                <li>Pick <strong>NaOH</strong> for a hard bar or <strong>KOH</strong> for soft/liquid soap, and set your superfat (5% is the usual default).</li>
+                <li>Choose how you express water, then read off the <a href="https://www.amazon.com/s?k=sodium+hydroxide+lye+soap+making&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-trace">lye</a> and water to weigh. Confirm it against a second calculator before you mix.</li>
+            </ol>
+
+            <h2>FAQ</h2>
+            <p><strong>How do I calculate how much lye my recipe needs?</strong><br>
+            For each oil, oil weight × its SAP value, summed, then × (1 − superfat%). 1,000 g coconut at SAP 0.190 is 190 g NaOH at 0% superfat, or 180.5 g at 5%. NaOH for bar soap, KOH for liquid.</p>
+            <p><strong>What is superfat?</strong><br>
+            The share of oils you leave unsaponified so there's never free lye in the bar. 5% is the common default: you use 95% of the full-saponification lye. Higher is more conditioning but softer.</p>
+            <p><strong>Why is the KOH number bigger than the NaOH one?</strong><br>
+            KOH is heavier per molecule (56.11 vs 40.00 g/mol), so it takes about 1.4× as much to saponify the same oil. Switching the lye type swaps to each oil's KOH SAP value.</p>
+
+            <p class="related">Related: <a href="lye-calculator-sap-values-cold-process-soap.html">Lye calculator &amp; SAP values explained</a> · <a href="superfat-and-water-cold-process-soap.html">Superfat &amp; water in cold-process soap</a></p>
+
+            <div class="sources">
+                <h2>Sources</h2>
+                <ul>
+                    <li>Kevin M. Dunn — <em>Scientific Soapmaking: The Chemistry of the Cold Process</em> (Clavicula Press, 2010); Hampden-Sydney College — saponification chemistry &amp; SAP method</li>
+                    <li>USDA National Nutrient Database / Agricultural Handbook 8 — fatty-acid composition tables (public reference data)</li>
+                    <li>AOCS Official Methods — SAP value ranges; cross-checked against <a href="https://soapcalc.net/">SoapCalc.net</a> and Bramble Berry lye calculators</li>
+                </ul>
+                <p>SAP values are typical reference figures; real oils vary by source and batch. This is a starting point — always verify your final recipe on a second lye calculator before mixing, and keep a safe superfat.</p>
+            </div>
+        </article>
+        <footer>
+            <p>Contact: <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a></p>
+        </footer>
+    </main>
+
+    <script src="soap-lye-calculator.js"></script>
+</body>
+</html>
