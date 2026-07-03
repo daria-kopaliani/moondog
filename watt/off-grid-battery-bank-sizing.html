@@ -13,85 +13,170 @@
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"TechArticle","headline":"What size battery bank do I need?","description":"Size an off-grid battery bank from daily load, days of autonomy, and usable depth of discharge — and why LiFePO4 and AGM give very different answers.","url":"https://moondogapps.com/watt/off-grid-battery-bank-sizing.html","inLanguage":"en","datePublished":"2026-06-12","author":{"@type":"Organization","name":"Moon Dog"},"publisher":{"@type":"Organization","name":"Moon Dog"}}
     </script>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/assets/guides.css">
     <script data-goatcounter="https://moondog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
-<body>
-    <main>
-        <article>
-            <header>
-                <p><a href="../">← Moon Dog</a> · <a href="./">Off-Grid Solar Guides</a></p>
-                <h1>What size battery bank do I need?</h1>
-                <p class="article-meta">Three numbers: daily load, days of autonomy, and how deep you can safely discharge.</p>
-            </header>
+<body class="gg">
+
+<div class="gg-progress" id="ggProgress"></div>
+
+<main class="gg-article">
+
+  <div class="gg-crumb">
+    <a href="https://moondogapps.com/">Moon Dog</a>
+    <span class="sep">/</span>
+    <a class="accent" href="https://moondogapps.com/watt/">Off-Grid Solar Guides</a>
+  </div>
+
+  <article class="gg-sheet">
+
+    <div class="gg-eyebrow">Off-Grid Solar</div>
+    <h1 class="gg-h1">What size battery bank do I need?</h1>
+    <div class="gg-meta">
+      <span>Updated 2026</span>
+      <span class="dot"></span>
+      <span>3 min read</span>
+    </div>
+
+    <p class="gg-lede">Three numbers: daily load, days of autonomy, and how deep you can safely discharge.</p>
+
+    <nav class="gg-toc">
+      <div class="label">On this page</div>
+      <div class="gg-toc-list">
+        <a href="#start-with-usable-capacity-not-rated-cap"><span class="num">01</span>Start with usable capacity, not rated capacity</a>
+        <a href="#the-sizing-formula"><span class="num">02</span>The sizing formula</a>
+        <a href="#gear"><span class="num">03</span>Gear this guide uses</a>
+        <a href="#sources"><span class="num">04</span>Sources</a>
+      </div>
+    </nav>
+
+    <div class="gg-prose">
+
 
             <p>Panels make power during the day; the battery bank is what runs your fridge at 2 a.m. and carries you through a cloudy stretch. Its size depends on how much energy you use per day, how many no-sun days you want to survive, and — critically — what fraction of the battery you can actually use.</p>
 
-            <h2>Start with usable capacity, not rated capacity</h2>
+            <h2 id="start-with-usable-capacity-not-rated-cap">Start with usable capacity, not rated capacity</h2>
             <p>A battery's label capacity is not all usable. Draining a battery fully shortens its life, so you only use a fraction — the <strong>depth of discharge (DoD)</strong>. This is the single biggest difference between chemistries:</p>
-            <table>
-                <thead><tr><th>Chemistry</th><th class="num">Safe DoD</th><th>Notes</th></tr></thead>
+                </div>
+    <div class="gg-table-wrap">
+      <table class="gg-table">
+                <thead><tr><th>Chemistry</th><th>Safe DoD</th><th>Notes</th></tr></thead>
                 <tbody>
-                    <tr><td>LiFePO4 (lithium)</td><td class="num">80–100%</td><td>Light, long cycle life, costs more upfront</td></tr>
-                    <tr><td>AGM (sealed lead)</td><td class="num">50%</td><td>Cheaper, heavier; deeper draws kill it fast</td></tr>
-                    <tr><td>Flooded lead-acid</td><td class="num">50%</td><td>Cheapest, needs ventilation + maintenance</td></tr>
+                    <tr><td>LiFePO4 (lithium)</td><td class="strong">80–100%</td><td>Light, long cycle life, costs more upfront</td></tr>
+                    <tr><td>AGM (sealed lead)</td><td class="strong">50%</td><td>Cheaper, heavier; deeper draws kill it fast</td></tr>
+                    <tr><td>Flooded lead-acid</td><td class="strong">50%</td><td>Cheapest, needs ventilation + maintenance</td></tr>
                 </tbody>
             </table>
+    </div>
+    <div class="gg-prose">
+
             <p>The practical takeaway: a 100 Ah AGM battery gives you ~50 Ah; a 100 Ah LiFePO4 gives you 80–100 Ah. For the same usable energy, lead-acid needs roughly double the rated capacity.</p>
 
-            <h2>The sizing formula</h2>
+            <h2 id="the-sizing-formula">The sizing formula</h2>
             <p>Convert your daily load to amp-hours at your system voltage, multiply by the days of autonomy you want, then divide by usable DoD:</p>
             <p style="text-align:center"><strong>Battery Ah = (Daily Wh ÷ System V) × Days of autonomy ÷ DoD</strong></p>
             <p>Worked example — 660 Wh/day on a 12V system, 2 days of autonomy:</p>
-            <table>
-                <thead><tr><th>Chemistry</th><th class="num">Math</th><th class="num">Rated Ah needed</th></tr></thead>
+                </div>
+    <div class="gg-table-wrap">
+      <table class="gg-table">
+                <thead><tr><th>Chemistry</th><th>Math</th><th>Rated Ah needed</th></tr></thead>
                 <tbody>
-                    <tr><td>LiFePO4 (0.9 DoD)</td><td class="num">(660 ÷ 12) × 2 ÷ 0.9</td><td class="num">~122 Ah</td></tr>
-                    <tr><td>AGM (0.5 DoD)</td><td class="num">(660 ÷ 12) × 2 ÷ 0.5</td><td class="num">~220 Ah</td></tr>
+                    <tr><td>LiFePO4 (0.9 DoD)</td><td class="strong">(660 ÷ 12) × 2 ÷ 0.9</td><td class="strong">~122 Ah</td></tr>
+                    <tr><td>AGM (0.5 DoD)</td><td class="strong">(660 ÷ 12) × 2 ÷ 0.5</td><td class="strong">~220 Ah</td></tr>
                 </tbody>
             </table>
-
-            <div class="callout">
+    </div>
+    <div class="gg-note-card">
                 <p><strong>Days of autonomy</strong> is how long the bank runs with no solar input. One day is fine for fair-weather weekend use; 2–3 days is sensible for full-time off-grid where a cloudy spell shouldn't leave you dark.</p>
             </div>
+    <div class="gg-prose">
+
 
             <div class="callout warn">
                 <strong>Don't forget temperature and inverter losses.</strong>
                 <p>Lead-acid loses usable capacity in the cold, and any 120V AC loads add ~10–15% inverter loss on top. Add margin rather than sizing to the exact minimum.</p>
             </div>
 
-            <p class="affiliate-note">Some links below are affiliate links — if you buy through them, Moon Dog may earn a small commission at no extra cost to you. We only point to gear we'd actually use.</p>
+            
 
-            <div class="gear">
-                <h3>Gear this guide uses</h3>
-                <p class="gear-sub">The parts that turn your calculated bank size into a working off-grid setup.</p>
-                <ul>
-                    <li>A <a href="https://www.amazon.com/s?k=LiFePO4+battery+12V&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-watt">LiFePO4 battery</a> delivers the deep usable capacity (80–100% DoD) the example assumes.</li>
-                    <li>An <a href="https://www.amazon.com/s?k=pure+sine+wave+inverter&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-watt">inverter</a> sized for your AC loads, remembering the ~10–15% conversion loss noted above.</li>
-                    <li>An <a href="https://www.amazon.com/s?k=MPPT+solar+charge+controller&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-watt">MPPT charge controller</a> to refill the bank efficiently from your panels.</li>
-                </ul>
+            
+
+            
             </div>
 
-            <div class="cta">
-                <h3>Watt does this for your exact build</h3>
-                <p>Enter your devices, voltage, battery chemistry, and desired autonomy — Watt returns the rated bank size, the matching solar array, and charge-controller and wire-gauge picks, with every assumption shown. For van, RV, and off-grid systems. Free to download.</p>
-                <p><a class="store" href="https://apps.apple.com/app/id6777471058">Get Watt on the App Store</a></p>
-            </div>
+    <div class="gg-gear" id="gear">
+      <h2>Gear this guide uses</h2>
+      <p class="intro">The parts that turn your calculated bank size into a working off-grid setup.</p>
+      <div class="gg-gear-list">
+        <a class="gg-gear-item" href="https://www.amazon.com/s?k=LiFePO4+battery+12V&tag=moondogapps-20" target="_blank" rel="noopener sponsored" data-goatcounter-click="aff-watt">
+          <span class="mark">◇</span>
+          <span class="gbody"><span class="name">LiFePO4 battery</span><span class="desc">A delivers the deep usable capacity (80–100% DoD) the example assumes</span></span>
+          <span class="cta">View →</span>
+        </a>
+        <a class="gg-gear-item" href="https://www.amazon.com/s?k=pure+sine+wave+inverter&tag=moondogapps-20" target="_blank" rel="noopener sponsored" data-goatcounter-click="aff-watt">
+          <span class="mark">◇</span>
+          <span class="gbody"><span class="name">inverter</span><span class="desc">An sized for your AC loads, remembering the ~10–15% conversion loss noted above</span></span>
+          <span class="cta">View →</span>
+        </a>
+        <a class="gg-gear-item" href="https://www.amazon.com/s?k=MPPT+solar+charge+controller&tag=moondogapps-20" target="_blank" rel="noopener sponsored" data-goatcounter-click="aff-watt">
+          <span class="mark">◇</span>
+          <span class="gbody"><span class="name">MPPT charge controller</span><span class="desc">An to refill the bank efficiently from your panels</span></span>
+          <span class="cta">View →</span>
+        </a>
+      </div>
+      <p class="gg-disclosure">Some links below are affiliate links — if you buy through them, Moon Dog may earn a small commission at no extra cost to you. We only point to gear we'd actually use.</p>
+    </div>
 
-            <p class="related">Related: <a href="how-many-solar-panels-rv-van-off-grid.html">How many solar panels do I need?</a></p>
+    <div class="gg-appcta">
+      <div class="abody"><img src="/assets/icons/watt.png" alt="">
+        <div>
+          <div class="ey">The app for this</div>
+          <div class="t">Watt does this for your exact build</div>
+          <div class="s">Enter your devices, voltage, battery chemistry, and desired autonomy — Watt returns the rated bank size, the matching solar array, and charge-controller and wire-gauge picks, with every assumption shown. For van, RV, and off-grid systems. Free to download.</div>
+        </div>
+      </div>
+      <a class="btn" href="https://apps.apple.com/app/id6777471058">Get Watt on the App Store</a>
+    </div>
+    <div class="gg-related">
+      <div class="label">Related</div>
+      <div class="gg-chips">
+        <a class="gg-chip" href="https://moondogapps.com/watt/how-many-solar-panels-rv-van-off-grid.html">How many solar panels do I need?</a>
+      </div>
+    </div>
 
-            <div class="sources">
-                <h2>Sources</h2>
-                <ul>
-                    <li>Battery manufacturer cycle-life vs. depth-of-discharge data (LiFePO4 and lead-acid)</li>
-                    <li>Standard off-grid system-design practice (autonomy and derating factors)</li>
-                </ul>
-                <p>Cycle life and safe DoD vary by manufacturer — follow your battery's datasheet for its rated limits.</p>
-            </div>
-        </article>
-        <footer>
-            <p>Contact: <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a></p>
-        </footer>
-    </main>
+    <div class="gg-sources" id="sources">
+      <h2>Sources</h2>
+      <div class="gg-src-list">
+        <div class="gg-src"><span>Battery manufacturer cycle-life vs. depth-of-discharge data (LiFePO4 and lead-acid)</span></div>
+        <div class="gg-src"><span>Standard off-grid system-design practice (autonomy and derating factors)</span></div>
+      </div>
+      <p class="gg-note">Cycle life and safe DoD vary by manufacturer — follow your battery's datasheet for its rated limits.</p>
+    </div>
+
+  </article>
+</main>
+
+<footer class="gg-footer">
+  <div class="inner">
+    <span class="fine">© 2026 Moondog Software · Free to try, pay once. No subscriptions, no ads.</span>
+    <a href="mailto:roman.kopaliani@gmail.com">Contact</a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var bar = document.getElementById('ggProgress');
+    if(!bar) return;
+    function upd(){
+      var h = document.documentElement;
+      var max = h.scrollHeight - h.clientHeight;
+      var p = max > 0 ? Math.min(1, Math.max(0, (window.scrollY || h.scrollTop) / max)) : 0;
+      bar.style.width = (p * 100).toFixed(1) + '%';
+    }
+    window.addEventListener('scroll', upd, { passive: true });
+    window.addEventListener('resize', upd);
+    upd();
+  })();
+</script>
 </body>
 </html>

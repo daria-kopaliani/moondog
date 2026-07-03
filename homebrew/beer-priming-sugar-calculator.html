@@ -13,23 +13,53 @@
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"TechArticle","headline":"Beer priming sugar calculator — the bottle-conditioning math","description":"How much priming sugar to add when bottling home brew: corn sugar by target CO2 volumes and batch size, with a worked five-gallon example and a quick reference table.","url":"https://moondogapps.com/homebrew/beer-priming-sugar-calculator.html","inLanguage":"en","datePublished":"2026-06-26","author":{"@type":"Organization","name":"Moon Dog"},"publisher":{"@type":"Organization","name":"Moon Dog"}}
     </script>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/assets/guides.css">
     <script data-goatcounter="https://moondog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
-<body>
-    <main>
-        <article>
-            <header>
-                <p><a href="../">← Moon Dog</a> · <a href="./">Home Brewing Guides</a></p>
-                <h1>Beer priming sugar calculator</h1>
-                <p class="article-meta">How much priming sugar to add at bottling for your target CO₂ volumes and batch size — with a worked example and a reference table.</p>
-            </header>
+<body class="gg">
+
+<div class="gg-progress" id="ggProgress"></div>
+
+<main class="gg-article">
+
+  <div class="gg-crumb">
+    <a href="https://moondogapps.com/">Moon Dog</a>
+    <span class="sep">/</span>
+    <a class="accent" href="https://moondogapps.com/homebrew/">Home Brewing Guides</a>
+  </div>
+
+  <article class="gg-sheet">
+
+    <div class="gg-eyebrow">Home Brewing</div>
+    <h1 class="gg-h1">Beer priming sugar calculator</h1>
+    <div class="gg-meta">
+      <span>Updated 2026</span>
+      <span class="dot"></span>
+      <span>4 min read</span>
+    </div>
+
+    <p class="gg-lede">How much priming sugar to add at bottling for your target CO₂ volumes and batch size — with a worked example and a reference table.</p>
+
+    <nav class="gg-toc">
+      <div class="label">On this page</div>
+      <div class="gg-toc-list">
+        <a href="#what-volumes-of-co-means"><span class="num">01</span>What "volumes of CO₂" means</a>
+        <a href="#the-dosing-rule-corn-sugar"><span class="num">02</span>The dosing rule (corn sugar)</a>
+        <a href="#worked-example-5-gallons-to-2-5-volumes"><span class="num">03</span>Worked example: 5 gallons to 2.5 volumes</a>
+        <a href="#quick-reference-corn-sugar-for-a-5-gallo"><span class="num">04</span>Quick reference: corn sugar for a 5-gallon batch</a>
+        <a href="#gear"><span class="num">05</span>Gear this guide uses</a>
+        <a href="#sources"><span class="num">06</span>Sources</a>
+      </div>
+    </nav>
+
+    <div class="gg-prose">
+
 
             <p>Bottle conditioning is how home brew gets its fizz: you add a small, measured dose of sugar at bottling, the leftover yeast eats it, and the CO₂ they produce is trapped in the sealed bottle. Too little sugar and the beer is flat; too much and you risk gushers — or, at the extreme, bottle bombs. So this isn't a step to eyeball. The good news: the math is simple, and it hinges on two numbers — how carbonated you want the beer (in "volumes" of CO₂) and how much beer you're bottling.</p>
 
-            <p class="affiliate-note">Some links below are affiliate links — if you buy through them, Moon Dog may earn a small commission at no extra cost to you. We only point to gear we'd actually use.</p>
+            
 
-            <h2>What "volumes of CO₂" means</h2>
+            <h2 id="what-volumes-of-co-means">What "volumes of CO₂" means</h2>
             <p>One "volume" of CO₂ is one liter of dissolved CO₂ per liter of beer. Different styles want different levels:</p>
             <ul>
                 <li><strong>British ales:</strong> ~1.5–2.2 volumes (gentle)</li>
@@ -38,13 +68,13 @@
             </ul>
             <p>Most first batches land happily around <strong>2.4–2.5 volumes</strong> — a clean, pub-style fizz.</p>
 
-            <h2>The dosing rule (corn sugar)</h2>
+            <h2 id="the-dosing-rule-corn-sugar">The dosing rule (corn sugar)</h2>
             <p>Corn sugar (dextrose) is the standard reference priming sugar. The widely used figure — matching Palmer's tables — is about <strong>4 grams of corn sugar per liter of beer, per volume of CO₂</strong> you want to <em>add</em>. (More precisely ~3.9–4.2 g/L; we'll use 4.0 g/L for clean arithmetic.) The catch is the words "to add": your beer already holds some residual CO₂ left over from fermentation — roughly <strong>0.8–1.0 volumes</strong> for a beer fermented at typical ale temperatures. So you only prime for the gap between your target and what's already in there.</p>
             <p>The formula:</p>
             <p style="text-align:center"><strong>grams of corn sugar = 4.0 × (target volumes − residual volumes) × liters of beer</strong></p>
             <p>Table sugar (sucrose) is a touch more potent — use about <strong>91%</strong> of the corn-sugar weight. Dry malt extract (DME) is weaker — use about <strong>1.5×</strong> the corn-sugar weight.</p>
 
-            <h2>Worked example: 5 gallons to 2.5 volumes</h2>
+            <h2 id="worked-example-5-gallons-to-2-5-volumes">Worked example: 5 gallons to 2.5 volumes</h2>
             <p>Say you've fermented a 5-gallon (≈18.9 L) American pale ale at 68°F and you want 2.5 volumes of CO₂.</p>
             <ul>
                 <li>Residual CO₂ at ~68°F ≈ <strong>0.9 volumes</strong></li>
@@ -53,49 +83,107 @@
             </ul>
             <p>If you only had table sugar: 121 × 0.91 ≈ <strong>110 g</strong>. With DME: 121 × 1.5 ≈ <strong>182 g</strong>. Dissolve the sugar in ~1–2 cups of boiling water, cool it, and gently mix it into the bottling bucket <em>before</em> you rack the beer in — even distribution is what keeps every bottle equally carbonated.</p>
 
-            <h2>Quick reference: corn sugar for a 5-gallon batch</h2>
+            <h2 id="quick-reference-corn-sugar-for-a-5-gallo">Quick reference: corn sugar for a 5-gallon batch</h2>
             <p>Assuming ~0.9 residual volumes (ale fermented near 68°F) and 18.9 L of beer:</p>
-            <table>
-                <thead><tr><th>Target CO₂ (volumes)</th><th>Style feel</th><th class="num">Corn sugar</th></tr></thead>
+                </div>
+    <div class="gg-table-wrap">
+      <table class="gg-table">
+                <thead><tr><th>Target CO₂ (volumes)</th><th>Style feel</th><th>Corn sugar</th></tr></thead>
                 <tbody>
-                    <tr><td>2.0</td><td>British ale</td><td class="num">~83 g (2.9 oz)</td></tr>
-                    <tr><td>2.2</td><td>Mild / porter</td><td class="num">~98 g (3.5 oz)</td></tr>
-                    <tr><td>2.4</td><td>Standard ale</td><td class="num">~113 g (4.0 oz)</td></tr>
-                    <tr><td>2.6</td><td>American ale</td><td class="num">~129 g (4.5 oz)</td></tr>
-                    <tr><td>3.0</td><td>Wheat / Belgian</td><td class="num">~159 g (5.6 oz)</td></tr>
+                    <tr><td>2.0</td><td>British ale</td><td class="strong">~83 g (2.9 oz)</td></tr>
+                    <tr><td>2.2</td><td>Mild / porter</td><td class="strong">~98 g (3.5 oz)</td></tr>
+                    <tr><td>2.4</td><td>Standard ale</td><td class="strong">~113 g (4.0 oz)</td></tr>
+                    <tr><td>2.6</td><td>American ale</td><td class="strong">~129 g (4.5 oz)</td></tr>
+                    <tr><td>3.0</td><td>Wheat / Belgian</td><td class="strong">~159 g (5.6 oz)</td></tr>
                 </tbody>
             </table>
+    </div>
+    <div class="gg-prose">
+
             <p>Scale linearly for other batch sizes (for a 2.5-gallon batch, halve the numbers). And weigh the sugar — a kitchen scale beats the "5 oz per batch" folk wisdom, which ignores both your target and your residual CO₂.</p>
 
-            <div class="callout">
+                </div>
+    <div class="gg-note-card">
                 <strong>Two safety rules.</strong>
                 <p>First, confirm fermentation is <em>finished</em> before bottling — take a stable hydrometer reading on two consecutive days. Priming on top of unfinished fermentation is how you get bottle bombs. Second, measure the sugar by weight, not by eye; "a scoop" is exactly how over-carbonation happens. Then give bottles ~2 weeks at room temperature to condition before you chill and taste.</p>
             </div>
-            <div class="gear">
-                <h3>Gear this guide uses</h3>
-                <p class="gear-sub">To prime accurately you need the sugar, a scale, and a way to confirm fermentation is done.</p>
-                <ul>
-                    <li><a href="https://www.amazon.com/s?k=corn+sugar+priming+sugar+dextrose&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-homebrew">Corn sugar (dextrose) priming sugar</a> — the reference priming sugar this math is built on.</li>
-                    <li>A <a href="https://www.amazon.com/s?k=small+digital+gram+scale&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-homebrew">small digital gram scale</a> — weigh the dose; don't eyeball it.</li>
-                    <li>A <a href="https://www.amazon.com/s?k=triple+scale+hydrometer+brewing+test+jar&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-homebrew">hydrometer and test jar</a> — confirm fermentation is finished before you bottle.</li>
-                </ul>
-            </div>
 
-            <p class="related">Related: <a href="best-home-brewing-equipment.html">The best home brewing equipment (2026)</a> · <a href="extract-vs-all-grain-brewing.html">Extract vs all-grain brewing</a> · <a href="./">All home brewing guides</a></p>
+    <div class="gg-gear" id="gear">
+      <h2>Gear this guide uses</h2>
+      <p class="intro">To prime accurately you need the sugar, a scale, and a way to confirm fermentation is done.</p>
+      <div class="gg-gear-list">
+        <a class="gg-gear-item" href="https://www.amazon.com/s?k=corn+sugar+priming+sugar+dextrose&tag=moondogapps-20" target="_blank" rel="noopener sponsored" data-goatcounter-click="aff-homebrew">
+          <span class="mark">◇</span>
+          <span class="gbody"><span class="name">Corn sugar (dextrose) priming sugar</span><span class="desc">the reference priming sugar this math is built on</span></span>
+          <span class="cta">View →</span>
+        </a>
+        <a class="gg-gear-item" href="https://www.amazon.com/s?k=small+digital+gram+scale&tag=moondogapps-20" target="_blank" rel="noopener sponsored" data-goatcounter-click="aff-homebrew">
+          <span class="mark">◇</span>
+          <span class="gbody"><span class="name">small digital gram scale</span><span class="desc">A — weigh the dose; don&#x27;t eyeball it</span></span>
+          <span class="cta">View →</span>
+        </a>
+        <a class="gg-gear-item" href="https://www.amazon.com/s?k=triple+scale+hydrometer+brewing+test+jar&tag=moondogapps-20" target="_blank" rel="noopener sponsored" data-goatcounter-click="aff-homebrew">
+          <span class="mark">◇</span>
+          <span class="gbody"><span class="name">hydrometer and test jar</span><span class="desc">A — confirm fermentation is finished before you bottle</span></span>
+          <span class="cta">View →</span>
+        </a>
+      </div>
+      <p class="gg-disclosure">Some links below are affiliate links — if you buy through them, Moon Dog may earn a small commission at no extra cost to you. We only point to gear we'd actually use.</p>
+    </div>
 
-            <div class="sources">
-                <h2>Sources</h2>
-                <ul>
-                    <li>John Palmer, <em>How to Brew</em> — corn-sugar priming reference (~4 g/L per volume) and residual-CO₂ guidance</li>
-                    <li><a href="https://www.brewersfriend.com/beer-priming-calculator/">Brewer's Friend priming calculator</a> — volumes, temperature, and sugar-type conversions</li>
-                    <li><a href="https://www.northernbrewer.com/pages/priming-sugar-calculator">Northern Brewer priming sugar calculator</a> — corn sugar vs table sugar vs DME factors</li>
-                </ul>
-                <p>General guidance, not a substitute for your own readings. Residual CO₂ depends on your fermentation temperature, so treat these as close estimates and round conservatively. Bottle conditioning relies on live yeast and sealed bottles — and as with every step, sanitation is the #1 beginner failure: sanitize bottles, caps, and the bottling bucket before filling.</p>
-            </div>
-        </article>
-        <footer>
-            <p>Contact: <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a></p>
-        </footer>
-    </main>
+    <div class="gg-appcta">
+      <div class="abody">
+        <div>
+          <div class="ey">From Moon Dog</div>
+          <div class="t">Precise little calculators for makers.</div>
+          <div class="s">30 single-purpose apps. Pay once — no subscriptions, no ads.</div>
+        </div>
+      </div>
+      <a class="btn" href="https://moondogapps.com/#apps">Browse apps</a>
+    </div>
+    <div class="gg-related">
+      <div class="label">Related</div>
+      <div class="gg-chips">
+        <a class="gg-chip" href="https://moondogapps.com/homebrew/best-home-brewing-equipment.html">The best home brewing equipment (2026)</a>
+        <a class="gg-chip" href="https://moondogapps.com/homebrew/extract-vs-all-grain-brewing.html">Extract vs all-grain brewing</a>
+        <a class="gg-chip" href="https://moondogapps.com/homebrew/">All home brewing guides</a>
+      </div>
+    </div>
+
+    <div class="gg-sources" id="sources">
+      <h2>Sources</h2>
+      <div class="gg-src-list">
+        <div class="gg-src"><span>John Palmer, <em>How to Brew</em> — corn-sugar priming reference (~4 g/L per volume) and residual-CO₂ guidance</span></div>
+        <div class="gg-src"><a href="https://www.brewersfriend.com/beer-priming-calculator/" target="_blank" rel="noopener">Brewer's Friend priming calculator</a><span> — volumes, temperature, and sugar-type conversions</span></div>
+        <div class="gg-src"><a href="https://www.northernbrewer.com/pages/priming-sugar-calculator" target="_blank" rel="noopener">Northern Brewer priming sugar calculator</a><span> — corn sugar vs table sugar vs DME factors</span></div>
+      </div>
+      <p class="gg-note">General guidance, not a substitute for your own readings. Residual CO₂ depends on your fermentation temperature, so treat these as close estimates and round conservatively. Bottle conditioning relies on live yeast and sealed bottles — and as with every step, sanitation is the #1 beginner failure: sanitize bottles, caps, and the bottling bucket before filling.</p>
+    </div>
+
+  </article>
+</main>
+
+<footer class="gg-footer">
+  <div class="inner">
+    <span class="fine">© 2026 Moondog Software · Free to try, pay once. No subscriptions, no ads.</span>
+    <a href="mailto:roman.kopaliani@gmail.com">Contact</a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var bar = document.getElementById('ggProgress');
+    if(!bar) return;
+    function upd(){
+      var h = document.documentElement;
+      var max = h.scrollHeight - h.clientHeight;
+      var p = max > 0 ? Math.min(1, Math.max(0, (window.scrollY || h.scrollTop) / max)) : 0;
+      bar.style.width = (p * 100).toFixed(1) + '%';
+    }
+    window.addEventListener('scroll', upd, { passive: true });
+    window.addEventListener('resize', upd);
+    upd();
+  })();
+</script>
 </body>
 </html>

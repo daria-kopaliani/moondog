@@ -13,22 +13,52 @@
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"TechArticle","headline":"Sizing a well pump: total dynamic head","description":"What total dynamic head is, the four components that make it up — drawdown, lift, pressure, and friction — and how TDH and flow together pick a pump.","url":"https://moondogapps.com/well/well-pump-tdh-sizing.html","inLanguage":"en","datePublished":"2026-06-12","author":{"@type":"Organization","name":"Moon Dog"},"publisher":{"@type":"Organization","name":"Moon Dog"}}
     </script>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/assets/guides.css">
     <script data-goatcounter="https://moondog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
-<body>
-    <main>
-        <article>
-            <header>
-                <p><a href="../">← Moon Dog</a> · <a href="./">Off-Grid Water Guides</a></p>
-                <h1>Sizing a well pump: total dynamic head</h1>
-                <p class="article-meta">A pump is chosen by two numbers — the flow you need and the head it must overcome.</p>
-            </header>
+<body class="gg">
+
+<div class="gg-progress" id="ggProgress"></div>
+
+<main class="gg-article">
+
+  <div class="gg-crumb">
+    <a href="https://moondogapps.com/">Moon Dog</a>
+    <span class="sep">/</span>
+    <a class="accent" href="https://moondogapps.com/well/">Off-Grid Water Guides</a>
+  </div>
+
+  <article class="gg-sheet">
+
+    <div class="gg-eyebrow">Off-Grid Water</div>
+    <h1 class="gg-h1">Sizing a well pump: total dynamic head</h1>
+    <div class="gg-meta">
+      <span>Updated 2026</span>
+      <span class="dot"></span>
+      <span>3 min read</span>
+    </div>
+
+    <p class="gg-lede">A pump is chosen by two numbers — the flow you need and the head it must overcome.</p>
+
+    <nav class="gg-toc">
+      <div class="label">On this page</div>
+      <div class="gg-toc-list">
+        <a href="#the-four-components-of-tdh"><span class="num">01</span>The four components of TDH</a>
+        <a href="#why-drawdown-matters"><span class="num">02</span>Why drawdown matters</a>
+        <a href="#gear"><span class="num">03</span>Gear this guide uses</a>
+        <a href="#sources"><span class="num">04</span>Sources</a>
+      </div>
+    </nav>
+
+    <div class="gg-prose">
+
 
             <p>"What size pump do I need?" can't be answered by horsepower alone. Pumps are selected from a curve that pairs flow rate (gallons per minute) with <strong>total dynamic head (TDH)</strong> — the total resistance, expressed in feet, the pump must push against. Get TDH wrong and you either starve your fixtures or burn out an oversized pump.</p>
 
-            <h2>The four components of TDH</h2>
-            <table>
+            <h2 id="the-four-components-of-tdh">The four components of TDH</h2>
+                </div>
+    <div class="gg-table-wrap">
+      <table class="gg-table">
                 <thead><tr><th>Component</th><th>What it is</th></tr></thead>
                 <tbody>
                     <tr><td>Pumping water level (lift)</td><td>Depth to the water while pumping — the static level plus drawdown as the pump runs</td></tr>
@@ -37,53 +67,108 @@
                     <tr><td>Friction loss</td><td>Resistance from pipe length, diameter, fittings, and flow rate</td></tr>
                 </tbody>
             </table>
+    </div>
+    <div class="gg-prose">
+
             <p>Add them up and you have TDH:</p>
             <p style="text-align:center"><strong>TDH = pumping level + elevation lift + pressure head + friction loss</strong></p>
 
-            <h2>Why drawdown matters</h2>
+            <h2 id="why-drawdown-matters">Why drawdown matters</h2>
             <p>The water level in a well <em>drops</em> while you pump — that's drawdown. You must size to the <strong>pumping</strong> water level, not the resting level, or the pump will be undersized once it's actually running. A well that sits at 80 ft static but draws down to 140 ft while pumping has a 140 ft lift component, not 80.</p>
 
-            <div class="callout">
+                </div>
+    <div class="gg-note-card">
                 <p><strong>Pressure converts at 2.31 ft per psi.</strong> Want 50 psi at the tank? That's about 115 ft of head on its own. Pressure is often the most overlooked chunk of TDH for people sizing by depth alone.</p>
             </div>
+    <div class="gg-prose">
+
 
             <div class="callout warn">
                 <strong>Friction loss climbs fast with flow and thin pipe.</strong>
                 <p>Push more GPM through undersized pipe and friction loss can dominate TDH on a long run. The fix is usually larger-diameter drop pipe — not a bigger pump fighting the restriction.</p>
             </div>
 
-            <p class="affiliate-note">Some links below are affiliate links — if you buy through them, Moon Dog may earn a small commission at no extra cost to you. We only point to gear we'd actually use.</p>
+            
 
-            <div class="gear">
-                <h3>Gear this guide uses</h3>
-                <p class="gear-sub">Once you have your TDH and flow, these are the parts you select against the pump curve.</p>
-                <ul>
-                    <li>A <a href="https://www.amazon.com/s?k=submersible+well+pump&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-well">well pump</a> picked for your flow and TDH operating point — not by horsepower alone.</li>
-                    <li>A <a href="https://www.amazon.com/s?k=well+pressure+tank&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-well">pressure tank</a> sized to your target pressure to cut pump cycling.</li>
-                    <li>Larger-diameter <a href="https://www.amazon.com/s?k=well+drop+pipe&tag=moondogapps-20" rel="sponsored" data-goatcounter-click="aff-well">drop pipe</a> is often the real fix for friction loss on a long run.</li>
-                </ul>
+            
+
+            
             </div>
 
-            <div class="cta">
-                <h3>Well computes TDH from your system</h3>
-                <p>Enter your pumping level, lift, pressure, pipe, and target flow and Well returns the TDH and the operating point to match against a pump curve — with sizing math drawn from extension and standards sources. Free to download.</p>
-                <p><a class="store" href="https://apps.apple.com/app/id6778885751">Get Well on the App Store</a></p>
-            </div>
+    <div class="gg-gear" id="gear">
+      <h2>Gear this guide uses</h2>
+      <p class="intro">Once you have your TDH and flow, these are the parts you select against the pump curve.</p>
+      <div class="gg-gear-list">
+        <a class="gg-gear-item" href="https://www.amazon.com/s?k=submersible+well+pump&tag=moondogapps-20" target="_blank" rel="noopener sponsored" data-goatcounter-click="aff-well">
+          <span class="mark">◇</span>
+          <span class="gbody"><span class="name">well pump</span><span class="desc">A picked for your flow and TDH operating point — not by horsepower alone</span></span>
+          <span class="cta">View →</span>
+        </a>
+        <a class="gg-gear-item" href="https://www.amazon.com/s?k=well+pressure+tank&tag=moondogapps-20" target="_blank" rel="noopener sponsored" data-goatcounter-click="aff-well">
+          <span class="mark">◇</span>
+          <span class="gbody"><span class="name">pressure tank</span><span class="desc">A sized to your target pressure to cut pump cycling</span></span>
+          <span class="cta">View →</span>
+        </a>
+        <a class="gg-gear-item" href="https://www.amazon.com/s?k=well+drop+pipe&tag=moondogapps-20" target="_blank" rel="noopener sponsored" data-goatcounter-click="aff-well">
+          <span class="mark">◇</span>
+          <span class="gbody"><span class="name">drop pipe</span><span class="desc">Larger-diameter is often the real fix for friction loss on a long run</span></span>
+          <span class="cta">View →</span>
+        </a>
+      </div>
+      <p class="gg-disclosure">Some links below are affiliate links — if you buy through them, Moon Dog may earn a small commission at no extra cost to you. We only point to gear we'd actually use.</p>
+    </div>
 
-            <p class="related">Related: <a href="uv-water-disinfection-dose-nsf-55.html">UV disinfection dose for well water (NSF/ANSI 55)</a> · <a href="../guides/best-water-test-kits.html">Best at-home water test kits (2026)</a></p>
+    <div class="gg-appcta">
+      <div class="abody"><img src="/assets/icons/well.png" alt="">
+        <div>
+          <div class="ey">The app for this</div>
+          <div class="t">Well computes TDH from your system</div>
+          <div class="s">Enter your pumping level, lift, pressure, pipe, and target flow and Well returns the TDH and the operating point to match against a pump curve — with sizing math drawn from extension and standards sources. Free to download.</div>
+        </div>
+      </div>
+      <a class="btn" href="https://apps.apple.com/app/id6778885751">Get Well on the App Store</a>
+    </div>
+    <div class="gg-related">
+      <div class="label">Related</div>
+      <div class="gg-chips">
+        <a class="gg-chip" href="https://moondogapps.com/well/uv-water-disinfection-dose-nsf-55.html">UV disinfection dose for well water (NSF/ANSI 55)</a>
+        <a class="gg-chip" href="https://moondogapps.com/guides/best-water-test-kits.html">Best at-home water test kits (2026)</a>
+      </div>
+    </div>
 
-            <div class="sources">
-                <h2>Sources</h2>
-                <ul>
-                    <li>Penn State Extension (B. Swistock) — private water wells and pump systems</li>
-                    <li>USDA NRCS Conservation Practice Standard 642 (water well) and standard hydraulics references</li>
-                </ul>
-                <p>Sizing math is a planning aid; have a licensed well/pump professional review your design.</p>
-            </div>
-        </article>
-        <footer>
-            <p>Contact: <a href="mailto:roman.kopaliani@gmail.com">roman.kopaliani@gmail.com</a></p>
-        </footer>
-    </main>
+    <div class="gg-sources" id="sources">
+      <h2>Sources</h2>
+      <div class="gg-src-list">
+        <div class="gg-src"><span>Penn State Extension (B. Swistock) — private water wells and pump systems</span></div>
+        <div class="gg-src"><span>USDA NRCS Conservation Practice Standard 642 (water well) and standard hydraulics references</span></div>
+      </div>
+      <p class="gg-note">Sizing math is a planning aid; have a licensed well/pump professional review your design.</p>
+    </div>
+
+  </article>
+</main>
+
+<footer class="gg-footer">
+  <div class="inner">
+    <span class="fine">© 2026 Moondog Software · Free to try, pay once. No subscriptions, no ads.</span>
+    <a href="mailto:roman.kopaliani@gmail.com">Contact</a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var bar = document.getElementById('ggProgress');
+    if(!bar) return;
+    function upd(){
+      var h = document.documentElement;
+      var max = h.scrollHeight - h.clientHeight;
+      var p = max > 0 ? Math.min(1, Math.max(0, (window.scrollY || h.scrollTop) / max)) : 0;
+      bar.style.width = (p * 100).toFixed(1) + '%';
+    }
+    window.addEventListener('scroll', upd, { passive: true });
+    window.addEventListener('resize', upd);
+    upd();
+  })();
+</script>
 </body>
 </html>
