@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hydroponic Nutrient Chart for Vegetables (Printable PDF)</title>
+<style>
+    @page { size: letter portrait; margin: 14mm 12mm; }
+    * { box-sizing: border-box; }
+    html, body {
+        margin: 0; padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        color: #1a1a1a;
+        -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    }
+    .sheet { padding: 0; }
+    header {
+        border-bottom: 3px solid #e8e0c8;
+        padding-bottom: 10px; margin-bottom: 14px;
+    }
+    h1 { font-size: 19px; margin: 0 0 3px; letter-spacing: -0.01em; }
+    .sub { font-size: 11px; color: #555; margin: 0; }
+    .brand { float: right; font-size: 11px; color: #888; font-weight: 600; margin-top: 2px; }
+    table { border-collapse: collapse; width: 100%; font-size: 11px; margin: 0 0 10px; }
+    th, td { text-align: left; padding: 5px 7px; border-bottom: 1px solid #e5e5e5; }
+    thead th { background: #e8e0c8; border-bottom: 2px solid #d8cfae; font-weight: 700; }
+    td.num, th.num { text-align: right; white-space: nowrap; }
+    tbody tr:nth-child(even) { background: #faf8f0; }
+    .grp td { background: #f4efe0; font-weight: 700; font-size: 10.5px; padding: 4px 7px; }
+    .notes { font-size: 10px; color: #444; line-height: 1.45; margin: 8px 0 6px; }
+    .notes strong { color: #1a1a1a; }
+    footer {
+        border-top: 1px solid #e5e5e5; margin-top: 10px; padding-top: 8px;
+        font-size: 9.5px; color: #777; line-height: 1.45;
+    }
+    footer a { color: #777; text-decoration: none; }
+    .src { font-weight: 600; color: #555; }
+</style>
+</head>
+<body>
+<div class="sheet">
+    <header>
+        <span class="brand">moondogapps.com</span>
+        <h1>Hydroponic Nutrient Chart for Vegetables — EC, ppm &amp; pH by Crop &amp; Stage</h1>
+        <p class="sub">Target EC, ppm (500 &amp; 700 scale) and pH by growth stage. Every row traces to published university controlled-environment research.</p>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Crop &amp; stage</th>
+                <th class="num">EC (mS/cm)</th>
+                <th class="num">ppm (500)</th>
+                <th class="num">ppm (700)</th>
+                <th class="num">pH</th>
+                <th>Source</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="grp"><td colspan="6">Leafy greens &amp; herbs</td></tr>
+            <tr><td>Lettuce — seedling</td><td class="num">0.8–1.2</td><td class="num">400–600</td><td class="num">560–840</td><td class="num">5.6–6.0</td><td>Cornell CEA</td></tr>
+            <tr><td>Lettuce — mature head</td><td class="num">1.4–1.8</td><td class="num">700–900</td><td class="num">980–1260</td><td class="num">5.6–6.0</td><td>Cornell CEA</td></tr>
+            <tr><td>Leafy greens — kale, chard, spinach, arugula</td><td class="num">1.2–1.8</td><td class="num">600–900</td><td class="num">840–1260</td><td class="num">5.8–6.2</td><td>Penn State</td></tr>
+            <tr><td>Basil</td><td class="num">1.4–1.8</td><td class="num">700–900</td><td class="num">980–1260</td><td class="num">5.5–6.0</td><td>Penn State</td></tr>
+            <tr><td>Leafy herbs — cilantro, parsley, mint, chives</td><td class="num">1.4–1.8</td><td class="num">700–900</td><td class="num">980–1260</td><td class="num">5.5–6.0</td><td>Penn State</td></tr>
+            <tr><td>Microgreens — all cultivars</td><td class="num">1.0–1.8</td><td class="num">500–900</td><td class="num">700–1260</td><td class="num">5.8–6.2</td><td>Produce Grower</td></tr>
+
+            <tr class="grp"><td colspan="6">Fruiting crops</td></tr>
+            <tr><td>Strawberry</td><td class="num">1.2–1.8</td><td class="num">600–900</td><td class="num">840–1260</td><td class="num">5.8–6.2</td><td>UF/IFAS</td></tr>
+            <tr><td>Pepper — bell &amp; chili</td><td class="num">1.8–2.4</td><td class="num">900–1200</td><td class="num">1260–1680</td><td class="num">5.8–6.2</td><td>Cornell CEA</td></tr>
+            <tr><td>Cucumber</td><td class="num">1.8–2.4</td><td class="num">900–1200</td><td class="num">1260–1680</td><td class="num">5.8–6.2</td><td>UF/IFAS</td></tr>
+            <tr><td>Tomato — seedling</td><td class="num">1.2–1.6</td><td class="num">600–800</td><td class="num">840–1120</td><td class="num">5.8–6.2</td><td>Penn State</td></tr>
+            <tr><td>Tomato — vegetative</td><td class="num">1.8–2.2</td><td class="num">900–1100</td><td class="num">1260–1540</td><td class="num">5.8–6.2</td><td>UF/IFAS</td></tr>
+            <tr><td>Tomato — fruit set</td><td class="num">2.2–2.8</td><td class="num">1100–1400</td><td class="num">1540–1960</td><td class="num">5.8–6.2</td><td>UF/IFAS</td></tr>
+        </tbody>
+    </table>
+
+    <p class="notes">
+        <strong>EC is the source value</strong> — the two ppm columns are just conversions: <strong>500 scale</strong> = EC × 500 (Hanna, Bluelab); <strong>700 scale</strong> = EC × 700 (Truncheon, HM Digital). The same solution reads a bigger number on the 700 scale, so match the column to your meter.
+        <strong>Run the low end early</strong> (young roots are salt-sensitive), raise EC through vegetative growth, and shift fruiting crops toward more potassium at fruit set. Subtract your source-water ppm before dosing. Most hydroponic vegetables and herbs feed best at pH <strong>5.5–6.5</strong>.
+    </p>
+
+    <footer>
+        <span class="src">Sources:</span> Cornell CEA (Mattson &amp; Lieth, <em>A Recipe for Hydroponic Success</em>) · Penn State Extension (hydroponics nutrient solutions) · UF/IFAS (hydroponic tomato, cucumber &amp; strawberry) · <em>Produce Grower</em> (commercial microgreens). Starting-point ranges — adjust to your cultivar, climate and system, and verify with your own measurements. &nbsp;·&nbsp; Free chart from <a href="https://moondogapps.com/crop/hydroponic-nutrient-targets-by-crop.html">moondogapps.com/crop</a> — © 2026 Moon Dog.
+    </footer>
+</div>
+</body>
+</html>
