@@ -36,12 +36,22 @@
   nav{display:flex;align-items:center;gap:6px;}
   nav a{padding:8px 14px;font-size:15px;font-weight:500;color:var(--text-secondary);border-radius:12px;}
 
-  .hero{padding-top:40px;padding-bottom:30px;}
-  .hero h1{font-family:var(--font-display);font-weight:800;font-size:clamp(38px,6vw,62px);line-height:1.02;letter-spacing:-1.8px;margin:0;max-width:15ch;}
-  .hero p{font-size:20px;line-height:1.45;color:var(--text-secondary);margin:20px 0 0;max-width:46ch;}
+  .hero{display:flex;flex-wrap:wrap;align-items:center;gap:40px 48px;padding-top:32px;padding-bottom:26px;}
+  .hero-copy{flex:1 1 400px;min-width:min(100%,340px);}
+  .hero h1{font-family:var(--font-display);font-weight:800;font-size:clamp(38px,5.4vw,58px);line-height:1.03;letter-spacing:-1.6px;margin:0;max-width:15ch;}
+  .hero p{font-size:19px;line-height:1.45;color:var(--text-secondary);margin:20px 0 0;max-width:48ch;}
+  .hero .pledge{font-size:16px;line-height:1.55;color:var(--text-secondary);margin:18px 0 0;max-width:48ch;}
+  .hero .pledge .payoff{display:block;margin-top:6px;color:var(--text-primary);font-weight:600;}
   .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;}
   .chip{display:inline-flex;align-items:center;gap:7px;padding:7px 14px 7px 12px;background:var(--surface-card);border:1px solid var(--border-weak);border-radius:9999px;font-size:14px;font-weight:500;}
   .chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);}
+
+  .cluster{flex:0 1 460px;align-self:center;position:relative;width:min(460px,86vw);aspect-ratio:460/452;margin:0 auto;}
+  .phone{position:absolute;border-radius:14%/6.4%;overflow:hidden;background:#0a0a0a;border:5px solid #0a0a0a;}
+  .phone img{display:block;width:100%;height:auto;}
+  .phone.p1{left:0%;top:10%;width:41%;z-index:1;transform:rotate(-9deg);box-shadow:0 0 0 1px rgba(255,255,255,.06), 0 20px 44px -14px rgba(18,18,18,.5);}
+  .phone.p2{left:59%;top:10%;width:41%;z-index:2;transform:rotate(9deg);box-shadow:0 0 0 1px rgba(255,255,255,.06), 0 20px 44px -14px rgba(18,18,18,.5);}
+  .phone.p3{left:29.5%;top:0%;width:41%;z-index:3;box-shadow:0 0 0 1px rgba(255,255,255,.06), 0 26px 50px -12px rgba(18,18,18,.55);}
 
   .filterbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--surface-bg) 82%,transparent);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid var(--border-weak);}
   .filterbar .row{display:flex;gap:8px;overflow-x:auto;padding-top:12px;padding-bottom:12px;scrollbar-width:none;}
@@ -54,14 +64,7 @@
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;padding-top:28px;padding-bottom:8px;}
   .card{display:flex;align-items:center;gap:15px;padding:16px;background:var(--surface-card);border:1px solid var(--border-weak);border-radius:16px;box-shadow:0 1px 3px rgba(0,0,0,.05);transition:transform .18s ease,box-shadow .18s ease;}
   .card:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.10);}
-  .tile{position:relative;flex:0 0 auto;width:60px;height:60px;border-radius:15px;overflow:hidden;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06);}
-  .tile span{position:relative;font-family:var(--font-display);font-weight:800;font-size:27px;color:#fff;letter-spacing:-1px;text-shadow:0 1px 2px rgba(0,0,0,.18);}
-  .t-water{background:linear-gradient(158deg,oklch(0.74 0.11 228),oklch(0.58 0.13 240));}
-  .t-food{background:linear-gradient(158deg,oklch(0.75 0.15 48),oklch(0.62 0.17 34));}
-  .t-grow{background:linear-gradient(158deg,oklch(0.75 0.13 150),oklch(0.60 0.14 155));}
-  .t-craft{background:linear-gradient(158deg,oklch(0.68 0.14 300),oklch(0.54 0.15 298));}
-  .t-health{background:linear-gradient(158deg,oklch(0.74 0.14 352),oklch(0.60 0.16 356));}
-  .t-home{background:linear-gradient(158deg,oklch(0.77 0.13 74),oklch(0.64 0.14 60));}
+  .ico{flex:0 0 auto;width:60px;height:60px;border-radius:15px;display:block;object-fit:cover;box-shadow:0 0 0 1px rgba(0,0,0,.06);}
   .meta{flex:1 1 auto;min-width:0;}
   .meta .top{display:flex;align-items:baseline;gap:8px;}
   .meta .name{font-family:var(--font-display);font-weight:700;font-size:17px;letter-spacing:-0.3px;}
@@ -95,7 +98,7 @@
 
 <div class="wrap">
   <header>
-    <a class="logo" href="/"><span class="moon"></span><span class="wordmark">Moon Dog</span></a>
+    <a class="logo" href="/"><span class="moon"></span><span class="wordmark">Moondog Software</span></a>
     <nav>
       <a href="#apps">Apps</a>
       <a href="https://moondogapps.com/guides/">Guides</a>
@@ -105,14 +108,22 @@
 
 <div class="wrap">
   <section class="hero">
-    <h1>Small, useful apps for hobbyists&nbsp;and&nbsp;makers.</h1>
-    <p>Single-purpose iOS calculators for the exact math your hobby needs — water chemistry, cooking, craft, and off-grid. No card up front. Nothing auto-charges. No "cancel before you're billed." Try free, then pay once — only if you want to keep it.</p>
-    <div class="chips">
-      <span class="chip">Free to try</span>
-      <span class="chip">No subscriptions</span>
-      <span class="chip">No ads</span>
-      <span class="chip">No account</span>
-      <span class="chip">Works offline</span>
+    <div class="hero-copy">
+      <h1>Small, useful apps for hobbyists&nbsp;and&nbsp;makers.</h1>
+      <p>Single-purpose iOS calculators for the exact math your hobby needs — water chemistry, cooking, craft, and off-grid.</p>
+      <p class="pledge">No card up front. Nothing ever charges automatically.<span class="payoff">Try free, then pay once — only if you want to keep it.</span></p>
+      <div class="chips">
+        <span class="chip">Free to try</span>
+        <span class="chip">No subscriptions</span>
+        <span class="chip">No ads</span>
+        <span class="chip">No account</span>
+        <span class="chip">Works offline</span>
+      </div>
+    </div>
+    <div class="cluster">
+      <div class="phone p1"><img src="assets/hero/reef-water.png" alt="Reef — aquarium chemistry app"></div>
+      <div class="phone p2"><img src="assets/hero/steam-health.png" alt="Steam — sauna dose calculator app"></div>
+      <div class="phone p3"><img src="assets/hero/crust-food.png" alt="Crust — pizza dough calculator app"></div>
     </div>
   </section>
 </div>
@@ -134,41 +145,36 @@
 <div class="wrap">
   <section>
     <div class="grid" id="grid">
-      <a class="card" data-cat="water" href="https://apps.apple.com/app/id6776702484" target="_blank" rel="noopener"><span class="tile t-water"><span>F</span></span><span class="meta"><span class="top"><span class="name">Frost</span><span class="sub">Cold Plunge Care</span></span><p>Chlorine or peroxide dosing for chiller or DIY plunges.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="water" href="https://apps.apple.com/app/id6775030424" target="_blank" rel="noopener"><span class="tile t-water"><span>S</span></span><span class="meta"><span class="top"><span class="name">Soak</span><span class="sub">Hot Tub Assistant</span></span><p>Chlorine and bromine dosing math for spas.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="water" href="https://apps.apple.com/app/id6776750986" target="_blank" rel="noopener"><span class="tile t-water"><span>R</span></span><span class="meta"><span class="top"><span class="name">Reef</span><span class="sub">Aquarium Chemistry</span></span><p>Calcium, alkalinity and magnesium reef dosing.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="water" href="https://apps.apple.com/app/id6778002026" target="_blank" rel="noopener"><span class="tile t-water"><span>A</span></span><span class="meta"><span class="top"><span class="name">Aquascape</span><span class="sub">Planted Tank Calc</span></span><p>EI, PPS-Pro, PMDD or custom fertilizer dosing.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="water" href="https://apps.apple.com/app/id6777459595" target="_blank" rel="noopener"><span class="tile t-water"><span>P</span></span><span class="meta"><span class="top"><span class="name">Pond</span><span class="sub">Koi Chemistry</span></span><p>KH, ammonia and nitrite corrective doses.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="water" href="https://apps.apple.com/app/id6777715538" target="_blank" rel="noopener"><span class="tile t-water"><span>S</span></span><span class="meta"><span class="top"><span class="name">Saline</span><span class="sub">Saltwater Pool Care</span></span><p>Salt, stabilizer and saturation index.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="water" href="https://apps.apple.com/app/id6778089301" target="_blank" rel="noopener"><span class="tile t-water"><span>S</span></span><span class="meta"><span class="top"><span class="name">Splash</span><span class="sub">Chlorine Pool Care</span></span><p>FC/CYA-aware targets and shock math.</p></span><span class="chev">&rsaquo;</span></a>
-
-      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6777995566" target="_blank" rel="noopener"><span class="tile t-food"><span>C</span></span><span class="meta"><span class="top"><span class="name">Crust</span><span class="sub">Pizza Dough Calc</span></span><p>Style-aware dough math and a cold-ferment backtimer.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6778791851" target="_blank" rel="noopener"><span class="tile t-food"><span>P</span></span><span class="meta"><span class="top"><span class="name">Press</span><span class="sub">Hard Cider Calc</span></span><p>Acidity and tannin balance, plus YAN nutrient math.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6777718532" target="_blank" rel="noopener"><span class="tile t-food"><span>S</span></span><span class="meta"><span class="top"><span class="name">Strip</span><span class="sub">USDA Jerky Safety</span></span><p>Kill-step temps and cure math, USDA-cited.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6778012488" target="_blank" rel="noopener"><span class="tile t-food"><span>S</span></span><span class="meta"><span class="top"><span class="name">Seal</span><span class="sub">Home Canning Safety</span></span><p>Altitude-aware USDA processing times and pressures.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6779727409" target="_blank" rel="noopener"><span class="tile t-food"><span>B</span></span><span class="meta"><span class="top"><span class="name">Bath</span><span class="sub">Sous Vide Cook &amp; Chill</span></span><p>Time, temp and safe cook-chill-reheat timing.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6779998482" target="_blank" rel="noopener"><span class="tile t-food"><span>C</span></span><span class="meta"><span class="top"><span class="name">Cure</span><span class="sub">Dehydrate &amp; Store</span></span><p>Drying times, conditioning and safe storage.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6779934934" target="_blank" rel="noopener"><span class="tile t-food"><span>C</span></span><span class="meta"><span class="top"><span class="name">Curd</span><span class="sub">Cheese Making Calc</span></span><p>Yield, rennet, culture and brine, with affinage.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6781295152" target="_blank" rel="noopener"><span class="tile t-food"><span>T</span></span><span class="meta"><span class="top"><span class="name">Tap</span><span class="sub">Draft Beer &amp; CO&#8322;</span></span><p>CO&#8322; volumes, line length and pour temperature.</p></span><span class="chev">&rsaquo;</span></a>
-
-      <a class="card" data-cat="grow" href="https://apps.apple.com/app/id6777968635" target="_blank" rel="noopener"><span class="tile t-grow"><span>C</span></span><span class="meta"><span class="top"><span class="name">Crop</span><span class="sub">Hydroponic Calc</span></span><p>Target ppm to salt weights, with EC/pH logging.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="grow" href="https://apps.apple.com/app/id6778854774" target="_blank" rel="noopener"><span class="tile t-grow"><span>F</span></span><span class="meta"><span class="top"><span class="name">Flush</span><span class="sub">Mushroom Cultivation</span></span><p>Substrate hydration, agar and spawn math.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="grow" href="https://apps.apple.com/app/id6784354608" target="_blank" rel="noopener"><span class="tile t-grow"><span>T</span></span><span class="meta"><span class="top"><span class="name">Turf</span><span class="sub">Lawn Care Calc</span></span><p>Nitrogen, seeding and weed-control rates by lawn size.</p></span><span class="chev">&rsaquo;</span></a>
-
-      <a class="card" data-cat="craft" href="https://apps.apple.com/app/id6778017216" target="_blank" rel="noopener"><span class="tile t-craft"><span>F</span></span><span class="meta"><span class="top"><span class="name">Flux</span><span class="sub">Glaze Chemistry</span></span><p>Live UMF and per-oxide limit warnings.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="craft" href="https://apps.apple.com/app/id6778435536" target="_blank" rel="noopener"><span class="tile t-craft"><span>T</span></span><span class="meta"><span class="top"><span class="name">Trace</span><span class="sub">Soap &amp; Lye Calc</span></span><p>SAP-based lye and water, superfat and cure tracker.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="craft" href="https://apps.apple.com/app/id6778773369" target="_blank" rel="noopener"><span class="tile t-craft"><span>H</span></span><span class="meta"><span class="top"><span class="name">Hide</span><span class="sub">Leathermaker's Calc</span></span><p>Saddle-stitch SPI, thread length and edge amounts.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="craft" href="https://apps.apple.com/app/id6777764715" target="_blank" rel="noopener"><span class="tile t-craft"><span>T</span></span><span class="meta"><span class="top"><span class="name">Temper</span><span class="sub">Knife Heat Treat</span></span><p>Quench and temper targets by steel type.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="craft" href="https://apps.apple.com/app/id6779728248" target="_blank" rel="noopener"><span class="tile t-craft"><span>W</span></span><span class="meta"><span class="top"><span class="name">Wick</span><span class="sub">Candle Maker's Calc</span></span><p>Wax and fragrance weights, wick sizing and cost.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="craft" href="https://apps.apple.com/app/id6781351285" target="_blank" rel="noopener"><span class="tile t-craft"><span>G</span></span><span class="meta"><span class="top"><span class="name">Groove</span><span class="sub">Turntable Setup</span></span><p>Cartridge alignment, tracking force and anti-skate.</p></span><span class="chev">&rsaquo;</span></a>
-
-      <a class="card" data-cat="health" href="https://apps.apple.com/app/id6779296866" target="_blank" rel="noopener"><span class="tile t-health"><span>L</span></span><span class="meta"><span class="top"><span class="name">Lumen</span><span class="sub">Red Light Calc</span></span><p>J/cm&#178; dosing by device and distance.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="health" href="https://apps.apple.com/app/id6779691750" target="_blank" rel="noopener"><span class="tile t-health"><span>M</span></span><span class="meta"><span class="top"><span class="name">Marker</span><span class="sub">Longevity Bloodwork</span></span><p>ApoB, Lp(a), hsCRP and HbA1c vs optimal ranges.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="health" href="https://apps.apple.com/app/id6779141940" target="_blank" rel="noopener"><span class="tile t-health"><span>S</span></span><span class="meta"><span class="top"><span class="name">Steam</span><span class="sub">Sauna Dose Calc</span></span><p>Temp and time targets by experience level.</p></span><span class="chev">&rsaquo;</span></a>
-
-      <a class="card" data-cat="home" href="https://apps.apple.com/app/id6777471058" target="_blank" rel="noopener"><span class="tile t-home"><span>W</span></span><span class="meta"><span class="top"><span class="name">Watt</span><span class="sub">Solar for Van &amp; RV</span></span><p>Battery, panel, wire gauge and fuse sizing.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="home" href="https://apps.apple.com/app/id6778885751" target="_blank" rel="noopener"><span class="tile t-home"><span>W</span></span><span class="meta"><span class="top"><span class="name">Well</span><span class="sub">Off-Grid Water Calc</span></span><p>Well drawdown, pump head and UV disinfection dose.</p></span><span class="chev">&rsaquo;</span></a>
-      <a class="card" data-cat="home" href="https://apps.apple.com/app/id6781259378" target="_blank" rel="noopener"><span class="tile t-home"><span>G</span></span><span class="meta"><span class="top"><span class="name">Garage</span><span class="sub">Car Care &amp; Log</span></span><p>Service intervals, fuel economy and reminders.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="water" href="https://apps.apple.com/app/id6776702484" target="_blank" rel="noopener"><img class="ico" src="assets/icons/frost.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Frost</span><span class="sub">Cold Plunge Care</span></span><p>Chlorine or peroxide dosing for chiller or DIY plunges.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="water" href="https://apps.apple.com/app/id6775030424" target="_blank" rel="noopener"><img class="ico" src="assets/icons/soak.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Soak</span><span class="sub">Hot Tub Assistant</span></span><p>Chlorine and bromine dosing math for spas.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="water" href="https://apps.apple.com/app/id6776750986" target="_blank" rel="noopener"><img class="ico" src="assets/icons/reef.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Reef</span><span class="sub">Aquarium Chemistry</span></span><p>Calcium, alkalinity and magnesium reef dosing.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="water" href="https://apps.apple.com/app/id6778002026" target="_blank" rel="noopener"><img class="ico" src="assets/icons/aquascape.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Aquascape</span><span class="sub">Planted Tank Calc</span></span><p>EI, PPS-Pro, PMDD or custom fertilizer dosing.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="water" href="https://apps.apple.com/app/id6777459595" target="_blank" rel="noopener"><img class="ico" src="assets/icons/pond.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Pond</span><span class="sub">Koi Chemistry</span></span><p>KH, ammonia and nitrite corrective doses.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="water" href="https://apps.apple.com/app/id6777715538" target="_blank" rel="noopener"><img class="ico" src="assets/icons/saline.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Saline</span><span class="sub">Saltwater Pool Care</span></span><p>Salt, stabilizer and saturation index.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="water" href="https://apps.apple.com/app/id6778089301" target="_blank" rel="noopener"><img class="ico" src="assets/icons/splash.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Splash</span><span class="sub">Chlorine Pool Care</span></span><p>FC/CYA-aware targets and shock math.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6777995566" target="_blank" rel="noopener"><img class="ico" src="assets/icons/crust.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Crust</span><span class="sub">Pizza Dough Calc</span></span><p>Style-aware dough math and a cold-ferment backtimer.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6778791851" target="_blank" rel="noopener"><img class="ico" src="assets/icons/press.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Press</span><span class="sub">Hard Cider Calc</span></span><p>Acidity and tannin balance, plus YAN nutrient math.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6777718532" target="_blank" rel="noopener"><img class="ico" src="assets/icons/strip.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Strip</span><span class="sub">USDA Jerky Safety</span></span><p>Kill-step temps and cure math, USDA-cited.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6778012488" target="_blank" rel="noopener"><img class="ico" src="assets/icons/seal.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Seal</span><span class="sub">Home Canning Safety</span></span><p>Altitude-aware USDA processing times and pressures.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6779727409" target="_blank" rel="noopener"><img class="ico" src="assets/icons/bath.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Bath</span><span class="sub">Sous Vide Cook & Chill</span></span><p>Time, temp and safe cook-chill-reheat timing.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6779998482" target="_blank" rel="noopener"><img class="ico" src="assets/icons/cure.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Cure</span><span class="sub">Dehydrate & Store</span></span><p>Drying times, conditioning and safe storage.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6779934934" target="_blank" rel="noopener"><img class="ico" src="assets/icons/curd.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Curd</span><span class="sub">Cheese Making Calc</span></span><p>Yield, rennet, culture and brine, with affinage.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="food" href="https://apps.apple.com/app/id6781295152" target="_blank" rel="noopener"><img class="ico" src="assets/icons/tap.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Tap</span><span class="sub">Draft Beer &amp; CO₂</span></span><p>CO₂ volumes, line length and pour temperature.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="grow" href="https://apps.apple.com/app/id6777968635" target="_blank" rel="noopener"><img class="ico" src="assets/icons/crop.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Crop</span><span class="sub">Hydroponic Calc</span></span><p>Target ppm to salt weights, with EC/pH logging.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="grow" href="https://apps.apple.com/app/id6778854774" target="_blank" rel="noopener"><img class="ico" src="assets/icons/flush.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Flush</span><span class="sub">Mushroom Cultivation</span></span><p>Substrate hydration, agar and spawn math.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="grow" href="https://apps.apple.com/app/id6784354608" target="_blank" rel="noopener"><img class="ico" src="assets/icons/turf.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Turf</span><span class="sub">Lawn Care Calc</span></span><p>Nitrogen, seeding and weed-control rates by lawn size.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="craft" href="https://apps.apple.com/app/id6778017216" target="_blank" rel="noopener"><img class="ico" src="assets/icons/flux.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Flux</span><span class="sub">Glaze Chemistry</span></span><p>Live UMF and per-oxide limit warnings.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="craft" href="https://apps.apple.com/app/id6778435536" target="_blank" rel="noopener"><img class="ico" src="assets/icons/trace.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Trace</span><span class="sub">Soap &amp; Lye Calc</span></span><p>SAP-based lye and water, superfat and cure tracker.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="craft" href="https://apps.apple.com/app/id6778773369" target="_blank" rel="noopener"><img class="ico" src="assets/icons/hide.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Hide</span><span class="sub">Leathermaker's Calc</span></span><p>Saddle-stitch SPI, thread length and edge amounts.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="craft" href="https://apps.apple.com/app/id6777764715" target="_blank" rel="noopener"><img class="ico" src="assets/icons/temper.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Temper</span><span class="sub">Knife Heat Treat</span></span><p>Quench and temper targets by steel type.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="craft" href="https://apps.apple.com/app/id6779728248" target="_blank" rel="noopener"><img class="ico" src="assets/icons/wick.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Wick</span><span class="sub">Candle Maker's Calc</span></span><p>Wax and fragrance weights, wick sizing and cost.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="craft" href="https://apps.apple.com/app/id6781351285" target="_blank" rel="noopener"><img class="ico" src="assets/icons/groove.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Groove</span><span class="sub">Turntable Setup</span></span><p>Cartridge alignment, tracking force and anti-skate.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="health" href="https://apps.apple.com/app/id6779296866" target="_blank" rel="noopener"><img class="ico" src="assets/icons/lumen.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Lumen</span><span class="sub">Red Light Calc</span></span><p>J/cm² dosing by device and distance.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="health" href="https://apps.apple.com/app/id6779691750" target="_blank" rel="noopener"><img class="ico" src="assets/icons/marker.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Marker</span><span class="sub">Longevity Bloodwork</span></span><p>ApoB, Lp(a), hsCRP and HbA1c vs optimal ranges.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="health" href="https://apps.apple.com/app/id6779141940" target="_blank" rel="noopener"><img class="ico" src="assets/icons/steam.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Steam</span><span class="sub">Sauna Dose Calc</span></span><p>Temp and time targets by experience level.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="home" href="https://apps.apple.com/app/id6777471058" target="_blank" rel="noopener"><img class="ico" src="assets/icons/watt.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Watt</span><span class="sub">Solar for Van &amp; RV</span></span><p>Battery, panel, wire gauge and fuse sizing.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="home" href="https://apps.apple.com/app/id6778885751" target="_blank" rel="noopener"><img class="ico" src="assets/icons/well.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Well</span><span class="sub">Off-Grid Water Calc</span></span><p>Well drawdown, pump head and UV disinfection dose.</p></span><span class="chev">&rsaquo;</span></a>
+      <a class="card" data-cat="home" href="https://apps.apple.com/app/id6781259378" target="_blank" rel="noopener"><img class="ico" src="assets/icons/garage.png" alt="" width="60" height="60"><span class="meta"><span class="top"><span class="name">Garage</span><span class="sub">Car Care &amp; Log</span></span><p>Service intervals, fuel economy and reminders.</p></span><span class="chev">&rsaquo;</span></a>
     </div>
   </section>
 
@@ -187,7 +193,7 @@
     <div class="inner">
       <div class="fl">
         <span class="moon"></span>
-        <span class="wm">Moon Dog</span>
+        <span class="wm">Moondog Software</span>
         <span class="fine">© 2026 · Free to try, pay once. No subscriptions, no ads.</span>
       </div>
       <a class="contact" href="mailto:roman.kopaliani@gmail.com">Contact</a>
