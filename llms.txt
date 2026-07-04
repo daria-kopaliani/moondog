@@ -1,6 +1,6 @@
 # Moon Dog
 
-> Free, citation-backed calculators and plain-English guides for makers and hobbyists — home canning (per-food USDA times), hydroponics, soap making, cold plunge, aquarium and pond chemistry, sous vide, mushroom growing, knife heat-treat and more. Each topic pairs a focused calculator with guides citing primary sources (USDA/NCHFP, university extension, IFOS, peer-reviewed literature). Companion iOS apps exist but every guide is free to read on the web.
+> Free, citation-backed calculators and plain-English guides for makers and hobbyists — home canning (per-food USDA times), soap making (per-oil SAP & properties), hydroponics, cold plunge, aquaria, sous vide, mushrooms, knife heat-treat and more. Sources: USDA/NCHFP, Kevin Dunn, university extension, IFOS, peer-reviewed literature. Companion iOS apps exist; every guide is free on the web.
 
 ## Calculators (interactive tools)
 - [Hydroponic Nutrient Calculator — EC to ppm & Targets by Crop](https://moondogapps.com/crop/hydroponic-nutrient-calculator.html)
@@ -229,7 +229,39 @@
 
 ### trace — Soapmaking Guides — Trace
 - [Soapmaking Guides — Trace](https://moondogapps.com/trace/)
+- [Apricot Kernel Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/apricot-kernel-soap.html)
+- [Avocado Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/avocado-soap.html)
+- [Beeswax in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/beeswax-soap.html)
+- [Canola Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/canola-soap.html)
+- [Castor Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/castor-soap.html)
+- [Cocoa Butter in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/cocoa-butter-soap.html)
+- [Coconut Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/coconut-76-soap.html)
+- [Coconut Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/coconut-92-soap.html)
+- [Corn Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/corn-soap.html)
+- [Grapeseed Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/grapeseed-soap.html)
+- [Hemp Seed Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/hemp-seed-soap.html)
+- [Jojoba Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/jojoba-soap.html)
+- [Kokum Butter in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/kokum-butter-soap.html)
+- [Lard in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/lard-soap.html)
+- [Macadamia Nut Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/macadamia-soap.html)
+- [Mango Butter in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/mango-butter-soap.html)
+- [Olive Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/olive-pomace-soap.html)
+- [Olive Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/olive-pure-soap.html)
+- [Palm Kernel Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/palm-kernel-soap.html)
+- [Palm Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/palm-soap.html)
+- [Peanut Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/peanut-soap.html)
+- [Rice Bran Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/rice-bran-soap.html)
+- [Safflower in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/safflower-high-oleic-soap.html)
+- [Sesame Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/sesame-soap.html)
+- [Shea Butter in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/shea-butter-soap.html)
+- [Soybean Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/soybean-soap.html)
+- [Stearic Acid in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/stearic-acid-soap.html)
+- [Sunflower in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/sunflower-high-oleic-soap.html)
+- [Sunflower Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/sunflower-soap.html)
 - [Superfat and Water in Cold-Process Soap, Explained](https://moondogapps.com/trace/superfat-and-water-cold-process-soap.html)
+- [Sweet Almond Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/sweet-almond-soap.html)
+- [Tallow in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/tallow-beef-soap.html)
+- [Walnut Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/walnut-soap.html)
 
 ### turf — Turf: Lawn Care Calculator
 - [Turf: Lawn Care Calculator](https://moondogapps.com/turf/)
