@@ -1,0 +1,214 @@
+# Moon Dog
+
+> Free, citation-backed calculators and plain-English guides for makers and hobbyists — hydroponics, home canning, soap making, cold plunge, aquarium and pond chemistry, sous vide, mushroom growing, knife heat-treat and more. Each topic pairs a focused calculator with guides that cite primary sources (USDA/NCHFP, university extension, IFOS, peer-reviewed literature). Companion iOS apps exist but every guide is free to read on the web.
+
+## Calculators (interactive tools)
+- [Hydroponic Nutrient Calculator — EC to ppm & Targets by Crop](https://moondogapps.com/crop/hydroponic-nutrient-calculator.html)
+- [Mushroom Substrate Calculator — Hydration Water & Biological Efficiency](https://moondogapps.com/flush/mushroom-substrate-calculator.html)
+- [Beer Priming Sugar Calculator — The Bottle-Conditioning Math](https://moondogapps.com/homebrew/beer-priming-sugar-calculator.html)
+- [Hot Tub Chemical Dosage Calculator — How Much Chlorine, pH & Alkalinity to Add](https://moondogapps.com/hottub/hot-tub-chemical-dosage-calculator.html)
+- [Red Light Therapy Dose Calculator — J/cm² & Minutes to Target](https://moondogapps.com/lumen/red-light-therapy-dose-calculator.html)
+- [How Much Rain Can I Collect? The Catchment Formula (0.62 gal/sq ft/inch)](https://moondogapps.com/rainwater/rainwater-collection-calculator.html)
+- [Canning Altitude Calculator — Water Bath Time & Pressure PSI (USDA)](https://moondogapps.com/seal/canning-altitude-calculator.html)
+- [Lye Calculator Basics: How to Calculate NaOH for Cold-Process Soap](https://moondogapps.com/trace/lye-calculator-sap-values-cold-process-soap.html)
+- [Soap Lye Calculator — NaOH & KOH by Oil (Cold Process)](https://moondogapps.com/trace/soap-lye-calculator.html)
+
+## Buying guides
+- [The Best Candle Making Supplies for Beginners (2026): Wax, Wicks, Fragrance & Kits](https://moondogapps.com/guides/best-candle-making-supplies.html)
+- [The Best Hard Cider Making Equipment for Beginners (2026): Fermenter, Yeast, Sanitizer & Bottling](https://moondogapps.com/guides/best-cider-making-equipment.html)
+- [The Best Food Dehydrators (2026): Jerky, Fruit & the Accessories That Matter](https://moondogapps.com/guides/best-dehydrators.html)
+- [The Best Hydroponic Nutrients & Meters (2026): Flora Trio, MasterBlend, EC & pH](https://moondogapps.com/guides/best-hydroponic-nutrients.html)
+- [The Best Knife Making Supplies (2026): Heat-Treat & Grinding Gear](https://moondogapps.com/guides/best-knifemaking-supplies.html)
+- [The Best Leatherworking Tools for Beginners (2026): A No-Hype Starter Kit](https://moondogapps.com/guides/best-leatherworking-tools.html)
+- [The Best Mushroom Growing Supplies for Beginners (2026): Kits, Substrate & Lab Gear](https://moondogapps.com/guides/best-mushroom-growing-supplies.html)
+- [The Best Pressure Canners & Canning Gear (2026): All American, Presto, Ball](https://moondogapps.com/guides/best-pressure-canners.html)
+- [The Best Cold-Process Soap Making Supplies & Starter Kits (2026)](https://moondogapps.com/guides/best-soap-making-supplies.html)
+- [The Best Sous Vide Machines (2026): Immersion Circulators & Accessories](https://moondogapps.com/guides/best-sous-vide-machines.html)
+- [The Best At-Home Water Test Kits (2026): Pool, Spa, Well, Tap & Aquarium](https://moondogapps.com/guides/best-water-test-kits.html)
+
+## Guides by topic
+### aquascape — Planted Tank Guides — Aquascape
+- [Planted Tank Guides — Aquascape](https://moondogapps.com/aquascape/)
+- [EI vs. PPS-Pro vs. PMDD: Which Planted Tank Dosing Method?](https://moondogapps.com/aquascape/ei-vs-pps-pro-vs-pmdd-dosing.html)
+- [The PPS-Pro Recipe and Dosing Schedule for Planted Tanks](https://moondogapps.com/aquascape/pps-pro-dosing-recipe.html)
+
+### bath — Bath: Sous Vide Cook & Chill
+- [Bath: Sous Vide Cook & Chill](https://moondogapps.com/bath/)
+- [How to Chill Sous Vide Food Safely (the Step Most Guides Skip)](https://moondogapps.com/bath/chill-sous-vide-food-safely.html)
+- [How Long Is Sous Vide Food Safe in the Fridge?](https://moondogapps.com/bath/how-long-sous-vide-food-safe-in-fridge.html)
+
+### compost — Composting & Worm Farming Guides
+- [Composting & Worm Farming Guides](https://moondogapps.com/compost/)
+- [The Best Compost Bins and Tumblers (2026): Tumbler, Stationary, Worm Farm & Bokashi](https://moondogapps.com/compost/best-compost-bins-and-tumblers.html)
+- [The Compost Carbon-to-Nitrogen Ratio (Browns:Greens) Explained](https://moondogapps.com/compost/compost-carbon-nitrogen-ratio.html)
+- [Vermicomposting: Worm Bin Basics — Bedding, Feeding & Harvesting](https://moondogapps.com/compost/vermicomposting-worm-bin-basics.html)
+
+### crop — Hydroponic Guides — Crop
+- [Hydroponic Guides — Crop](https://moondogapps.com/crop/)
+- [Hydroponic Nutrient Chart for Vegetables (Free Printable PDF) — EC, ppm & pH by Crop & Stage](https://moondogapps.com/crop/hydroponic-nutrient-targets-by-crop.html)
+- [Hydroponic Tomato ppm & EC Schedule by Growth Stage](https://moondogapps.com/crop/hydroponic-tomato-ppm-ec-schedule.html)
+- [Hydroponics ppm Chart — EC to ppm Conversion & Crop Ranges](https://moondogapps.com/crop/hydroponics-ppm-chart.html)
+- [MasterBlend & General Hydroponics ppm Chart — Mixing Ratios per Gallon](https://moondogapps.com/crop/masterblend-general-hydroponics-ppm-chart.html)
+- [ppm, EC, and PPM Scales in Hydroponics, Explained](https://moondogapps.com/crop/ppm-ec-hydroponic-nutrients-explained.html)
+
+### crust — Pizza Dough Guides — Crust
+- [Pizza Dough Guides — Crust](https://moondogapps.com/crust/)
+- [How Much Yeast for Cold-Ferment Pizza Dough? (24h / 48h / 72h Chart)](https://moondogapps.com/crust/how-much-yeast-cold-ferment-pizza-dough.html)
+- [Pizza Dough Hydration by Style — Neapolitan, NY, Detroit, Sicilian, Roman](https://moondogapps.com/crust/pizza-dough-hydration-by-style.html)
+
+### curd — Curd: Cheese Making Calculator
+- [Curd: Cheese Making Calculator](https://moondogapps.com/curd/)
+
+### cure — Cure: Dehydrate & Store
+- [Cure: Dehydrate & Store](https://moondogapps.com/cure/)
+
+### ferment — Fermentation Guides
+- [Fermentation Guides](https://moondogapps.com/ferment/)
+- [The Best Home Fermentation Supplies (2026): Jars, Lids, Weights, Crocks & Kombucha Kits](https://moondogapps.com/ferment/best-fermentation-supplies.html)
+- [How Much Salt for Sauerkraut — The 2% By-Weight Rule](https://moondogapps.com/ferment/how-much-salt-for-sauerkraut.html)
+- [Kombucha First and Second Ferment — Ratios, SCOBY, Timing & Carbonation](https://moondogapps.com/ferment/kombucha-first-and-second-ferment.html)
+
+### flush — Mushroom Cultivation Guides — Flush
+- [Mushroom Cultivation Guides — Flush](https://moondogapps.com/flush/)
+- [Biological Efficiency (BE): How to Measure Mushroom Yield](https://moondogapps.com/flush/biological-efficiency-mushroom-yield.html)
+- [Coco Coir Substrate Hydration for Mushrooms — How Much Water per Brick](https://moondogapps.com/flush/coco-coir-substrate-hydration-mushrooms.html)
+- [How Wet Should Mushroom Substrate Be? Field Capacity & the Squeeze Test](https://moondogapps.com/flush/substrate-hydration-field-capacity-mushrooms.html)
+- [How to Calculate Mushroom Substrate Moisture Content (% by Weight)](https://moondogapps.com/flush/substrate-moisture-content-calculation-mushrooms.html)
+
+### flux — Glaze Chemistry Guides — Flux
+- [Glaze Chemistry Guides — Flux](https://moondogapps.com/flux/)
+- [Is Your Glaze Food-Safe? Limit Formulas and Leaching](https://moondogapps.com/flux/glaze-food-safe-limit-formulas.html)
+- [UMF Glaze Chemistry Explained (Unity Molecular Formula)](https://moondogapps.com/flux/umf-glaze-chemistry-explained.html)
+
+### frost — Cold Plunge Water Care Guides — Frost
+- [Cold Plunge Water Care Guides — Frost](https://moondogapps.com/frost/)
+- [Chlorine vs. Hydrogen Peroxide for a Cold Plunge — The Dosing Math](https://moondogapps.com/frost/chlorine-vs-hydrogen-peroxide-cold-plunge.html)
+- [Cold Plunge Temperature and Time: Best Temps by Experience Level](https://moondogapps.com/frost/cold-plunge-temperature-guide.html)
+- [Cold Plunge Water Testing: Strips, Target Readings, and How Often](https://moondogapps.com/frost/cold-plunge-water-testing.html)
+- [How Often Should You Change Cold Plunge Water? A Cadence Chart](https://moondogapps.com/frost/how-often-change-cold-plunge-water.html)
+- [Why Is My Cold Plunge Water Cloudy? 5 Causes and the Fix for Each](https://moondogapps.com/frost/why-is-cold-plunge-water-cloudy.html)
+
+### garage — Garage: Car Care & Service Log
+- [Garage: Car Care & Service Log](https://moondogapps.com/garage/)
+
+### groove — Groove: Turntable Setup Calculator
+- [Groove: Turntable Setup Calculator](https://moondogapps.com/groove/)
+
+### guides — Guides
+- [Guides](https://moondogapps.com/guides/)
+
+### hide — Leatherworking Guides — Hide
+- [Leatherworking Guides — Hide](https://moondogapps.com/hide/)
+- [How Much Thread for a Saddle Stitch?](https://moondogapps.com/hide/saddle-stitch-thread-length.html)
+- [Stitches Per Inch (SPI) by Leather Weight and Project](https://moondogapps.com/hide/stitches-per-inch-leather-by-weight.html)
+
+### homebrew — Home Brewing Guides
+- [Home Brewing Guides](https://moondogapps.com/homebrew/)
+- [The Best Home Brewing Equipment for Beginners (2026): A Starter Gear Guide](https://moondogapps.com/homebrew/best-home-brewing-equipment.html)
+- [Extract vs All-Grain Brewing — The Difference and Where to Start](https://moondogapps.com/homebrew/extract-vs-all-grain-brewing.html)
+
+### hottub — Hot Tub Water Care Guides — Soak
+- [Hot Tub Water Care Guides — Soak](https://moondogapps.com/hottub/)
+- [Hot Tub Water Balance Cheat Sheet — Ideal Chlorine, pH, Alkalinity Levels](https://moondogapps.com/hottub/hot-tub-water-balance-cheat-sheet.html)
+- [Why Is My Hot Tub Water Cloudy, Foamy, or Green?](https://moondogapps.com/hottub/hot-tub-water-cloudy-foamy-green.html)
+- [How Much Chlorine to Add to a Hot Tub — The Dosing Math](https://moondogapps.com/hottub/how-much-chlorine-to-add-to-hot-tub.html)
+- [How to Lower (or Raise) pH and Alkalinity in a Hot Tub](https://moondogapps.com/hottub/how-to-lower-ph-alkalinity-hot-tub.html)
+- [New Hot Tub Startup: How to Fill and Balance the Water](https://moondogapps.com/hottub/new-hot-tub-startup-fill-and-balance.html)
+
+### kit — iOS Ship Kit — the App Store tooling behind 30+ apps
+- [iOS Ship Kit — the App Store tooling behind 30+ apps](https://moondogapps.com/kit/)
+
+### lumen — Red Light Therapy Guides — Lumen
+- [Red Light Therapy Guides — Lumen](https://moondogapps.com/lumen/)
+- [How Long Should a Red Light Therapy Session Be?](https://moondogapps.com/lumen/how-long-red-light-therapy-session.html)
+- [Why More Red Light Isn't Better: The Biphasic Dose Response](https://moondogapps.com/lumen/red-light-biphasic-dose-response.html)
+- [How to Calculate Red Light Therapy Dose (J/cm²)](https://moondogapps.com/lumen/red-light-therapy-dose-j-cm2.html)
+- [Red Light Therapy Dose Table — Minutes by Distance & Power](https://moondogapps.com/lumen/red-light-therapy-minutes-distance-dose-table.html)
+
+### marker — Longevity Bloodwork Guides — Marker
+- [Longevity Bloodwork Guides — Marker](https://moondogapps.com/marker/)
+- [ApoB vs. LDL Cholesterol: Why the Longevity Crowd Tracks Particle Count](https://moondogapps.com/marker/apob-vs-ldl-cholesterol.html)
+- [How Often Should You Retest Your Bloodwork?](https://moondogapps.com/marker/how-often-test-bloodwork.html)
+- [The Longevity Blood Panel: Which Markers and Why](https://moondogapps.com/marker/longevity-blood-panel-markers.html)
+- [Optimal vs. Reference Ranges: Why "Normal" Bloodwork Isn't the Longevity Target](https://moondogapps.com/marker/optimal-vs-reference-ranges-bloodwork.html)
+
+### pond — Koi Pond Guides — Pond
+- [Koi Pond Guides — Pond](https://moondogapps.com/pond/)
+- [Why Your Koi Pond pH Crashes — and the KH Fix](https://moondogapps.com/pond/koi-pond-ph-crash-kh-fix.html)
+- [Koi Pond Water Parameters: The Levels That Matter](https://moondogapps.com/pond/koi-pond-water-parameters.html)
+
+### press — Cidermaking Guides — Press
+- [Cidermaking Guides — Press](https://moondogapps.com/press/)
+- [Blending Cider Apples: Balancing Sugar, Acid, and Tannin](https://moondogapps.com/press/cider-apple-blend-sugar-acid-tannin.html)
+- [YAN and Yeast Nutrient: Preventing H₂S in Cider](https://moondogapps.com/press/cider-yan-nutrient-h2s.html)
+
+### rainwater — Rainwater Harvesting Guides
+- [Rainwater Harvesting Guides](https://moondogapps.com/rainwater/)
+- [The Best Rain Barrels & Diverters (2026): Barrels, First-Flush, Filters & IBC Totes](https://moondogapps.com/rainwater/best-rain-barrels-and-diverters.html)
+- [Is Rainwater Safe to Drink? Garden vs. Potable, Contaminants & Treatment](https://moondogapps.com/rainwater/is-rainwater-safe-to-drink.html)
+
+### reef — Reef Chemistry Guides — Reef
+- [Reef Chemistry Guides — Reef](https://moondogapps.com/reef/)
+- [Why Dose Magnesium Before Calcium and Alkalinity in a Reef Tank](https://moondogapps.com/reef/dose-magnesium-before-calcium-alkalinity.html)
+- [Reef Tank Parameters by Tank Type — SPS, Mixed, LPS/Soft Cheat Sheet](https://moondogapps.com/reef/reef-tank-parameters-by-type.html)
+
+### saline — Saltwater Pool Guides — Saline
+- [Saltwater Pool Guides — Saline](https://moondogapps.com/saline/)
+- [What Salt Level Does a Salt Cell Need? (Hayward, Pentair, Jandy)](https://moondogapps.com/saline/salt-level-for-swg-cell.html)
+- [CSI and Salt Cell Longevity: Why Saturation Index Decides Cell Life](https://moondogapps.com/saline/saltwater-pool-csi-cell-longevity.html)
+
+### seal — Home Canning Guides — Seal
+- [Home Canning Guides — Seal](https://moondogapps.com/seal/)
+- [Altitude Canning Chart: USDA Time & Pressure Adjustments by Elevation](https://moondogapps.com/seal/canning-at-altitude-adjustments.html)
+- [Canning Salsa Safely: Why You Must Use a Tested Recipe](https://moondogapps.com/seal/canning-salsa-safely.html)
+- [How Long Do Home-Canned Goods Last? Shelf Life & Storage](https://moondogapps.com/seal/how-long-do-home-canned-goods-last.html)
+- [Pressure Canning Green Beans: Time & PSI by Altitude](https://moondogapps.com/seal/pressure-canning-green-beans-time-psi.html)
+- [Canning Tomatoes: How Much Lemon Juice or Citric Acid (USDA)](https://moondogapps.com/seal/water-bath-canning-tomatoes-acidification.html)
+- [Water Bath vs. Pressure Canning: Which One Your Food Needs](https://moondogapps.com/seal/water-bath-vs-pressure-canning.html)
+
+### splash — Chlorine Pool Guides — Splash
+- [Chlorine Pool Guides — Splash](https://moondogapps.com/splash/)
+- [Free Chlorine and CYA: The Ratio That Actually Keeps a Pool Clear](https://moondogapps.com/splash/fc-cya-ratio-chlorine-pool.html)
+- [How Much Chlorine or Shock to Add to a Pool](https://moondogapps.com/splash/how-much-shock-chlorine-pool.html)
+
+### steam — Sauna Guides — Steam
+- [Sauna Guides — Steam](https://moondogapps.com/steam/)
+- [How Often to Sauna: What the Research Suggests About Frequency](https://moondogapps.com/steam/sauna-frequency-for-benefits.html)
+- [Sauna Temperature and Time: How Hot and How Long?](https://moondogapps.com/steam/sauna-temperature-and-time.html)
+
+### strip — Jerky Safety Guides — Strip
+- [Jerky Safety Guides — Strip](https://moondogapps.com/strip/)
+- [Curing Salt for Jerky: How Much Prague Powder #1?](https://moondogapps.com/strip/jerky-curing-salt-prague-powder.html)
+- [Why Jerky Must Reach 160°F (165°F for Poultry)](https://moondogapps.com/strip/jerky-safe-drying-temperature.html)
+
+### tap — Tap: Draft Beer & CO2 Calculator
+- [Tap: Draft Beer & CO2 Calculator](https://moondogapps.com/tap/)
+
+### temper — Knife Heat-Treatment Guides — Temper
+- [Knife Heat-Treatment Guides — Temper](https://moondogapps.com/temper/)
+- [Quench and Temper: Hitting a Target Hardness (HRC) by Steel](https://moondogapps.com/temper/quench-and-temper-knife-steel-hrc.html)
+- [Tempering Temperature and Oxide Color Chart for Knife Steel](https://moondogapps.com/temper/tempering-temperature-color-chart.html)
+
+### trace — Soapmaking Guides — Trace
+- [Soapmaking Guides — Trace](https://moondogapps.com/trace/)
+- [Superfat and Water in Cold-Process Soap, Explained](https://moondogapps.com/trace/superfat-and-water-cold-process-soap.html)
+
+### turf — Turf: Lawn Care Calculator
+- [Turf: Lawn Care Calculator](https://moondogapps.com/turf/)
+
+### watt — Off-Grid Solar Guides — Watt
+- [Off-Grid Solar Guides — Watt](https://moondogapps.com/watt/)
+- [How Many Solar Panels Do I Need for a Van, RV, or Off-Grid Setup?](https://moondogapps.com/watt/how-many-solar-panels-rv-van-off-grid.html)
+- [What Size Battery Bank for Off-Grid? Amp-Hours, Depth of Discharge & Autonomy](https://moondogapps.com/watt/off-grid-battery-bank-sizing.html)
+
+### well — Off-Grid Water Guides — Well
+- [Off-Grid Water Guides — Well](https://moondogapps.com/well/)
+- [UV Water Disinfection Dose for Well Water (NSF/ANSI 55)](https://moondogapps.com/well/uv-water-disinfection-dose-nsf-55.html)
+- [Sizing a Well Pump: Total Dynamic Head (TDH) Explained](https://moondogapps.com/well/well-pump-tdh-sizing.html)
+
+### wick — Wick: Candle Maker's Calculator
+- [Wick: Candle Maker's Calculator](https://moondogapps.com/wick/)
+- [Why Is My Candle Tunneling, Frosting, or Sweating?](https://moondogapps.com/wick/candle-tunneling-frosting-sweating.html)
+- [How Much Wax and Fragrance for a Candle? Fragrance Load Explained](https://moondogapps.com/wick/candle-wax-and-fragrance-load.html)
+- [How to Choose a Candle Wick Size (by Container Diameter)](https://moondogapps.com/wick/candle-wick-size-by-diameter.html)
+- [How to Price Handmade Candles (Cost + Markup)](https://moondogapps.com/wick/how-to-price-handmade-candles.html)
