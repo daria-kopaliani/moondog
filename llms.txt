@@ -1,6 +1,6 @@
 # Moon Dog
 
-> Free, citation-backed calculators and plain-English guides for makers and hobbyists — home canning (per-food USDA times), soap making (per-oil SAP & properties), hydroponics, cold plunge, aquaria, sous vide, mushrooms, knife heat-treat and more. Sources: USDA/NCHFP, Kevin Dunn, university extension, IFOS, peer-reviewed literature. Companion iOS apps exist; every guide is free on the web.
+> Free, citation-backed calculators and plain-English guides for makers and hobbyists — home canning (per-food USDA times), soap making (per-oil SAP & properties), hydroponics (per-crop ppm/EC/pH), cold plunge, aquaria, sous vide, mushrooms, knife heat-treat and more. Sources: USDA/NCHFP, Kevin Dunn, Cornell/Penn State, IFOS, peer-reviewed literature. Companion iOS apps exist; every guide is free on the web.
 
 ## Calculators (interactive tools)
 - [Hydroponic Nutrient Calculator — EC to ppm & Targets by Crop](https://moondogapps.com/crop/hydroponic-nutrient-calculator.html)
@@ -45,11 +45,19 @@
 
 ### crop — Hydroponic Guides — Crop
 - [Hydroponic Guides — Crop](https://moondogapps.com/crop/)
+- [Basil Hydroponic Nutrients: ppm, EC & pH by Stage (2026)](https://moondogapps.com/crop/basil-hydroponic-nutrients.html)
+- [Cucumber Hydroponic Nutrients: ppm, EC & pH by Stage (2026)](https://moondogapps.com/crop/cucumber-hydroponic-nutrients.html)
 - [Hydroponic Nutrient Chart for Vegetables (Free Printable PDF) — EC, ppm & pH by Crop & Stage](https://moondogapps.com/crop/hydroponic-nutrient-targets-by-crop.html)
 - [Hydroponic Tomato ppm & EC Schedule by Growth Stage](https://moondogapps.com/crop/hydroponic-tomato-ppm-ec-schedule.html)
 - [Hydroponics ppm Chart — EC to ppm Conversion & Crop Ranges](https://moondogapps.com/crop/hydroponics-ppm-chart.html)
+- [Leafy greens Hydroponic Nutrients: ppm, EC & pH by Stage (2026)](https://moondogapps.com/crop/leafy-greens-hydroponic-nutrients.html)
+- [Leafy herbs Hydroponic Nutrients: ppm, EC & pH by Stage (2026)](https://moondogapps.com/crop/leafy-herbs-hydroponic-nutrients.html)
+- [Lettuce Hydroponic Nutrients: ppm, EC & pH by Stage (2026)](https://moondogapps.com/crop/lettuce-hydroponic-nutrients.html)
 - [MasterBlend & General Hydroponics ppm Chart — Mixing Ratios per Gallon](https://moondogapps.com/crop/masterblend-general-hydroponics-ppm-chart.html)
+- [Microgreens Hydroponic Nutrients: ppm, EC & pH by Stage (2026)](https://moondogapps.com/crop/microgreens-hydroponic-nutrients.html)
+- [Pepper Hydroponic Nutrients: ppm, EC & pH by Stage (2026)](https://moondogapps.com/crop/pepper-hydroponic-nutrients.html)
 - [ppm, EC, and PPM Scales in Hydroponics, Explained](https://moondogapps.com/crop/ppm-ec-hydroponic-nutrients-explained.html)
+- [Strawberry Hydroponic Nutrients: ppm, EC & pH by Stage (2026)](https://moondogapps.com/crop/strawberry-hydroponic-nutrients.html)
 
 ### crust — Pizza Dough Guides — Crust
 - [Pizza Dough Guides — Crust](https://moondogapps.com/crust/)
