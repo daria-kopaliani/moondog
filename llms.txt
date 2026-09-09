@@ -1,6 +1,6 @@
 # Moon Dog
 
-> Free, citation-backed calculators and plain-English guides for makers and hobbyists — home canning (per-food USDA times), soap making (per-oil SAP & properties), hydroponics (per-crop ppm/EC/pH), cold plunge, aquaria, sous vide, mushrooms, knife heat-treat and more. Sources: USDA/NCHFP, Kevin Dunn, Cornell/Penn State, IFOS, peer-reviewed literature. Companion iOS apps exist; every guide is free on the web.
+> Free, citation-backed calculators and plain-English guides for makers and hobbyists — home canning (per-food USDA times), soap making (per-oil SAP & properties), hydroponics (per-crop ppm/EC/pH), soil testing (lime rates by texture, fertilizer per square foot, reading a lab report), cold plunge, aquaria, sous vide, mushrooms, knife heat-treat and more. Sources: USDA/NCHFP, Kevin Dunn, Cornell/Penn State, IFOS, peer-reviewed literature. Companion iOS apps exist; every guide is free on the web.
 
 ## Calculators (interactive tools)
 - [Hydroponic Nutrient Calculator — EC to ppm & Targets by Crop](https://moondogapps.com/crop/hydroponic-nutrient-calculator.html)
@@ -125,6 +125,14 @@
 
 ### kit — iOS Ship Kit — the App Store tooling behind 30+ apps
 - [iOS Ship Kit — the App Store tooling behind 30+ apps](https://moondogapps.com/kit/)
+
+### loam — Soil Test & Fertilizer Guides — Loam
+- [Loam: Soil Test & Fertilizer](https://moondogapps.com/loam/)
+- [How Much Lime to Raise Soil pH (by Texture, per 1,000 sq ft)](https://moondogapps.com/loam/how-much-lime-to-raise-soil-ph.html)
+- [How Much Fertilizer per Square Foot (and per 1,000 sq ft)](https://moondogapps.com/loam/how-much-fertilizer-per-square-foot.html)
+- [How to Read a Soil Test Report (pH, Buffer pH, CEC, P2O5)](https://moondogapps.com/loam/how-to-read-a-soil-test-report.html)
+- [Target Soil PH by Crop: Vegetables, Brassicas, Potatoes, Blueberries](https://moondogapps.com/loam/soil-ph-by-crop.html)
+- [Organic Fertilizer N-P-K Chart (with First-Season Availability)](https://moondogapps.com/loam/organic-fertilizer-npk-chart.html)
 
 ### lumen — Red Light Therapy Guides — Lumen
 - [Red Light Therapy Guides — Lumen](https://moondogapps.com/lumen/)
