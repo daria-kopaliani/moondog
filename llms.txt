@@ -37,6 +37,12 @@
 - [How to Chill Sous Vide Food Safely (the Step Most Guides Skip)](https://moondogapps.com/bath/chill-sous-vide-food-safely.html)
 - [How Long Is Sous Vide Food Safe in the Fridge?](https://moondogapps.com/bath/how-long-sous-vide-food-safe-in-fridge.html)
 
+### blast — Blast: Pressure Washer Calculator
+- [Blast: Pressure Washer Calc](https://moondogapps.com/blast/)
+
+### brine — Fermentation & Brine Guides — Brine
+- [Brine: Fermentation Salt Calc](https://moondogapps.com/brine/)
+
 ### compost — Composting & Worm Farming Guides
 - [Composting & Worm Farming Guides](https://moondogapps.com/compost/)
 - [The Best Compost Bins and Tumblers (2026): Tumbler, Stationary, Worm Farm & Bokashi](https://moondogapps.com/compost/best-compost-bins-and-tumblers.html)
@@ -58,6 +64,7 @@
 - [Pepper Hydroponic Nutrients: ppm, EC & pH by Stage (2026)](https://moondogapps.com/crop/pepper-hydroponic-nutrients.html)
 - [ppm, EC, and PPM Scales in Hydroponics, Explained](https://moondogapps.com/crop/ppm-ec-hydroponic-nutrients-explained.html)
 - [Strawberry Hydroponic Nutrients: ppm, EC & pH by Stage (2026)](https://moondogapps.com/crop/strawberry-hydroponic-nutrients.html)
+- [Can You Make Your Own Hydroponic Nutrients? Yes — Two Ways, One Recipe](https://moondogapps.com/crop/make-your-own-hydroponic-nutrients.html)
 
 ### crust — Pizza Dough Guides — Crust
 - [Pizza Dough Guides — Crust](https://moondogapps.com/crust/)
@@ -66,15 +73,30 @@
 
 ### curd — Curd: Cheese Making Calculator
 - [Curd: Cheese Making Calculator](https://moondogapps.com/curd/)
+- [How to Make Brie / Camembert at Home: Yield, Rennet & Aging](https://moondogapps.com/curd/how-to-make-brie.html)
+- [How to Make Cheddar at Home: Yield, Rennet & Aging](https://moondogapps.com/curd/how-to-make-cheddar.html)
+- [How to Make Chèvre (fresh goat) at Home: Yield, Rennet & Aging](https://moondogapps.com/curd/how-to-make-chevre.html)
+- [How to Make Colby at Home: Yield, Rennet & Aging](https://moondogapps.com/curd/how-to-make-colby.html)
+- [How to Make Feta at Home: Yield, Rennet & Aging](https://moondogapps.com/curd/how-to-make-feta.html)
+- [How to Make Gouda at Home: Yield, Rennet & Aging](https://moondogapps.com/curd/how-to-make-gouda.html)
+- [How to Make Monterey Jack at Home: Yield, Rennet & Aging](https://moondogapps.com/curd/how-to-make-montereyjack.html)
+- [How to Make Mozzarella (fresh) at Home: Yield, Rennet & Aging](https://moondogapps.com/curd/how-to-make-mozzarella.html)
+- [How to Make Parmesan at Home: Yield, Rennet & Aging](https://moondogapps.com/curd/how-to-make-parmesan.html)
 
 ### cure — Cure: Dehydrate & Store
 - [Cure: Dehydrate & Store](https://moondogapps.com/cure/)
+
+### drift — Roof Snow Load Guides — Drift
+- [Drift: Roof Snow Load Calc](https://moondogapps.com/drift/)
 
 ### ferment — Fermentation Guides
 - [Fermentation Guides](https://moondogapps.com/ferment/)
 - [The Best Home Fermentation Supplies (2026): Jars, Lids, Weights, Crocks & Kombucha Kits](https://moondogapps.com/ferment/best-fermentation-supplies.html)
 - [How Much Salt for Sauerkraut — The 2% By-Weight Rule](https://moondogapps.com/ferment/how-much-salt-for-sauerkraut.html)
 - [Kombucha First and Second Ferment — Ratios, SCOBY, Timing & Carbonation](https://moondogapps.com/ferment/kombucha-first-and-second-ferment.html)
+
+### flame — Propane Guides — Flame
+- [Flame: Propane Tank Calc](https://moondogapps.com/flame/)
 
 ### flush — Mushroom Cultivation Guides — Flush
 - [Mushroom Cultivation Guides — Flush](https://moondogapps.com/flush/)
@@ -105,6 +127,9 @@
 ### guides — Guides
 - [Guides](https://moondogapps.com/guides/)
 
+### gust — Air Compressor Guides — Gust
+- [Gust: Air Compressor Calc](https://moondogapps.com/gust/)
+
 ### hide — Leatherworking Guides — Hide
 - [Leatherworking Guides — Hide](https://moondogapps.com/hide/)
 - [How Much Thread for a Saddle Stitch?](https://moondogapps.com/hide/saddle-stitch-thread-length.html)
@@ -134,6 +159,9 @@
 - [Target Soil PH by Crop: Vegetables, Brassicas, Potatoes, Blueberries](https://moondogapps.com/loam/soil-ph-by-crop.html)
 - [Organic Fertilizer N-P-K Chart (with First-Season Availability)](https://moondogapps.com/loam/organic-fertilizer-npk-chart.html)
 
+### loft — Insulation Guides — Loft
+- [Loft: Attic Insulation Calc](https://moondogapps.com/loft/)
+
 ### lumen — Red Light Therapy Guides — Lumen
 - [Red Light Therapy Guides — Lumen](https://moondogapps.com/lumen/)
 - [How Long Should a Red Light Therapy Session Be?](https://moondogapps.com/lumen/how-long-red-light-therapy-session.html)
@@ -147,6 +175,9 @@
 - [How Often Should You Retest Your Bloodwork?](https://moondogapps.com/marker/how-often-test-bloodwork.html)
 - [The Longevity Blood Panel: Which Markers and Why](https://moondogapps.com/marker/longevity-blood-panel-markers.html)
 - [Optimal vs. Reference Ranges: Why "Normal" Bloodwork Isn't the Longevity Target](https://moondogapps.com/marker/optimal-vs-reference-ranges-bloodwork.html)
+
+### pile — Composting Guides — Pile
+- [Pile: Compost Ratio Calc](https://moondogapps.com/pile/)
 
 ### pond — Koi Pond Guides — Pond
 - [Koi Pond Guides — Pond](https://moondogapps.com/pond/)
@@ -168,10 +199,16 @@
 - [Why Dose Magnesium Before Calcium and Alkalinity in a Reef Tank](https://moondogapps.com/reef/dose-magnesium-before-calcium-alkalinity.html)
 - [Reef Tank Parameters by Tank Type — SPS, Mixed, LPS/Soft Cheat Sheet](https://moondogapps.com/reef/reef-tank-parameters-by-type.html)
 
+### reel — Extension Cord Guides — Reel
+- [Reel: Extension Cord Calc](https://moondogapps.com/reel/)
+
 ### saline — Saltwater Pool Guides — Saline
 - [Saltwater Pool Guides — Saline](https://moondogapps.com/saline/)
 - [What Salt Level Does a Salt Cell Need? (Hayward, Pentair, Jandy)](https://moondogapps.com/saline/salt-level-for-swg-cell.html)
 - [CSI and Salt Cell Longevity: Why Saturation Index Decides Cell Life](https://moondogapps.com/saline/saltwater-pool-csi-cell-longevity.html)
+
+### saw — Saw: Chainsaw & Fuel Mix Calculator
+- [Saw: Chainsaw & Fuel Mix Calc](https://moondogapps.com/saw/)
 
 ### seal — Home Canning Guides — Seal
 - [Home Canning Guides — Seal](https://moondogapps.com/seal/)
@@ -219,11 +256,19 @@
 - [Pressure Canning Green Beans: Time & PSI by Altitude](https://moondogapps.com/seal/pressure-canning-green-beans-time-psi.html)
 - [Canning Tomatoes: How Much Lemon Juice or Citric Acid (USDA)](https://moondogapps.com/seal/water-bath-canning-tomatoes-acidification.html)
 - [Water Bath vs. Pressure Canning: Which One Your Food Needs](https://moondogapps.com/seal/water-bath-vs-pressure-canning.html)
+- [How Much Lemon Juice for Canning Tomatoes (Per Quart & Per Pint)](https://moondogapps.com/seal/how-much-lemon-juice-canning-tomatoes.html)
+- [How long to water bath can pickles: times by jar size (USDA)](https://moondogapps.com/seal/water-bath-can-pickles.html)
 
 ### splash — Chlorine Pool Guides — Splash
 - [Chlorine Pool Guides — Splash](https://moondogapps.com/splash/)
 - [Free Chlorine and CYA: The Ratio That Actually Keeps a Pool Clear](https://moondogapps.com/splash/fc-cya-ratio-chlorine-pool.html)
 - [How Much Chlorine or Shock to Add to a Pool](https://moondogapps.com/splash/how-much-shock-chlorine-pool.html)
+
+### split — Log Splitter Guides — Split
+- [Split: Log Splitter Calc](https://moondogapps.com/split/)
+
+### stack — Stack: Firewood & BTU Calculator
+- [Stack: Firewood & BTU Calc](https://moondogapps.com/stack/)
 
 ### steam — Sauna Guides — Steam
 - [Sauna Guides — Steam](https://moondogapps.com/steam/)
@@ -242,6 +287,26 @@
 - [Knife Heat-Treatment Guides — Temper](https://moondogapps.com/temper/)
 - [Quench and Temper: Hitting a Target Hardness (HRC) by Steel](https://moondogapps.com/temper/quench-and-temper-knife-steel-hrc.html)
 - [Tempering Temperature and Oxide Color Chart for Knife Steel](https://moondogapps.com/temper/tempering-temperature-color-chart.html)
+- [1084 Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/1084-heat-treat.html)
+- [1095 Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/1095-heat-treat.html)
+- [14C28N Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/14c28n-heat-treat.html)
+- [15N20 Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/15n20-heat-treat.html)
+- [5160 Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/5160-heat-treat.html)
+- [52100 Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/52100-heat-treat.html)
+- [80CrV2 Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/80crv2-heat-treat.html)
+- [8670 Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/8670-heat-treat.html)
+- [A2 Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/a2-heat-treat.html)
+- [AEB-L Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/aeb-l-heat-treat.html)
+- [ApexUltra Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/apexultra-heat-treat.html)
+- [CPM-154 Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/cpm-154-heat-treat.html)
+- [CPM-3V Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/cpm-3v-heat-treat.html)
+- [D2 Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/d2-heat-treat.html)
+- [M390 Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/m390-heat-treat.html)
+- [CPM MagnaCut Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/magnacut-heat-treat.html)
+- [MagnaMax Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/magnamax-heat-treat.html)
+- [O1 Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/o1-heat-treat.html)
+- [S35VN Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/s35vn-heat-treat.html)
+- [S45VN Heat Treat: Austenitize, Quench & Temper Chart](https://moondogapps.com/temper/s45vn-heat-treat.html)
 
 ### trace — Soapmaking Guides — Trace
 - [Soapmaking Guides — Trace](https://moondogapps.com/trace/)
@@ -278,6 +343,9 @@
 - [Sweet Almond Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/sweet-almond-soap.html)
 - [Tallow in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/tallow-beef-soap.html)
 - [Walnut Oil in Soap: SAP Value, Lye Amount & Properties](https://moondogapps.com/trace/walnut-soap.html)
+
+### tug — Winch Guides — Tug
+- [Tug: Winch & Recovery Calc](https://moondogapps.com/tug/)
 
 ### turf — Turf: Lawn Care Calculator
 - [Turf: Lawn Care Calculator](https://moondogapps.com/turf/)
