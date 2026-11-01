@@ -35,7 +35,7 @@
   .logo{display:flex;align-items:center;gap:11px;}
   .moon{width:26px;height:26px;border-radius:50%;box-shadow:inset 8px -6px 0 0 var(--text-primary);display:inline-block;}
   .wordmark{font-family:var(--font-display);font-weight:700;font-size:19px;letter-spacing:-0.4px;}
-  nav{display:flex;align-items:center;gap:6px;}
+  nav{display:flex;flex-wrap:wrap;align-items:center;gap:6px;}
   nav a{padding:8px 14px;font-size:15px;font-weight:500;color:var(--text-secondary);border-radius:12px;}
 
   .hero{display:flex;flex-wrap:wrap;align-items:center;gap:40px 48px;padding-top:32px;padding-bottom:26px;}
@@ -94,6 +94,11 @@
   footer .wm{font-family:var(--font-display);font-weight:700;font-size:15px;letter-spacing:-0.3px;}
   footer .fine{color:var(--text-disabled);font-size:14px;}
   footer .contact{font-size:14px;font-weight:500;color:var(--accent);}
+  @media (max-width:600px){
+    header{flex-wrap:wrap;}
+    header nav{width:100%;}
+    header nav a{padding:8px 10px;}
+  }
 </style>
 </head>
 <body>
@@ -104,6 +109,7 @@
     <nav>
       <a href="#apps">Apps</a>
       <a href="https://moondogapps.com/guides/">Guides</a>
+      <a href="/hire/">App repair</a>
     </nav>
   </header>
 </div>
