@@ -3,7 +3,7 @@
 (() => {
   const form = document.getElementById('intake');
   if (!form) return;
-  const recipient = 'roman.kopaliani@gmail.com';
+  const recipient = 'hello@moondogapps.com';
   const status = document.getElementById('form-status');
   const prepared = document.getElementById('prepared');
 

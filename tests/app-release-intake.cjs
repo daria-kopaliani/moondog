@@ -57,7 +57,7 @@ function fixture() {
   f.submit();
   let uri = new URL(f.nodes['email-draft'].href);
   assert.equal(uri.protocol, 'mailto:');
-  assert.equal(uri.pathname, 'roman.kopaliani@gmail.com');
+  assert.equal(uri.pathname, 'hello@moondogapps.com');
   assert.match(uri.searchParams.get('body'), /A\+B & App/);
   assert.match(uri.searchParams.get('body'), /Unicode: é ✓/);
   assert.match(f.nodes['form-status'].textContent, /Nothing has been sent/);
